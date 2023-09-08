@@ -4,8 +4,9 @@ const styles = {
     height: "100vh",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "left",
     flexDirection: "column",
+    paddingLeft:"5%",
   },
 };
 

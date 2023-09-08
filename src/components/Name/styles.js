@@ -5,6 +5,9 @@ const styles = {
     zIndex: 1,
     fontFamily: "raleway",
     fontWeight: 700,
+    "@media (min-width: 768px)": {
+      fontSize: "100%",
+    },
   },
 };
 
