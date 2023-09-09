@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.fbea3cdc.css",
-    "main.js": "/MyPortfolio/static/js/main.383d1fc4.js",
+    "main.css": "/MyPortfolio/static/css/main.45c9ec9d.css",
+    "main.js": "/MyPortfolio/static/js/main.48769a6c.js",
     "static/media/graphql.svg": "/MyPortfolio/static/media/graphql.0b5294ac4124a3b313b2e99060f036ee.svg",
     "static/media/mongoDBIcon.svg": "/MyPortfolio/static/media/mongoDBIcon.27861d11957586cabb70ab848dc60188.svg",
     "static/media/apollo.svg": "/MyPortfolio/static/media/apollo.c1f27460c06feaa14e9130dfc8cf928f.svg",
@@ -14,13 +14,13 @@
     "static/media/githubWhite.svg": "/MyPortfolio/static/media/githubWhite.3924e87ea6bbdafcea3ab49e268249c6.svg",
     "static/media/git.svg": "/MyPortfolio/static/media/git.0e76f22a743680e0609a58140207b10a.svg",
     "static/media/github.svg": "/MyPortfolio/static/media/github.419e852a063422b915f5c16a87f3dd35.svg",
-    "static/media/javascript-original.svg": "/MyPortfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "index.html": "/MyPortfolio/index.html",
-    "main.fbea3cdc.css.map": "/MyPortfolio/static/css/main.fbea3cdc.css.map",
-    "main.383d1fc4.js.map": "/MyPortfolio/static/js/main.383d1fc4.js.map"
+    "static/media/javascript-original.svg": "/MyPortfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "main.45c9ec9d.css.map": "/MyPortfolio/static/css/main.45c9ec9d.css.map",
+    "main.48769a6c.js.map": "/MyPortfolio/static/js/main.48769a6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbea3cdc.css",
-    "static/js/main.383d1fc4.js"
+    "static/css/main.45c9ec9d.css",
+    "static/js/main.48769a6c.js"
   ]
 }
