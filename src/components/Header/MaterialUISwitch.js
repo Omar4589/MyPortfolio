@@ -19,6 +19,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
       transform: "translateX(0px)",
       //opacity of inside of circle when switch is checked
       "& .MuiSwitch-thumb:before": {
+        borderRadius: "50%",
         backgroundColor: "#000000",
         backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
           "#ffffff"

@@ -1,0 +1,145 @@
+.outer-menu {
+    z-index: 1;
+  }
+  
+  .outer-menu .checkbox-toggle {
+    z-index: 2;
+  }
+
+
+
+    /*                 ROTATION OF HAMBURGER LINES ANIMATION                */
+  .outer-menu .checkbox-toggle:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  
+
+
+  /* .outer-menu .checkbox-toggle:checked ~ .menu {
+    pointer-events: auto;
+    visibility: visible !important;
+  } */
+  
+
+
+
+
+  /*                 MENU RENDER ANIMATION                 */
+  .outer-menu .checkbox-toggle:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+  }
+
+
+
+
+/*   
+  .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+  } */
+  
+
+
+
+
+  /*             ANIMATION THAT PLAYS WHEN YOU HOVER OVER X ICON                 */
+  .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+  /* .outer-menu .hamburger {
+    z-index: 1;
+    backface-visibility: hidden;
+  } */
+  
+
+
+
+
+
+
+  /*                HAMBURGER LINES                */
+  .outer-menu .hamburger > div {
+    height: 0.125rem;
+    transition: all 0.4s ease;
+    -webkit-box-pack: center;
+  }
+
+  .outer-menu .hamburger > div:before,
+  .outer-menu .hamburger > div:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -0.5rem;
+    height: 0.125rem;
+    transition: all 0.4s ease;
+    background-color: inherit;
+  }
+
+  .outer-menu .hamburger > div:after {
+    top: 0.5rem;
+  }
+  
+  /* .outer-menu .menu {
+    backface-visibility: hidden;
+    outline: 0.0625rem solid transparent;
+  }
+   */
+   
+
+
+
+
+
+
+
+   /*                ACTUAL MENU                */
+  .outer-menu .menu > div {
+    width: 240vw;
+    height: 260vw;
+    transform: scale(0);
+    will-change: transform;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    backface-visibility: hidden;
+  }
+  
+  /* .outer-menu .menu > div > div {
+    max-width: 90vw;
+    transition: opacity 0.4s ease;
+  } */
+  
+
+
+
+
+
+
+  /*                    MENU LINKS                */
+  .outer-menu .menu > div > div ul li a {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #8b31ff 51%, #7000ff 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .outer-menu .menu > div > div ul li a:hover {
+    background-position: 100% 0;
+  }
+
+  

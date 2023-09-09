@@ -14,7 +14,7 @@ const Title = () => {
   // };
 
   return (
-    <div style={{ ...styles.main }} className="text-3xl absolute top-96 pt-5 mx-5">
+    <div style={{ ...styles.main }} className="text-3xl absolute top-96 pt-5 font-bold mx-5">
       <Typed
         strings={[
           "Web Developer",
