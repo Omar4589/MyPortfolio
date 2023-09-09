@@ -29,7 +29,7 @@ const TheParticles = (props) => {
 
   return (
     <Particles
-      style={{}}
+      style={{ }}
       id={id}
       init={particlesInit}
       loaded={particlesLoaded}

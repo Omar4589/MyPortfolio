@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.3",
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
     "@testing-library/jest-dom": "^5.17.0",
@@ -15,10 +18,7 @@
     "react-scripts": "5.0.1",
     "react-typed": "^1.2.0",
     "tsparticles": "^2.12.0",
-    "web-vitals": "^2.1.4",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@fontsource/roboto": "^5.0.3"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -46,5 +46,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://omar4589.github.io/MyPortfolio/"
+  "homepage": "https://omar4589.github.io/MyPortfolio/",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }

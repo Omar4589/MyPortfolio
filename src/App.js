@@ -11,6 +11,7 @@ import Bugs from "./components/Bugs/Bugs";
 import ParticlesComponent from "./components/Particles/ParticlesComponent";
 import { displayWelcomeLog } from "./utils/WelcomeLogMessage/displayWelcomeLog";
 import "./components/Title/cursor.css";
+import "./index.css";
 
 function App() {
   const { themeState } = useThemeContext();
@@ -24,6 +25,8 @@ function App() {
       style={{
         background: themeState.background,
         color: themeState.text,
+        height: "100%",
+        width: "100%",
       }}
     >
       <ParticlesComponent />
@@ -33,6 +36,7 @@ function App() {
         <Title />
         <Bugs />
       </Landing>
+      <AboutMe />
     </div>
   );
 }

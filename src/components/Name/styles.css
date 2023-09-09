@@ -1,16 +1,10 @@
 .main {
     margin: 0;
-    font-size: 550%;
     z-index: 1;
     font-family: 'raleway';
     font-weight: 700;
   }
-  
-  @media (min-width: 430px) {
-    .main {
-      font-size: 500%;
-    }
-  }
+ 
 
   .first {
     margin:0;

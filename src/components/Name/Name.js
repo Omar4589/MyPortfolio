@@ -4,9 +4,9 @@ import "./styles.css";
 
 const Name = () => {
   return (
-    <div className="main">
-      <p className="first">Omar</p>
-      <p className="last">Zumaya</p>
+    <div className="main mx-5">
+      <p className="first absolute text-7xl  ">Omar</p>
+      <p className="last absolute text-7xl top-80">Zumaya</p>
     </div>
   );
 };
