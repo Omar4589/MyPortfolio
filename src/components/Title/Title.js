@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./styles";
 import Typed from "react-typed";
 import "./cursor.css";
+
+
 const Title = () => {
   const [hideCursor, setHideCursor] = useState(false);
 
@@ -10,6 +12,7 @@ const Title = () => {
       setHideCursor(true);
     }, 3000); // 3000 milliseconds = 3 seconds
   };
+
   return (
     <div style={{ ...styles.main }} className={hideCursor ? "hide-cursor" : ""}>
       <Typed

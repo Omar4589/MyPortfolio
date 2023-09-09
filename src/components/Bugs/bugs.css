@@ -1,0 +1,39 @@
+.hide-bug {
+    display: none;
+ }
+ 
+ .bug {
+     position: absolute;
+     top: 58%;
+     right: 21%;
+     font-size: 150%;
+     z-index: 1;
+ }
+ .bug1 {
+     position: absolute;
+     top: 52%;
+     right: 10%;
+     font-size: 150%;
+     z-index: 1;
+ }
+ .bug2 {
+     position: absolute;
+     top: 47%;
+     right: 22%;
+     font-size: 150%;
+     z-index: 1;
+ }
+ .bug3 {
+     position: absolute;
+     top: 40%;
+     right: 8%;
+     font-size: 150%;
+     z-index: 1;
+ }
+ .bug4 {
+     position: absolute;
+     top: 33%;
+     right: 20%;
+     font-size: 150%;
+     z-index: 1;
+ }
