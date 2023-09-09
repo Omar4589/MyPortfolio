@@ -11,7 +11,7 @@ const Hamburger = () => {
         type="checkbox"
         aria-label="menu"
       />
-      <div className="hamburger absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center ">
+      <div className={`hamburger absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center `}>
         <div
           className={`relative w-full items-center bg-${themeState.text}`}
         ></div>
