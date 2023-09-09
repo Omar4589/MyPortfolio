@@ -5,8 +5,8 @@ const styles = {
     zIndex: 1,
     fontFamily: "Dosis",
     fontweight: 500,
-    position: "relative",
-    top: "-8%",
+    position: "absolute",
+    top: "52%",
   },
 };
 
