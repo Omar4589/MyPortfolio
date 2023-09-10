@@ -24,14 +24,14 @@
     opacity: 0;
   }
   
+  .outer-menu .menu {
+    display: none;
+  }
 
-
-  /* .outer-menu .checkbox-toggle:checked ~ .menu {
-    pointer-events: auto;
-    visibility: visible !important;
-  } */
+  .outer-menu .checkbox-toggle:checked ~ .menu {
+    display: block;
+  }
   
-
 
 
 

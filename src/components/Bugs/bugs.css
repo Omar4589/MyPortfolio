@@ -4,35 +4,35 @@
  
  .bug {
      position: absolute;
-     top: 51%;
-     right: 8%;
+     top: 50%;
+     right: 25%;
      font-size: 150%;
      z-index: 1;
  }
  .bug1 {
      position: absolute;
-     top: 44%;
-     right: 17%;
+     top: 64%;
+     right: 18%;
      font-size: 150%;
      z-index: 1;
  }
  .bug2 {
      position: absolute;
-     top: 38%;
-     right: 8%;
+     top: 78%;
+     right: 18%;
      font-size: 150%;
      z-index: 1;
  }
  .bug3 {
      position: absolute;
-     top: 33%;
-     right: 23%;
+     top: 83%;
+     right: 10%;
      font-size: 150%;
      z-index: 1;
  }
  .bug4 {
      position: absolute;
-     top: 26%;
+     top: 96%;
      right: 10%;
      font-size: 150%;
      z-index: 1;

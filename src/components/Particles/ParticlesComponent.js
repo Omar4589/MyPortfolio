@@ -46,11 +46,8 @@ const ParticlesComponent = () => {
   }, [themeState]);
 
   return (
-    <div>
-      <TheParticles
-        id="hero-particles"
-        particlesOptions={particlesOptions}
-      />
+    <div style={{  }}>
+      <TheParticles id="hero-particles" particlesOptions={particlesOptions} />
     </div>
   );
 };
