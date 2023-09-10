@@ -394,7 +394,7 @@ export const mobileParticlesOptions = {
     },
     number: {
       limit: 0,
-      value: 10,
+      value: 15,
     },
 
     opacity: {
@@ -635,7 +635,7 @@ export const mobileParticlesOptionsDarkTheme = {
     },
     number: {
       limit: 0,
-      value: 10,
+      value: 15,
     },
 
     opacity: {

@@ -1,7 +1,7 @@
 import styles from "./styles";
 import MaterialUISwitch from "./MaterialUISwitch";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
-import Hamburger from "../Hamburger/Hamburger";
+import Hamburger from "../HamburgerMenu/Hamburger";
 
 const Header = () => {
   const { toggleThemeState } = useThemeContext();
