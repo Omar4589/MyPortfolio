@@ -3,87 +3,50 @@ main {
 }
 
 
-.outer-menu {
-    z-index: 1;
-  }
-  
-  .outer-menu .checkbox-toggle {
-    z-index: 2;
-  }
+/* THE FOLLOWING ANIMATIONS RUN BASED ON WHETHER OR NOT THE CHECKBOX INPUT FIELD IS CHECKED */
 
-
-
-    /*                 ROTATION OF HAMBURGER LINES ANIMATION                */
-  .outer-menu .checkbox-toggle:checked + .hamburger > div {
+    /*           ROTATION OF HAMBURGER ANIMATION            */
+  #hamburger #hamburger-checkbox:checked + #hamburger-background > div {
     transform: rotate(135deg);
   }
   
-  .outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+  #hamburger #hamburger-checkbox:checked + #hamburger-background > div:before {
     top: 0;
     transform: rotate(90deg);
   }
   
-  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+  #hamburger #hamburger-checkbox:checked + #hamburger-background > div:after {
     top: 0;
     transform: rotate(90deg);
     opacity: 0;
   }
-  
-  .outer-menu .menu {
-    display: none;
-  }
 
-  .outer-menu .checkbox-toggle:checked ~ .menu {
-    display: block;
-  }
-  
 
 
 
   /*                 MENU RENDER ANIMATION                 */
-  .outer-menu .checkbox-toggle:checked ~ .menu > div {
+  #hamburger #hamburger-checkbox:checked ~ #menu-container > div {
     transform: scale(1);
     transition-duration: 0.75s;
   }
 
 
-
-
-/*   
-  .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease 0.4s;
-  } */
-  
-
-
-
-
-  /*             ANIMATION THAT PLAYS WHEN YOU HOVER OVER X ICON                 */
-  .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+  /*        ANIMATION THAT PLAYS WHEN YOU HOVER OVER X ICON          */
+  #hamburger #hamburger-checkbox:checked:hover + #hamburger-background > div {
     transform: rotate(225deg);
   }
-  
-  /* .outer-menu .hamburger {
-    z-index: 1;
-    backface-visibility: hidden;
-  } */
+
   
 
-
-
-
-
-
-  /*                HAMBURGER LINES                */
-  .outer-menu .hamburger > div {
+  /*                HAMBURGER LINES STYLING                */
+  #hamburger #hamburger-background > div {
     height: 0.125rem;
     transition: all 0.4s ease;
     -webkit-box-pack: center;
   }
 
-  .outer-menu .hamburger > div:before,
-  .outer-menu .hamburger > div:after {
+  #hamburger #hamburger-background > div:before,
+  #hamburger #hamburger-background > div:after {
     content: "";
     z-index: 1;
     position: absolute;
@@ -95,25 +58,15 @@ main {
     background-color: inherit;
   }
 
-  .outer-menu .hamburger > div:after {
+  #hamburger #hamburger-background > div:after {
     top: 0.5rem;
   }
   
-  /* .outer-menu .menu {
-    backface-visibility: hidden;
-    outline: 0.0625rem solid transparent;
-  }
-   */
-   
 
-
-
-
-
-
+  
 
    /*                ACTUAL MENU                */
-  .outer-menu .menu > div {
+  #hamburger #menu-container > div {
     width: 240vw;
     height: 260vw;
     transform: scale(0);
@@ -123,19 +76,14 @@ main {
     backface-visibility: hidden;
   }
   
-  /* .outer-menu .menu > div > div {
+  #hamburger #menu-container > div > div {
     max-width: 90vw;
     transition: opacity 0.4s ease;
-  } */
+  }
   
 
-
-
-
-
-
   /*                    MENU LINKS                */
-  /* .outer-menu .menu > div > div ul li a {
+  /* #hamburger #menu-container > div > div ul li a {
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #8b31ff 51%, #7000ff 100%);
     background-size: 200% 100%;
     background-clip: text;
@@ -143,7 +91,7 @@ main {
     -webkit-text-fill-color: transparent;
   }
   
-  .outer-menu .menu > div > div ul li a:hover {
+  #hamburger #menu-container > div > div ul li a:hover {
     background-position: 100% 0;
   } */
 

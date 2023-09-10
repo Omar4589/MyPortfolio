@@ -3,14 +3,16 @@ export const lightTheme = {
   name: "light",
   background: "white",
   text: "black",
-  menuText:"white"
-  // ... (any other styles you want to define)
+  menuText: "white",
+  isChecked: "white",
+  isNotChecked: "black",
 };
 
 export const darkTheme = {
   name: "dark",
   background: "black",
   text: "white",
-  menuText:"black"
-  // ... (any other styles you want to define)
+  menuText: "black",
+  isChecked: "black",
+  isNotChecked: "white",
 };
