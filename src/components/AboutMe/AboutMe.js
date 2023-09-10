@@ -18,7 +18,7 @@ const AboutMe = () => {
             className="rounded-full w-full md:w-3/4 mx-auto"
           />
         </div>
-        <div className="w-full md:w-2/3 md:pl-5 z-10 ">
+        <div style={{ zIndex: 0 }} className="w-full md:w-2/3 md:pl-5  ">
           <h1 className="text-2xl font-bold mb-4">About Me</h1>
           <p className="text-lg mb-4">
             Hi, I'm Omar, a junior developer with a love for technology so great
@@ -35,10 +35,11 @@ const AboutMe = () => {
             learning, I am ready to contribute and grow in this vibrant field.
           </p>
           <p className="text-lg">
-            When I am not coding💻, I am indulging in my love for art 🖼️, exploring
-            the world of anime, eating ramen somewhere 🍜, or delving into
-            conspiracy theories that'll send you down a rabbit hole. 🕳️🐇 I am a creator at heart, ready to bring my
-            unique blend of skills and passions to the tech world.
+            When I am not coding💻, I am indulging in my love for art 🖼️,
+            exploring the world of anime, eating ramen somewhere 🍜, or delving
+            into conspiracy theories that'll send you down a rabbit hole. 🕳️🐇 I
+            am a creator at heart, ready to bring my unique blend of skills and
+            passions to the tech world.
           </p>
         </div>
       </div>

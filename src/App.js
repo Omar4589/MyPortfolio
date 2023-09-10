@@ -34,7 +34,6 @@ function App() {
       <Landing>
         <Name />
         <Title />
-        <Bugs />
       </Landing>
       <AboutMe />
     </div>
