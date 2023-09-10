@@ -1,3 +1,8 @@
+main {
+  font-family: raleway;
+}
+
+
 .outer-menu {
     z-index: 1;
   }
@@ -130,7 +135,7 @@
 
 
   /*                    MENU LINKS                */
-  .outer-menu .menu > div > div ul li a {
+  /* .outer-menu .menu > div > div ul li a {
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #8b31ff 51%, #7000ff 100%);
     background-size: 200% 100%;
     background-clip: text;
@@ -140,6 +145,8 @@
   
   .outer-menu .menu > div > div ul li a:hover {
     background-position: 100% 0;
-  }
+  } */
+
+
 
   
