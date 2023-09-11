@@ -3,7 +3,6 @@ import styles from "./styles";
 import Typed from "react-typed";
 import "./cursor.css";
 
-
 const Title = () => {
   // const [hideCursor, setHideCursor] = useState(false);
 
@@ -14,7 +13,10 @@ const Title = () => {
   // };
 
   return (
-    <div style={{ ...styles.main }} className="text-3xl absolute top-96 pt-5 font-bold mx-5">
+    <div
+      style={{ ...styles.main }}
+      className="text-3xl pt-5 font-bold mx-5 md:text-4xl md:flex md:justify-center md:w-full md:mx-auto md:pt-10"
+    >
       <Typed
         strings={[
           "Web Developer",

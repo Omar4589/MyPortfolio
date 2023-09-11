@@ -1,10 +1,9 @@
 const styles = {
   main: {
-  
     fontFamily: "Dosis",
-    fontweight: 500,
-    // position: "absolute",
-    // top: "52%",
+    fontWeight: 500,
+    position: "absolute",
+    top: "37%",
   },
 };
 

@@ -238,8 +238,8 @@ export const desktopParticlesOptions = {
     size: {
       random: {
         enable: true,
-        minimumValue: 30,
-        maxValue: 55,
+        minimumValue: 10,
+        maxValue: 25,
       },
     },
 
@@ -480,7 +480,7 @@ export const mobileParticlesOptions = {
       random: {
         enable: true,
         minimumValue: 10,
-        maxValue: 45,
+        maxValue: 25,
       },
     },
 
@@ -721,7 +721,7 @@ export const mobileParticlesOptionsDarkTheme = {
       random: {
         enable: true,
         minimumValue: 10,
-        maxValue: 45,
+        maxValue: 25,
       },
     },
 
@@ -960,8 +960,8 @@ export const desktopParticlesOptionsDarkTheme = {
     size: {
       random: {
         enable: true,
-        minimumValue: 30,
-        maxValue: 55,
+        minimumValue: 10,
+        maxValue: 25,
       },
     },
 
