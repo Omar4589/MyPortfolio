@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.be35eb27.css",
-    "main.js": "/MyPortfolio/static/js/main.9c945fef.js",
+    "main.css": "/MyPortfolio/static/css/main.0ddcfc91.css",
+    "main.js": "/MyPortfolio/static/js/main.edc4d394.js",
     "static/media/graphql.svg": "/MyPortfolio/static/media/graphql.0b5294ac4124a3b313b2e99060f036ee.svg",
     "static/media/mongoDBIcon.svg": "/MyPortfolio/static/media/mongoDBIcon.27861d11957586cabb70ab848dc60188.svg",
     "static/media/apollo.svg": "/MyPortfolio/static/media/apollo.c1f27460c06feaa14e9130dfc8cf928f.svg",
@@ -17,11 +17,11 @@
     "static/media/github.svg": "/MyPortfolio/static/media/github.419e852a063422b915f5c16a87f3dd35.svg",
     "index.html": "/MyPortfolio/index.html",
     "static/media/javascript-original.svg": "/MyPortfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
-    "main.be35eb27.css.map": "/MyPortfolio/static/css/main.be35eb27.css.map",
-    "main.9c945fef.js.map": "/MyPortfolio/static/js/main.9c945fef.js.map"
+    "main.0ddcfc91.css.map": "/MyPortfolio/static/css/main.0ddcfc91.css.map",
+    "main.edc4d394.js.map": "/MyPortfolio/static/js/main.edc4d394.js.map"
   },
   "entrypoints": [
-    "static/css/main.be35eb27.css",
-    "static/js/main.9c945fef.js"
+    "static/css/main.0ddcfc91.css",
+    "static/js/main.edc4d394.js"
   ]
 }
