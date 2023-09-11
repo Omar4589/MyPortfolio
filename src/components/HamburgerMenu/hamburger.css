@@ -80,6 +80,21 @@ main {
     max-width: 90vw;
     transition: opacity 0.4s ease;
   }
+
+
+  /*            BEATING ANIMATION FOR MENU LINKS           */
+  @keyframes beating {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+  }
+  
+  .beating:hover {
+    animation: beating 1.5s infinite;
+  }
   
 
   /*                    MENU LINKS                */

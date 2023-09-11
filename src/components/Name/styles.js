@@ -1,9 +1,5 @@
 const styles = {
-  main: {
-    fontSize: "500%",
-    fontFamily: "raleway",
-    fontWeight: 700,
-  },
+  main: {},
 };
 
 export default styles;
