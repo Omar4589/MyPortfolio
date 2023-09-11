@@ -15,7 +15,7 @@ const Title = () => {
   return (
     <div
       style={{ ...styles.main }}
-      className="text-3xl pt-5 font-bold mx-5 md:text-4xl md:flex md:justify-center md:w-full md:mx-auto md:pt-10"
+      className="text-3xl  pt-2  md:text-4xl md:flex md:justify-center md:w-full md:mx-auto md:pt-10"
     >
       <Typed
         strings={[

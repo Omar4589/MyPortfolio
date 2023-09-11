@@ -31,10 +31,8 @@ function App() {
     >
       <ParticlesComponent />
       <Header />
-      <Landing>
-        <Name />
-        <Title />
-      </Landing>
+      <Landing />
+        
     </div>
   );
 }

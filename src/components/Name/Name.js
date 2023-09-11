@@ -4,14 +4,14 @@ import "./styles.css";
 
 const Name = () => {
   return (
-    <div id="name-container" className="main h-full w-full mx-5 md:flex md:justify-center md:mx-auto">
+    <div id="name-container" className="main md:flex md:justify-center md:mx-auto">
       <p
         style={{}}
-        className="first relative text-6xl top-60 md:text-7xl md:top-56  "
+        className="text-6xl  md:text-7xl md:top-56  "
       >
         Omar
       </p>
-      <p style={{}} className="last relative text-6xl top-60 md:text-7xl">
+      <p style={{}} className="text-6xl md:text-7xl">
         Zumaya
       </p>
     </div>
