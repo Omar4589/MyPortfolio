@@ -1,0 +1,1 @@
+export const urlString = "https://raw.githubusercontent.com/sequelize/sequelize/main/logo.svg"

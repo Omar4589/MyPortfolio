@@ -11,20 +11,20 @@ import mysqlIcon from "../../assets/svgs/mysql.svg";
 import jsSquareIcon from "../../assets/svgs/javascript-original.svg";
 import githubWhiteIcon from "../../assets/svgs/githubWhite.svg";
 import apolloWhiteIcon from "../../assets/svgs/apolloWhite.svg";
+import tailwindIcon from "../../assets/svgs/tailwindCSS.svg";
+import handlebarsJS from "../../assets/svgs/handlebarsJS.svg";
+import expressIconWhite from "../../assets/svgs/expressJSDark.svg";
+import expressIcon from "../../assets/svgs/expressJS.svg";
+import npmIcon from "../../assets/svgs/npmIcon.svg";
+import { urlString } from "../../assets/svgs/sequelize.js";
+import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
 
 export const frontEndIconsLightTheme = [
-  {
-    name: "MongoDB",
-    icon: mongoDBIcon,
-  },
   {
     name: "React",
     icon: reactIcon,
   },
-  {
-    name: "Node.js",
-    icon: nodejsIcon,
-  },
+
   {
     name: "CSS",
     icon: cssIcon,
@@ -42,20 +42,16 @@ export const frontEndIconsLightTheme = [
     icon: graphqlIcon,
   },
   {
-    name: "Git",
-    icon: gitIcon,
-  },
-  {
-    name: "GitHub",
-    icon: githubIcon,
-  },
-  {
-    name: "MySQL",
-    icon: mysqlIcon,
-  },
-  {
     name: "JavaScript",
     icon: jsSquareIcon,
+  },
+  {
+    name: "Tailwind",
+    icon: tailwindIcon,
+  },
+  {
+    name: "Handlebars JS",
+    icon: handlebarsJS,
   },
 ];
 
@@ -111,22 +107,12 @@ export const backEndIconsLightTheme = [
     name: "MongoDB",
     icon: mongoDBIcon,
   },
-  {
-    name: "React",
-    icon: reactIcon,
-  },
+
   {
     name: "Node.js",
     icon: nodejsIcon,
   },
-  {
-    name: "CSS",
-    icon: cssIcon,
-  },
-  {
-    name: "HTML",
-    icon: htmlIcon,
-  },
+
   {
     name: "Apollo",
     icon: apolloIcon,
@@ -140,16 +126,24 @@ export const backEndIconsLightTheme = [
     icon: gitIcon,
   },
   {
-    name: "GitHub",
-    icon: githubIcon,
-  },
-  {
     name: "MySQL",
     icon: mysqlIcon,
   },
   {
-    name: "JavaScript",
-    icon: jsSquareIcon,
+    name: "Express JS",
+    icon: expressIcon,
+  },
+  {
+    name: "NPM",
+    icon: npmIcon,
+  },
+  {
+    name: "Sequelize ORM",
+    icon: urlString,
+  },
+  {
+    name: "Mongoose ODM",
+    icon: mongooseIcon,
   },
 ];
 
@@ -207,7 +201,15 @@ export const displayIcons = (icons) => {
       className="mt-3 mb-1  justify-center items-center   "
       key={icon.name + index}
     >
-      <img className="h-12 w-12 mx-auto" src={icon.icon} alt={`${icon.name} icon`} />
+      <img
+        className={
+          icon.name === "Mongoose ODM"
+            ? "h-10 w-16 mx-auto"
+            : "h-10 w-10 mx-auto"
+        }
+        src={icon.icon}
+        alt={`${icon.name} icon`}
+      />
       <h3 className="font-thin text-center text-sm">{icon.name}</h3>
     </div>
   ));
