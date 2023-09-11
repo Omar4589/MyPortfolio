@@ -9,7 +9,7 @@ const Landing = ({ children }) => {
   return (
     <div
       style={{ background: themeState.background }}
-      className="w-full min-h-screen pl-5 pt-56"
+      className="w-full min-h-screen px-5 pt-56"
     >
       <Name />
       <Title />

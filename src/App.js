@@ -12,6 +12,7 @@ import ParticlesComponent from "./components/Particles/ParticlesComponent";
 import { displayWelcomeLog } from "./utils/WelcomeLogMessage/displayWelcomeLog";
 import "./components/Title/cursor.css";
 import "./index.css";
+import MySkills from "./components/MySkills/MySkills";
 
 function App() {
   const { themeState } = useThemeContext();
@@ -32,7 +33,7 @@ function App() {
       <ParticlesComponent />
       <Header />
       <Landing />
-        
+      <MySkills />
     </div>
   );
 }
