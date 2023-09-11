@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useThemeContext } from "./utils/ThemeContext/ThemeContext";
-import Landing from "./components/Landing/Landing";
+import Landing from "./pages/Landing/Landing";
 import Name from "./components/Name/Name";
 import Title from "./components/Title/Title";
 import AboutMe from "./components/AboutMe/AboutMe";
@@ -12,7 +12,8 @@ import ParticlesComponent from "./components/Particles/ParticlesComponent";
 import { displayWelcomeLog } from "./utils/WelcomeLogMessage/displayWelcomeLog";
 import "./components/Title/cursor.css";
 import "./index.css";
-import MySkills from "./components/MySkills/MySkills";
+import MySkills from "./components/Skills/MySkills";
+import MySkillsPage from "./pages/MySkills/MySkills";
 
 function App() {
   const { themeState } = useThemeContext();
@@ -33,7 +34,7 @@ function App() {
       <ParticlesComponent />
       <Header />
       <Landing />
-      <MySkills />
+      <MySkillsPage />
     </div>
   );
 }
