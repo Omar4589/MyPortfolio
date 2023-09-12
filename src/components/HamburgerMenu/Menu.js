@@ -33,7 +33,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
             setIsChecked(false);
           }}
           className="beating"
-          href="#my-skills"
+          href="#skills-container"
         >
           My Skills
         </a>
