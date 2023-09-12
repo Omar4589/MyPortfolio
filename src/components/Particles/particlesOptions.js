@@ -9,7 +9,7 @@
 
 import mongoDBIcon from "../../assets/svgs/mongoDBIcon.svg";
 import reactIcon from "../../assets/svgs/react.svg";
-import nodejsIcon from "../../assets/svgs/noejs.svg";
+import nodejsIcon from "../../assets/svgs/nodejs.svg";
 import cssIcon from "../../assets/svgs/css.svg";
 import htmlIcon from "../../assets/svgs/html.svg";
 import apolloIcon from "../../assets/svgs/apollo.svg";

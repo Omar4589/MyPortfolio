@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import {
-  frontEndIconsLanguagesLightTheme,
-  frontEndIconsLanguagesDarkTheme,
+  frontEndIconsLanguages,
   frontEndIconsLibrariesFrameworksLightTheme,
   frontEndIconsLibrariesFrameworksDarkTheme,
-  backEndIconsLanguagesLightTheme,
-  backEndIconsLanguagesDarkTheme,
-  backEndIconsDatabasesLightTheme,
-  backEndIconsDatabasesDarkTheme,
-  otherIcons,
+  backEndIconsLanguages,
+  backEndIconsDatabases,
+  otherIconsDark,
+  otherIconsLight,
   displayIcons,
   backEndIconsLibrariesFrameworksDarkTheme,
   backEndIconsLibrariesFrameworksLightTheme,
@@ -28,13 +26,7 @@ const MySkills = () => {
   const [otherTechnologies, setOtherTechnologies] = useState([]);
 
   useEffect(() => {
-    setfrontEndLanguages(
-      displayIcons(
-        themeState.name === "dark"
-          ? frontEndIconsLanguagesDarkTheme
-          : frontEndIconsLanguagesLightTheme
-      )
-    );
+    setfrontEndLanguages(displayIcons(frontEndIconsLanguages));
     setfrontEndLibrariesFrameworks(
       displayIcons(
         themeState.name === "dark"
@@ -42,13 +34,7 @@ const MySkills = () => {
           : frontEndIconsLibrariesFrameworksLightTheme
       )
     );
-    setbackEndLanguages(
-      displayIcons(
-        themeState.name === "dark"
-          ? backEndIconsLanguagesDarkTheme
-          : backEndIconsLanguagesLightTheme
-      )
-    );
+    setbackEndLanguages(displayIcons(backEndIconsLanguages));
     setbackEndLibrariesFrameworks(
       displayIcons(
         themeState.name === "dark"
@@ -56,14 +42,13 @@ const MySkills = () => {
           : backEndIconsLibrariesFrameworksLightTheme
       )
     );
-    setbackEndDatabases(
+    setbackEndDatabases(displayIcons(backEndIconsDatabases));
+
+    setOtherTechnologies(
       displayIcons(
-        themeState.name === "dark"
-          ? backEndIconsDatabasesDarkTheme
-          : backEndIconsDatabasesLightTheme
+        themeState.name === "dark" ? otherIconsDark : otherIconsLight
       )
     );
-    setOtherTechnologies(displayIcons(otherIcons));
   }, [themeState]);
 
   return (

@@ -1,6 +1,6 @@
 import mongoDBIcon from "../../assets/svgs/mongoDBIcon.svg";
 import reactIcon from "../../assets/svgs/react.svg";
-import nodejsIcon from "../../assets/svgs/noejs.svg";
+import nodejsIcon from "../../assets/svgs/nodejs.svg";
 import cssIcon from "../../assets/svgs/css.svg";
 import htmlIcon from "../../assets/svgs/html.svg";
 import apolloIcon from "../../assets/svgs/apollo.svg";
@@ -18,23 +18,9 @@ import expressIcon from "../../assets/svgs/expressJS.svg";
 import npmIcon from "../../assets/svgs/npmIcon.svg";
 import { urlString } from "../../assets/svgs/sequelize.js";
 import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
-
-export const frontEndIconsLanguagesLightTheme = [
-  {
-    name: "HTML",
-    icon: htmlIcon,
-  },
-  {
-    name: "CSS",
-    icon: cssIcon,
-  },
-  {
-    name: "JavaScript",
-    icon: jsSquareIcon,
-  },
-];
-
-export const frontEndIconsLanguagesDarkTheme = [
+import herokuIcon from "../../assets/svgs/heroku.svg";
+import herokuIconDark from "../../assets/svgs/herokublack.svg";
+export const frontEndIconsLanguages = [
   {
     name: "HTML",
     icon: htmlIcon,
@@ -59,12 +45,12 @@ export const frontEndIconsLibrariesFrameworksLightTheme = [
     icon: apolloIcon,
   },
   {
-    name: "Handlebars JS",
-    icon: handlebarsJS,
+    name: "Tailwind CSS",
+    icon: tailwindIcon,
   },
   {
-    name: "Tailwind",
-    icon: tailwindIcon,
+    name: "Handlebars JS",
+    icon: handlebarsJS,
   },
 ];
 
@@ -78,138 +64,122 @@ export const frontEndIconsLibrariesFrameworksDarkTheme = [
     icon: apolloWhiteIcon,
   },
   {
+    name: "Tailwind CSS",
+    icon: tailwindIcon,
+  },
+  {
     name: "Handlebars JS",
     icon: handlebarsJS,
   },
-  {
-    name: "Tailwind",
-    icon: tailwindIcon,
-  },
 ];
 
-export const backEndIconsLanguagesLightTheme = [
+export const backEndIconsLanguages = [
   {
     name: "JavaScript",
     icon: jsSquareIcon,
-  },
-];
-
-
-export const backEndIconsLanguagesDarkTheme = [
-  {
-    name: "JavaScript",
-    icon: jsSquareIcon,
-  },
-];
-
-
-export const backEndIconsDatabasesLightTheme = [
-  {
-    name: "Mongoose ODM",
-    icon: mongooseIcon,
-  },
-  {
-    name: "Sequelize ORM",
-    icon: urlString,
-  },
-  {
-    name: "MongoDB",
-    icon: mongoDBIcon,
-  },
-  {
-    name: "MySQL",
-    icon: mysqlIcon,
-  },
-];
-
-
-
-export const backEndIconsDatabasesDarkTheme = [
-  {
-    name: "Mongoose ODM",
-    icon: mongooseIcon,
-  },
-  {
-    name: "Sequelize ORM",
-    icon: urlString,
-  },
-  {
-    name: "MongoDB",
-    icon: mongoDBIcon,
-  },
-  {
-    name: "MySQL",
-    icon: mysqlIcon,
   },
 ];
 
 export const backEndIconsLibrariesFrameworksLightTheme = [
   {
-    name: "Apollo",
+    name: "Express JS",
+    icon: expressIcon,
+  },
+  {
+    name: "Apollo Server",
     icon: apolloIcon,
   },
   {
-    name: "Express JS",
-    icon: expressIcon,
-  },
-  {
     name: "GraphQL",
     icon: graphqlIcon,
   },
-
-  {
-    name: "Node.js",
-    icon: nodejsIcon,
-  },
 ];
-
 
 export const backEndIconsLibrariesFrameworksDarkTheme = [
   {
-    name: "Apollo",
-    icon: apolloWhiteIcon,
-  },
-  {
     name: "Express JS",
     icon: expressIcon,
+  },
+  {
+    name: "Apollo Server",
+    icon: apolloWhiteIcon,
   },
   {
     name: "GraphQL",
     icon: graphqlIcon,
   },
+];
 
+export const backEndIconsDatabases = [
+  {
+    name: "MongoDB",
+    icon: mongoDBIcon,
+  },
+  {
+    name: "Mongoose ODM",
+    icon: mongooseIcon,
+  },
+  {
+    name: "MySQL",
+    icon: mysqlIcon,
+  },
+  {
+    name: "Sequelize ORM",
+    icon: urlString,
+  },
+];
+
+export const otherIconsLight = [
   {
     name: "Node.js",
     icon: nodejsIcon,
   },
-];
-
-
-export const otherIcons = [
   {
-    name: "Node.js",
-    icon: nodejsIcon,
+    name: "NPM",
+    icon: npmIcon,
   },
   {
     name: "Git",
     icon: gitIcon,
   },
   {
-    name: "NPM",
-    icon: npmIcon,
+    name: "Github",
+    icon: githubIcon,
+  },
+  {
+    name: "Heroku",
+    icon: herokuIconDark,
   },
 ];
 
-
+export const otherIconsDark = [
+  {
+    name: "Node.js",
+    icon: nodejsIcon,
+  },
+  {
+    name: "NPM",
+    icon: npmIcon,
+  },
+  {
+    name: "Git",
+    icon: gitIcon,
+  },
+  {
+    name: "Github",
+    icon: githubWhiteIcon,
+  },
+  {
+    name: "Heroku",
+    icon: herokuIcon,
+  },
+];
 
 export const displayIcons = (icons) => {
   console.log(icons);
 
-  return icons.map((icon, index) => (
-    <div
-      className="mt-3 mb-1  justify-center items-center   "
-      key={icon.name + index}
-    >
+  return icons.map((icon) => (
+    <div className="mt-3 mb-1  justify-center items-center   " key={icon.name}>
       <img
         className={
           icon.name === "Mongoose ODM"
