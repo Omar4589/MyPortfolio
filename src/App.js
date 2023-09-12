@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div
+      id="app"
       style={{
         background: themeState.background,
         color: themeState.text,

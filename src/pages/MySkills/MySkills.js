@@ -6,6 +6,7 @@ const MySkillsPage = ({ children }) => {
   const { themeState } = useThemeContext();
   return (
     <div
+      id="my-skills"
       style={{ background: themeState.background }}
       className="w-full min-h-screen px-5 pt-56 "
     >

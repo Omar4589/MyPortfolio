@@ -6,7 +6,7 @@ const Name = () => {
   return (
     <div
       id="name-container"
-      style={{ position: "relative", zIndex: 2 }}
+      style={{ position: "relative", zIndex: 1 }}
       className="main md:flex md:justify-center md:mx-auto"
     >
       <p style={{}} className="text-6xl  md:text-7xl md:top-56  ">

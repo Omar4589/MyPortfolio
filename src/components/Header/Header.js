@@ -6,13 +6,13 @@ import Hamburger from "../HamburgerMenu/Hamburger";
 const Header = () => {
   const { toggleThemeState } = useThemeContext();
   return (
-    <div style={{ ...styles.main }}>
+    <header id="header" style={{ ...styles.main }}>
       <MaterialUISwitch
         sx={{ marginLeft: 2, marginTop: 2, zIndex: 2 }}
         onClick={toggleThemeState}
       />
       <Hamburger />
-    </div>
+    </header>
   );
 };
 

@@ -19,11 +19,12 @@ const Hamburger = () => {
         className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20"
         type="checkbox"
         aria-label="menu"
+        checked={isChecked} 
         onChange={() => setIsChecked((prev) => !prev)}
       />
       <div
         id="hamburger-background"
-        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center"
+        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center z-10"
       >
         <div
           id="hamburger-lines"
@@ -35,7 +36,7 @@ const Hamburger = () => {
           className="relative w-full items-center z-10"
         ></div>
       </div>
-      <Menu isChecked={isChecked} />
+      <Menu isChecked={isChecked} setIsChecked={setIsChecked} />
     </div>
   );
 };

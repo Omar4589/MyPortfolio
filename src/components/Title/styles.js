@@ -3,7 +3,7 @@ const styles = {
     fontFamily: "Dosis",
     fontWeight: 500,
     position: "relative",
-    zIndex: 2,
+    zIndex: 1,
     // position: "absolute",
     // top: "43%",
   },

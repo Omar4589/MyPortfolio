@@ -8,7 +8,8 @@ const Landing = ({ children }) => {
   const { themeState } = useThemeContext();
   return (
     <div
-      style={{ background: themeState.background, }}
+      id="home"
+      style={{ background: themeState.background }}
       className="w-full min-h-screen px-5 pt-56 "
     >
       <Name />
