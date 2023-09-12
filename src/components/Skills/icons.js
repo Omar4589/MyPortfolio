@@ -176,8 +176,6 @@ export const otherIconsDark = [
 ];
 
 export const displayIcons = (icons) => {
-  console.log(icons);
-
   return icons.map((icon) => (
     <div className="mt-3 mb-1  justify-center items-center   " key={icon.name}>
       <img

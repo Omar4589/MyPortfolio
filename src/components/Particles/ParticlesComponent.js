@@ -10,7 +10,6 @@ import {
 
 const ParticlesComponent = () => {
   const { themeState } = useThemeContext();
-  console.log(themeState.name);
 
   const getParticlesOptions = () => {
     const isMobile = window.innerWidth <= 768;
@@ -46,7 +45,7 @@ const ParticlesComponent = () => {
   }, [themeState]);
 
   return (
-    <div id="particles" style={{  }}>
+    <div id="particles" style={{}}>
       <TheParticles id="hero-particles" particlesOptions={particlesOptions} />
     </div>
   );

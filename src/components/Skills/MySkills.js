@@ -70,7 +70,7 @@ const MySkills = () => {
         </h2>
       </div>
       <div id="skills-icons">
-        <div id="front-end" className="py-5">
+        <div id="front-end" className="py-5 space-y-2">
           <h1 className="text-2xl w-full ">Front-end</h1>
           <h2>Languages</h2>
           <div className="grid grid-cols-4 ">{frontEndLanguages}</div>
@@ -78,7 +78,7 @@ const MySkills = () => {
           <div className="grid grid-cols-4 ">{frontEndLibrariesFrameworks}</div>
         </div>
 
-        <div id="back-end" className=" ">
+        <div id="back-end" className="space-y-2 ">
           <h1 className="text-2xl w-full ">Back-end</h1>
           <h2>Languages</h2>
           <div className="grid grid-cols-4 ">{backEndLanguages}</div>
@@ -87,7 +87,7 @@ const MySkills = () => {
           <h2>Databases</h2>
           <div className="grid grid-cols-4 ">{backEndDatabases}</div>
         </div>
-        <div id="other" className=" ">
+        <div id="other" className=" space-y-2">
           <h1 className="text-2xl w-full ">Other</h1>
           <div className="grid grid-cols-4 ">{otherTechnologies}</div>
         </div>
