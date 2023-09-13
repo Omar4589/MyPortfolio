@@ -2,14 +2,22 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { displayProjects } from "./projectObjects";
 import { projectObjects } from "./projectObjects";
+import ProjectModal from "../ProjectModal/ProjectModal";
 
 const Projects = () => {
   const { themeState } = useThemeContext();
   const [projects, setProjects] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
-    setProjects(displayProjects(projectObjects));
+    setProjects(displayProjects(projectObjects, handleProjectClick));
   }, []);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
 
   return (
     <div
@@ -29,9 +37,15 @@ const Projects = () => {
           showcasing the power of full-stack development.
         </h2>
       </div>
-      <div id="projects" className="grid grid-rows-3 space-y-5 ">
+      <div id="projects" className="grid grid-cols-1 ">
         {projects}
       </div>
+      {isModalOpen && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </div>
   );
 };
