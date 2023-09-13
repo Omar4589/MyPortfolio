@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
+import backArrow from "../../assets/images/image (1).png";
 
 const ProjectModal = ({ project, onClose }) => {
   const { themeState } = useThemeContext();
@@ -18,22 +19,29 @@ const ProjectModal = ({ project, onClose }) => {
   return (
     <div
       id="project-modal"
-      className="fixed top-0 left-0 w-full h-screen bg-black backdrop-blur-sm bg-opacity-80 overflow-y-auto pb-14"
+      className="fixed top-0 left-0 w-full h-screen bg-black backdrop-blur-sm bg-opacity-80 overflow-y-auto pb-14 "
       style={{ zIndex: 1000, color: themeState.menuText }}
-      onClick={onClose}
+      // onClick={onClose}
     >
+      <button
+        onClick={onClose}
+        style={{  }}
+        className="block mx-auto mt-16 opacity-80"
+      >
+        <img src={backArrow} className="w-10 h-10" alt="back arrow" />
+      </button>
       <div
-        className="bg-white rounded-3xl overflow-hidden mt-28 mx-8 h-1/3 "
+        className="bg-white rounded-3xl overflow-hidden mt-10 mx-8 h-1/3 "
         onClick={(e) => e.stopPropagation()}
       >
         <img
           src={project.modalImage}
-          className=" w-full h-full object-contain"
+          className=" w-full h-full object-cover"
           alt="appImage"
         />
       </div>
 
-      <div id="project-details" className="w-full mt-16 px-5">
+      <div id="project-details" className="w-full mt-10 px-5">
         <h1 className="text-4xl border-b-4">{project.name}</h1>
         <h2 className="pt-3">{project.description}</h2>
         <a
@@ -48,7 +56,9 @@ const ProjectModal = ({ project, onClose }) => {
           {project.features.map((feature) => {
             return (
               <div className="" key={feature.featureName}>
-                <h3 className="pb-1 text-center">{feature.featureName}</h3>
+                <h3 className="pb-1 text-center">
+                  {feature.featureName} &#9989;
+                </h3>
                 <p className="pb-5 italic">{feature.featureDescription}</p>
               </div>
             );

@@ -1,30 +1,18 @@
 import githubIcon from "../../assets/svgs/github.svg";
 import githubWhiteIcon from "../../assets/svgs/githubWhite.svg";
-import YardGemsMobile from "../../assets/images/YardGemsMobile.jpg";
-import MealMapprMobile from "../../assets/images/MealMapprMobile.jpg";
-import EscapeMeMobile from "../../assets/images/EscapeMeMobile.jpg";
-import yg from "../../assets/images/yg.png";
+
 import yg2 from "../../assets/images/yg2.png";
-import yg4 from "../../assets/images/yg4.png";
-import yg3 from "../../assets/images/yg3.png";
-import mp1 from "../../assets/images/mp1.png";
-import m2 from "../../assets/images/m2.png";
-import m3 from "../../assets/images/m3.png";
-import m4 from "../../assets/images/m4.png";
 import m5 from "../../assets/images/M5.png";
 import themes from "../../assets/images/themes.jpg";
-import meals from "../../assets/images/meals.jpeg";
 import ygLogo from "../../assets/images/logo1.PNG";
 import ygAppName from "../../assets/images/YGappName.png";
-
-
-import appName from "../../assets/images/appName.jpg";
+import greenYardGems from "../../assets/images/greenYardGems.PNG";
 
 export const projectObjects = [
   {
     name: "YardGems",
     projectImage: yg2,
-    modalImage: ygAppName,
+    modalImage: greenYardGems,
     description:
       "YardGems is a community-driven platform designed to bring enthusiasts and sellers together in a vibrant, user-friendly marketplace. Find hidden gems in your neighborhood or list your own treasures to share with others.",
     madeWith: [],
@@ -54,7 +42,6 @@ export const projectObjects = [
         featureDescription:
           "Facilitating easy image uploads using Multer and Cloudinary, enhancing the visual appeal of listings.",
       },
-      { featureName: "", featureDescription: "" },
     ],
     github: "https://github.com/Omar4589/YardGems",
     url: "https://yardgems-15b0faee737f.herokuapp.com/",

@@ -3,6 +3,7 @@ import styles from "./styles";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import Name from "../../components/Name/Name";
 import Title from "../../components/Title/Title";
+import LandingIcons from "../../components/LandingIcons/LandingIcons";
 
 const Landing = ({ children }) => {
   const { themeState } = useThemeContext();
@@ -14,6 +15,17 @@ const Landing = ({ children }) => {
     >
       <Name />
       <Title />
+      <LandingIcons />
+      <button
+        onClick={() => {
+          console.log("you clicked the resume button");
+        }}
+        style={{ borderColor: themeState.text }}
+        className="px-3 my-3 z-10  border-2 rounded-full  "
+      >
+        {" "}
+        Resume{" "}
+      </button>
     </div>
   );
 };

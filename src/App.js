@@ -3,7 +3,7 @@ import { useThemeContext } from "./utils/ThemeContext/ThemeContext";
 import Landing from "./pages/Landing/Landing";
 import Name from "./components/Name/Name";
 import Title from "./components/Title/Title";
-import AboutMe from "./components/AboutMe/AboutMe";
+import AboutMePage from "./pages/AboutMe/AboutMePage";
 import MyWork from "./components/MyWork/MyWork";
 import Resume from "./components/Resume/Resume";
 import Header from "./components/Header/Header";
@@ -37,6 +37,7 @@ function App() {
       <Landing />
       <MySkillsPage />
       <MyProjectsPage />
+      <AboutMePage />
     </div>
   );
 }

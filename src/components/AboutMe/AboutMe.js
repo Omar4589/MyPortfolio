@@ -8,31 +8,24 @@ const AboutMe = () => {
   return (
     <div
       style={{ background: themeState.background }}
-      className="min-h-screen w-full p-5 mb-5 main "
+      className="min-h-screen w-full  mb-5 main "
     >
-      <div className="flex flex-col md:flex-row items-center pb-5 ">
-        <div className="w-full md:w-1/3">
+      <div className="flex flex-col items-center pb-5 ">
+        <div className="w-full">
           <img
+          id="about-me"
             src={portrait}
             alt="Omar"
-            className="rounded-full w-full md:w-3/4 mx-auto"
+            className="rounded-full w-full py-5 mx-auto"
           />
         </div>
-        <div style={{ zIndex: 0 }} className="w-full md:w-2/3 md:pl-5  ">
-          <h1 className="text-2xl font-bold mb-4">About Me</h1>
-          <p className="text-lg mb-4">
-            Hi, I'm Omar, a junior developer with a love for technology so great
-            that it's driven me to dive deep into the world of web development.
-          </p>
+        <div style={{ zIndex: 0 }} className="w-full ">
+          <h1 className="text-4xl font-bold mb-2">About Me</h1>
           <p className="text-lg mb-4">
             Fresh from completing an intensive bootcamp at UTSA's School of Data
             Science, I'm equipped with a rich skill set in the MERN stack,
             GraphQL, and MySQL, ready to tackle challenges and create innovative
             solutions in the tech industry.
-          </p>
-          <p className="text-lg mb-4">
-            With a foundation in various technologies and a knack for quick
-            learning, I am ready to contribute and grow in this vibrant field.
           </p>
           <p className="text-lg">
             When I am not coding💻, I am indulging in my love for art 🖼️,
