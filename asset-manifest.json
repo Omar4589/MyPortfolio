@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.ddec5927.css",
-    "main.js": "/MyPortfolio/static/js/main.2a05fe55.js",
+    "main.js": "/MyPortfolio/static/js/main.0de6ee6b.js",
     "static/media/yg2.png": "/MyPortfolio/static/media/yg2.950c79c7ca1490f5c734.png",
     "static/media/graphql.svg": "/MyPortfolio/static/media/graphql.0b5294ac4124a3b313b2e99060f036ee.svg",
     "static/media/mongoDBIcon.svg": "/MyPortfolio/static/media/mongoDBIcon.27861d11957586cabb70ab848dc60188.svg",
@@ -23,23 +23,23 @@
     "static/media/css.svg": "/MyPortfolio/static/media/css.220d3dff1cf4bf43a7ae3926baa4999b.svg",
     "static/media/apolloWhite.svg": "/MyPortfolio/static/media/apolloWhite.9a2b6cfb0d7d2b8e0de4707db57e5c7a.svg",
     "static/media/expressJSDark.svg": "/MyPortfolio/static/media/expressJSDark.161de55436f974b208a5ae053da2cb49.svg",
+    "static/media/githubWhite.png": "/MyPortfolio/static/media/githubWhite.e404a2290d83c92ab429.png",
     "static/media/herokublack.svg": "/MyPortfolio/static/media/herokublack.36a712535060894a231043f3047e8517.svg",
     "static/media/npmIcon.svg": "/MyPortfolio/static/media/npmIcon.923ff342b66c1f5e1a44ac0f323ba487.svg",
-    "static/media/githubWhite.svg": "/MyPortfolio/static/media/githubWhite.3924e87ea6bbdafcea3ab49e268249c6.svg",
     "static/media/git.svg": "/MyPortfolio/static/media/git.0e76f22a743680e0609a58140207b10a.svg",
     "static/media/linkedinWhite.png": "/MyPortfolio/static/media/linkedinWhite.38ba603626ed4edc0c7c.png",
     "static/media/image (1).png": "/MyPortfolio/static/media/image (1).8f63a2d5b4def8f53a27.png",
-    "static/media/github.svg": "/MyPortfolio/static/media/github.5fa69bc3be846421e7bd5e4b7c950ffb.svg",
     "static/media/heroku.svg": "/MyPortfolio/static/media/heroku.955d5a1cee5c8cdbd00ed405256385da.svg",
+    "static/media/github.svg": "/MyPortfolio/static/media/github.6d4f8d6e9335a6ad1b70714b46fcc88d.svg",
     "index.html": "/MyPortfolio/index.html",
     "static/media/javascript-original.svg": "/MyPortfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "static/media/linkedinBlack.svg": "/MyPortfolio/static/media/linkedinBlack.757885027fecebeb343266fa5ae768cd.svg",
     "static/media/envelopeBlack.svg": "/MyPortfolio/static/media/envelopeBlack.6c4972d1534f82645bde0042ddf51633.svg",
     "main.ddec5927.css.map": "/MyPortfolio/static/css/main.ddec5927.css.map",
-    "main.2a05fe55.js.map": "/MyPortfolio/static/js/main.2a05fe55.js.map"
+    "main.0de6ee6b.js.map": "/MyPortfolio/static/js/main.0de6ee6b.js.map"
   },
   "entrypoints": [
     "static/css/main.ddec5927.css",
-    "static/js/main.2a05fe55.js"
+    "static/js/main.0de6ee6b.js"
   ]
 }
