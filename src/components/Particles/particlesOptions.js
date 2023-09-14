@@ -327,7 +327,7 @@ export const mobileParticlesOptions = {
       ],
 
       onHover: {
-        enable: true,
+        enable: false,
         mode: "bubble",
         parallax: {
           enable: true,
@@ -568,7 +568,7 @@ export const mobileParticlesOptionsDarkTheme = {
       ],
 
       onHover: {
-        enable: true,
+        enable: false,
         mode: "bubble",
         parallax: {
           enable: true,

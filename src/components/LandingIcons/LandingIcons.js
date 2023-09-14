@@ -34,16 +34,12 @@ const LandingIcons = () => {
   const [icons, setIcons] = useState([]);
 
   useEffect(() => {
-    console.log(themeState.name);
     if (themeState.name === "light") {
       setIcons(darkIcons);
     } else {
       setIcons(lightIcons);
     }
   }, [themeState]);
-
-  console.log("ICONS");
-  console.log(icons);
 
   return (
     <div>
