@@ -63,7 +63,7 @@ const LandingIcons = () => {
           console.log("you clicked the resume button");
         }}
         style={{ borderColor: themeState.text }}
-        className="px-3 my-3 border-2 rounded-full relative z-10"
+        className="px-3 top-3 border-2 rounded-full relative z-10"
       >
         Resume
       </a>
