@@ -18,7 +18,7 @@ import gitIcon from "../../assets/svgs/git.svg";
 import githubIcon from "../../assets/svgs/github.svg";
 import mysqlIcon from "../../assets/svgs/mysql.svg";
 import jsSquareIcon from "../../assets/svgs/javascript-original.svg";
-import githubWhiteIcon from "../../assets/svgs/githubWhite.svg";
+import githubWhiteIcon from "../../assets/images/githubWhite.png";
 import apolloWhiteIcon from "../../assets/svgs/apolloWhite.svg";
 
 export const desktopParticlesOptions = {

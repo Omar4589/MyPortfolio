@@ -14,6 +14,7 @@ import "./components/Title/cursor.css";
 import "./index.css";
 import MySkillsPage from "./pages/MySkills/MySkills";
 import MyProjectsPage from "./pages/MyProjects/MyProjects";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { themeState } = useThemeContext();
@@ -38,6 +39,7 @@ function App() {
       <MySkillsPage />
       <MyProjectsPage />
       <AboutMePage />
+      <Footer />
     </div>
   );
 }

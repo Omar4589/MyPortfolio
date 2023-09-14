@@ -1,5 +1,5 @@
 import githubIcon from "../../assets/svgs/github.svg";
-import githubWhiteIcon from "../../assets/svgs/githubWhite.svg";
+import githubWhiteIcon from "../../assets/images/githubWhite.png";
 
 import yg2 from "../../assets/images/yg2.png";
 import m5 from "../../assets/images/M5.png";
