@@ -49,20 +49,69 @@ export const projectObjects = [
   {
     name: "MealMappr",
     projectImage: m5,
-    modalImage: ygLogo,
-    description: "",
+    modalImage: m5,
+    description:
+      "Meal Planner is your go-to free and user-friendly app, facilitating personalized meal plans to foster a healthier and happier lifestyle. The app is a testament to our dedication to making meal planning a breeze, helping users save time, money, and effort. Join our growing community and embark on a journey towards a simplified and enjoyable meal planning experience.",
     madeWith: [],
-    features: [{ featureName: "", featureDescription: "" }],
+    features: [
+      {
+        featureName: "User-Friendly Interface",
+        featureDescription:
+          "Designed with Tailwind CSS, offering a clean and modern UI that makes meal planning a simple and enjoyable task.",
+      },
+      {
+        featureName: "Personalized Meal Plans",
+        featureDescription:
+          "Create and manage your meal plans effortlessly, with the added functionality of viewing your plans on a full calendar.",
+      },
+      {
+        featureName: "Secure Sessions",
+        featureDescription:
+          "Utilizing express-session to maintain secure and persistent sessions for a reliable user experience.",
+      },
+      {
+        featureName: "Robust Backend",
+        featureDescription:
+          "Powered by a Node.js and Express server backend, coupled with MySQL for reliable and efficient data management.",
+      },
+    ],
     github: "https://github.com/Rolyat512/MealMappr",
     url: "https://mealmappr.herokuapp.com/",
   },
   {
     name: "EscapeMe",
     projectImage: themes,
-    modalImage: ygLogo,
-    description: "",
+    modalImage: themes,
+    description:
+      "EscapeMe serves as a one-stop solution for escape room enthusiasts, offering a seamless booking experience right at your fingertips. Users can create an account to book their next adventure, choosing from a variety of escape rooms for a date and time that suits them. The platform also caters to administrators, providing a comprehensive admin center to manage escape rooms, users, and bookings efficiently. Join the community and elevate your escape room experience with EscapeMe.",
     madeWith: [],
-    features: [{ featureName: "", featureDescription: "" }],
+    features: [
+      {
+        featureName: "Modern UI/UX",
+        featureDescription:
+          "Leveraging Tailwind CSS to offer a modern and clean user interface, enhancing the user experience with intuitive design.",
+      },
+      {
+        featureName: "User-Friendly Booking System",
+        featureDescription:
+          "Allows users to easily book their preferred escape room adventure at a date and time of their choosing, with just a few clicks.",
+      },
+      {
+        featureName: "Personalized User Accounts",
+        featureDescription:
+          "Users can create personalized accounts to manage their bookings and keep track of their upcoming adventures.",
+      },
+      {
+        featureName: "Admin Center",
+        featureDescription:
+          "A dedicated admin center for efficient management of escape rooms, user accounts, and bookings, ensuring a smooth operational flow.",
+      },
+      {
+        featureName: "Robust Backend",
+        featureDescription:
+          "Built with a Node.js and Express server backend, integrated with MySQL for reliable and secure data management.",
+      },
+    ],
     github: "https://github.com/Omar4589/Escape-Me",
     url: "https://escape-me.herokuapp.com/",
   },

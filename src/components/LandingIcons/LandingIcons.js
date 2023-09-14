@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { GitHub } from "@mui/icons-material";
 
+import resume from "../../assets/resume.pdf";
+
 const lightIcons = [
   { name: envelopeWhite, url: "mailto:omar4589@hotmail.com" },
   {
@@ -43,7 +45,6 @@ const LandingIcons = () => {
 
   return (
     <div>
-      {" "}
       <div id="landing-icons" style={{ zIndex: 1 }} className="flex">
         {icons.map((icon, index) => (
           <a
@@ -55,18 +56,17 @@ const LandingIcons = () => {
             <img src={icon.name} alt="icon" className="h-full" />
           </a>
         ))}
-      </div>{" "}
-      <button
-        type="button"
+      </div>
+      <a
+        href={resume}
         onClick={() => {
           console.log("you clicked the resume button");
         }}
         style={{ borderColor: themeState.text }}
         className="px-3 my-3 border-2 rounded-full relative z-10"
       >
-        {" "}
-        Resume{" "}
-      </button>
+        Resume
+      </a>
     </div>
   );
 };
