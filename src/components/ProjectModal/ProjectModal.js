@@ -46,11 +46,13 @@ const ProjectModal = ({ project, onClose }) => {
       <div id="project-details" className="w-full mt-10 px-5">
         <h1 className="text-4xl border-b-4 flex justify-between pl-2 pr-4 ">
           {project.name}{" "}
-          <img
-            src={githubIconWhite}
-            alt="github logo"
-            className=" h-10 w-10 relative bottom-1"
-          />
+          <a href={project.github} alt="github link">
+            <img
+              src={githubIconWhite}
+              alt="github logo"
+              className=" h-8 w-8 relative"
+            />
+          </a>
         </h1>
 
         <h2 className="pt-3">{project.description}</h2>

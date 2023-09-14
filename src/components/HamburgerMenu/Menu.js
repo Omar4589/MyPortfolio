@@ -17,7 +17,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
       ></div>
       <div
         id="menu-links"
-        className="text-5xl lg:text-6xl text-left relative top-52 lg:top-96 flex flex-col space-y-5 items-center justify-center  "
+        className="text-5xl lg:text-6xl text-left relative top-40 lg:top-96 flex flex-col space-y-5 items-center justify-center  "
       >
         <a
           onClick={() => {
@@ -54,24 +54,6 @@ const Menu = ({ isChecked, setIsChecked }) => {
           href="#about-me"
         >
           About Me
-        </a>
-        <a
-          onClick={() => {
-            setIsChecked(false);
-          }}
-          className="beating"
-          href="#contact-me"
-        >
-          Contact Me
-        </a>
-        <a
-          onClick={() => {
-            setIsChecked(false);
-          }}
-          className="beating"
-          href="#resume"
-        >
-          Resume
         </a>
       </div>
     </div>
