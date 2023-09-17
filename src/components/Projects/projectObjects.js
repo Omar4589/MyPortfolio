@@ -121,7 +121,7 @@ export const displayProjects = (projects, onProjectClick) => {
   return projects.map((project) => (
     <div
       key={project.name}
-      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-5 "
+      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-5 md:h-60"
       onClick={() => onProjectClick(project)}
     >
       <h1 className="absolute mt-5 ml-5 text-3xl text-white text-shadow-lg">

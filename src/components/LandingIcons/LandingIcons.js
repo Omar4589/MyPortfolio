@@ -51,7 +51,7 @@ const LandingIcons = () => {
             key={icon + index}
             href={icon.url}
             alt="icon url"
-            className="z-10 h-8 w-8 mt-3 mr-3 flex justify-center"
+            className="z-10 h-8 w-8 mt-3 mr-3 flex justify-center md:h-9 md:w-9 md:mr-5"
           >
             <img src={icon.name} alt="icon" className="h-full" />
           </a>
@@ -63,7 +63,7 @@ const LandingIcons = () => {
           console.log("you clicked the resume button");
         }}
         style={{ borderColor: themeState.text }}
-        className="px-3 top-3 border-2 rounded-full relative z-10"
+        className="px-3 top-3 border-2 rounded-full relative z-10 md:px-6 md:py-1 md:top-5 md:text-lg"
       >
         Resume
       </a>

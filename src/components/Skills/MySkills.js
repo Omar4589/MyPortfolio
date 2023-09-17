@@ -61,8 +61,8 @@ const MySkills = () => {
       className="main w-full min-h-screen"
     >
       <div id="skills-heading">
-        <h1 className="text-4xl pb-1">My Skills</h1>
-        <h2 className="font-thin pr-5 text-xl">
+        <h1 className="text-4xl pb-1 md:text-5xl md:pb-3">My Skills</h1>
+        <h2 className="font-thin pr-5 text-xl md:px-1 md:text-2xl">
           You're probably wondering,{" "}
           <span className="font-bold">"Omar, what can you do?"</span> {""}
           With a diverse set of skills and an unyielding desire to keep
@@ -70,26 +70,38 @@ const MySkills = () => {
         </h2>
       </div>
       <div id="skills-icons">
-        <div id="front-end" className="py-5 space-y-2">
-          <h1 className="text-3xl w-full ">Front-end</h1>
-          <h2 className="text-xl">Languages</h2>
-          <div className="grid grid-cols-4 ">{frontEndLanguages}</div>
-          <h2 className="text-xl">Libraries and Frameworks</h2>
-          <div className="grid grid-cols-4 ">{frontEndLibrariesFrameworks}</div>
+        <div id="front-end" className="py-5 space-y-2 ">
+          <h1 className="text-3xl w-full underline">Front-end</h1>
+          <h2 className="text-xl md:text-2xl">Languages</h2>
+          <div className="grid grid-cols-4 md:grid-cols-5">
+            {frontEndLanguages}
+          </div>
+          <h2 className="text-xl md:text-2xl">Libraries and Frameworks</h2>
+          <div className="grid grid-cols-4 md:grid-cols-5">
+            {frontEndLibrariesFrameworks}
+          </div>
         </div>
 
         <div id="back-end" className="space-y-2 ">
-          <h1 className="text-3xl w-full ">Back-end</h1>
-          <h2 className="text-xl">Languages</h2>
-          <div className="grid grid-cols-4 ">{backEndLanguages}</div>
-          <h2 className="text-xl">Libraries and Frameworks</h2>
-          <div className="grid grid-cols-4 ">{backEndLibrariesFrameworks}</div>
-          <h2 className="text-xl">Databases</h2>
-          <div className="grid grid-cols-4 ">{backEndDatabases}</div>
+          <h1 className="text-3xl w-full underline">Back-end</h1>
+          <h2 className="text-xl md:text-2xl">Languages</h2>
+          <div className="grid grid-cols-4 md:grid-cols-5">
+            {backEndLanguages}
+          </div>
+          <h2 className="text-xl md:text-2xl">Libraries and Frameworks</h2>
+          <div className="grid grid-cols-4 md:grid-cols-5 ">
+            {backEndLibrariesFrameworks}
+          </div>
+          <h2 className="text-xl md:text-2xl">Databases</h2>
+          <div className="grid grid-cols-4 md:grid-cols-5">
+            {backEndDatabases}
+          </div>
         </div>
         <div id="other" className=" space-y-2">
-          <h1 className="text-3xl w-full ">Other</h1>
-          <div className="grid grid-cols-4 ">{otherTechnologies}</div>
+          <h1 className="text-3xl w-full underline ">Other</h1>
+          <div className="grid grid-cols-4 md:grid-cols-5">
+            {otherTechnologies}
+          </div>
         </div>
       </div>
     </div>

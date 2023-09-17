@@ -8,26 +8,26 @@ const AboutMe = () => {
   return (
     <div
       style={{ background: themeState.background }}
-      className="min-h-screen w-full  mb-5 main "
+      className="min-h-screen w-full mb-5 main "
     >
       <div className="flex flex-col items-center pb-5 ">
-        <div className="w-full">
+        <div className="w-3/4 py-5 md:absolute md:left-1/2 md:ml-8  md:w-1/3">
           <img
             id="about-me"
             src={portrait}
             alt="Omar"
-            className="rounded-full w-full py-5 mx-auto"
+            className="w-full rounded-lg"
           />
         </div>
-        <div style={{ zIndex: 0 }} className="w-full ">
-          <h1 className="text-4xl font-bold mb-2">About Me</h1>
-          <p className="text-lg mb-4">
-            Hi! I'm Omar. I recently graduated from an intensive bootcamp at
-            UTSA's School of Data Science where I honed my skills in the MERN
-            stack, GraphQL, and MySQL. I'm eager to tackle real-world challenges
-            and create innovative solutions in the tech industry.
+        <div style={{ zIndex: 0 }} className="w-full md: md:pt-12">
+          <h1 className="text-4xl font-bold mb-2 md:text-5xl">About Me</h1>
+          <p className="text-lg mb-4 md:text-2xl md:w-1/2">
+            I recently graduated from an intensive bootcamp at UTSA's School of
+            Data Science where I honed my skills in the MERN stack, GraphQL, and
+            MySQL. I'm eager to tackle real-world challenges and create
+            innovative solutions in the tech industry.
           </p>
-          <p className="text-lg">
+          <p className="text-lg md:text-2xl md:mt-10">
             When I am not behind the screen coding 💻, you can find me indulging
             in my love for art 🖼️, exploring the world of anime, savoring a bowl
             of ramen 🍜, or delving into conspiracy theories that'll send you
