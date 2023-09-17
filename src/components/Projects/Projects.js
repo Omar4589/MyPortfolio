@@ -37,7 +37,7 @@ const Projects = () => {
           showcasing the power of full-stack development.
         </h2>
       </div>
-      <div id="projects" className="grid grid-cols-1 md:">
+      <div id="projects" className="grid grid-cols-1 lg:grid-cols-2 lg:pl-10">
         {projects}
       </div>
       {isModalOpen && (

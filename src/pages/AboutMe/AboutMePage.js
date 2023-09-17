@@ -7,7 +7,7 @@ const AboutMePage = ({ children }) => {
     <div
       id="about-me-page"
       style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 pt-60 pb-10 md:px-10"
+      className="w-full min-h-screen px-5 pt-60 pb-10 md:px-10 xl:px-20"
     >
       <AboutMe />
     </div>

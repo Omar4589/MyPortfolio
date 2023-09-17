@@ -8,8 +8,9 @@ const Header = () => {
   return (
     <header id="header" style={{ ...styles.main }}>
       <MaterialUISwitch
-        sx={{ marginLeft: 2, marginTop: 2, zIndex: 2 }}
+        sx={{  zIndex: 2 }}
         onClick={toggleThemeState}
+        className="ml-4 mt-4 md:ml-7 md:mt-7 xl:ml-10 xl:mt-8"
       />
       <Hamburger />
     </header>

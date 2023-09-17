@@ -8,7 +8,7 @@ const MySkillsPage = ({ children }) => {
     <div
       id="my-skills"
       style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 py-56 md:px-10"
+      className="w-full min-h-screen px-5 py-56 md:px-10 xl:pl-20 xl:pr-"
     >
       <MySkills />
     </div>

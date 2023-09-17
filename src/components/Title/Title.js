@@ -16,7 +16,7 @@ const Title = () => {
     <div
       id="title-container"
       style={{ ...styles.main }}
-      className="text-3xl  pt-2  md:text-3xl"
+      className="text-3xl  pt-2  md:text-3xl lg:text-4xl"
     >
       <Typed
         strings={[

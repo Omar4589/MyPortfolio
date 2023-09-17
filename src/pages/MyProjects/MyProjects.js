@@ -10,7 +10,7 @@ const MyProjects = ({ children }) => {
     <div
       id="my-projects"
       style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 md:px-10"
+      className="w-full min-h-screen px-5 md:px-10 xl:px-20"
     >
       <Projects />
     </div>

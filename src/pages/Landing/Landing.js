@@ -11,7 +11,7 @@ const Landing = ({ children }) => {
     <div
       id="home"
       style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 pt-56 md:flex  md:flex-col  md:justify-center md:pt-0 md:px-10 md:space-y-2 "
+      className="w-full min-h-screen px-5 pt-56 md:flex  md:flex-col  md:justify-center md:pt-0 md:px-10 md:space-y-2 xl:px-20"
     >
       <Name />
       <Title />
