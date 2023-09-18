@@ -21,6 +21,15 @@ import jsSquareIcon from "../../assets/svgs/javascript-original.svg";
 import githubWhiteIcon from "../../assets/images/githubWhite.png";
 import apolloWhiteIcon from "../../assets/svgs/apolloWhite.svg";
 
+import tailwindIcon from "../../assets/svgs/tailwindCSS.svg";
+import handlebarsJS from "../../assets/svgs/handlebarsJS.svg";
+import expressIconWhite from "../../assets/svgs/expressJSDark.svg";
+import expressIcon from "../../assets/svgs/expressJS.svg";
+import npmIcon from "../../assets/svgs/npmIcon.svg";
+import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
+import herokuIcon from "../../assets/svgs/heroku.svg";
+import herokuIconDark from "../../assets/svgs/herokublack.svg";
+
 export const desktopParticlesOptions = {
   autoPlay: true,
 
@@ -230,6 +239,38 @@ export const desktopParticlesOptions = {
         },
         {
           src: jsSquareIcon,
+          width: 100,
+          height: 100,
+        },
+
+        {
+          src: tailwindIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: handlebarsJS,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: npmIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: mongooseIcon,
+          width: 100,
+          height: 100,
+        },
+
+        {
+          src: expressIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: herokuIcon,
           width: 100,
           height: 100,
         },
@@ -470,6 +511,37 @@ export const mobileParticlesOptions = {
         },
         {
           src: jsSquareIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: tailwindIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: handlebarsJS,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: npmIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: mongooseIcon,
+          width: 100,
+          height: 100,
+        },
+
+        {
+          src: expressIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: herokuIcon,
           width: 100,
           height: 100,
         },
@@ -714,6 +786,37 @@ export const mobileParticlesOptionsDarkTheme = {
           width: 100,
           height: 100,
         },
+        {
+          src: tailwindIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: handlebarsJS,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: npmIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: mongooseIcon,
+          width: 100,
+          height: 100,
+        },
+
+        {
+          src: expressIconWhite,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: herokuIconDark,
+          width: 100,
+          height: 100,
+        },
       ],
     },
 
@@ -952,6 +1055,37 @@ export const desktopParticlesOptionsDarkTheme = {
         },
         {
           src: jsSquareIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: tailwindIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: handlebarsJS,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: npmIcon,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: mongooseIcon,
+          width: 100,
+          height: 100,
+        },
+
+        {
+          src: expressIconWhite,
+          width: 100,
+          height: 100,
+        },
+        {
+          src: herokuIconDark,
           width: 100,
           height: 100,
         },

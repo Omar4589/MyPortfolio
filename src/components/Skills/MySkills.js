@@ -70,54 +70,58 @@ const MySkills = () => {
         </h2>
       </div>
       <div id="skills-icons" className="">
-        <div className="xl:flex xl:justify-evenly ">
-          {" "}
-          <div id="front-end" className="py-5 space-y-2 xl:w-full">
-            <h1 className="text-3xl w-full underline xl:">Front-end</h1>
-            <h2 className="text-xl md:text-2xl xl:">Languages</h2>
-            <div
-              className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+        {" "}
+        <div
+          id="front-end"
+          className="py-5 space-y-2 md:mb-5 xl:w-full xl:mb-12"
+        >
+          <h1 className="text-3xl w-full underline xl:">Front-end</h1>
+          <h2 className="text-xl md:text-2xl xl:">Languages</h2>
+          <div
+            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
           "
-            >
-              {frontEndLanguages}
-            </div>
-            <h2 className="text-xl md:text-2xl xl:pt-8 ">Libraries and Frameworks</h2>
-            <div
-              className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
-          "
-            >
-              {frontEndLibrariesFrameworks}
-            </div>
+          >
+            {frontEndLanguages}
           </div>
-          <div id="back-end" className="space-y-2 xl:w-full">
-            <h1 className="text-3xl w-full underline ">Back-end</h1>
-
-            <h2 className="text-xl md:text-2xl ">Languages</h2>
-            <div
-              className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+          <h2 className="text-xl md:text-2xl xl:pt-8 ">
+            Libraries and Frameworks
+          </h2>
+          <div
+            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
           "
-            >
-              {backEndLanguages}
-            </div>
-            <h2 className="text-xl md:text-2xl xl:pt-8 ">Libraries and Frameworks</h2>
-            <div
-              className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
-          "
-            >
-              {backEndLibrariesFrameworks}
-            </div>
-            <h2 className="text-xl md:text-2xl xl:pt-8 ">Databases</h2>
-            <div
-              className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
-          "
-            >
-              {backEndDatabases}
-            </div>
+          >
+            {frontEndLibrariesFrameworks}
           </div>
         </div>
+        <div id="back-end" className="space-y-2 md:mb-6 xl:w-full xl:mb-12">
+          <h1 className="text-3xl w-full underline ">Back-end</h1>
 
-        <div id="other" className=" space-y-2 xl:mt-5">
-          <h1 className="text-3xl w-full underline ">Other</h1>
+          <h2 className="text-xl md:text-2xl ">Languages</h2>
+          <div
+            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+          "
+          >
+            {backEndLanguages}
+          </div>
+          <h2 className="text-xl md:text-2xl xl:pt-8 ">
+            Libraries and Frameworks
+          </h2>
+          <div
+            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+          "
+          >
+            {backEndLibrariesFrameworks}
+          </div>
+          <h2 className="text-xl md:text-2xl xl:pt-8 ">Databases</h2>
+          <div
+            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+          "
+          >
+            {backEndDatabases}
+          </div>
+        </div>
+        <div id="other" className=" space-y-2 xl:mt-5 ">
+          <h1 className="text-3xl w-full underline xl:text-4xl">Other</h1>
           <div
             className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-7
           "
