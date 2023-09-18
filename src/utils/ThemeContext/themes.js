@@ -13,6 +13,6 @@ export const darkTheme = {
   background: "black",
   text: "white",
   menuText: "black",
-  isChecked: "black",
+  isChecked: "white",
   isNotChecked: "white",
 };

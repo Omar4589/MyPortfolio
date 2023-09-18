@@ -12,12 +12,12 @@ const Menu = ({ isChecked, setIsChecked }) => {
     >
       <div
         id="menu-background"
-        style={{ backgroundColor: themeState.text }}
-        className="w-full h-full absolute opacity-80 menubackground "
+        // style={{ backgroundColor: themeState.text }}
+        className="w-full h-full absolute opacity-80 menubackground bg-black"
       ></div>
       <div
         id="menu-links"
-        className="text-5xl lg:text-6xl text-left relative top-40 lg:top-96 xl:top-60 flex flex-col space-y-5 items-center justify-center  "
+        className="text-5xl lg:text-6xl text-left relative top-40 lg:top-96 xl:top-60 flex flex-col space-y-5 items-center justify-center  text-white"
       >
         <a
           onClick={() => {
