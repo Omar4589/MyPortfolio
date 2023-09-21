@@ -50,7 +50,7 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
 
           <h1 className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10">
-            {project.name}{" "}
+            {project.name}
             <a href={project.github} alt="github link">
               <img
                 src={githubIconWhite}

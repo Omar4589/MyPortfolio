@@ -13,8 +13,9 @@ export const projectObjects = [
     name: "YardGems",
     projectImage: yg2,
     modalImage: greenYardGems,
+    myRole: "Project Leader/Developer",
     description:
-      "YardGems is a community-driven platform designed to bring enthusiasts and sellers together in a vibrant, user-friendly marketplace. Find hidden gems in your neighborhood or list your own treasures to share with others.",
+      "A community-driven platform designed to streamline the yard sale experience. The application eliminates the tedious need to drive around in search of yard sales by providing a centralized platform where users can find and list yard sales in their area.",
     madeWith: [],
     features: [
       {
@@ -47,11 +48,12 @@ export const projectObjects = [
     url: "https://yardgems-15b0faee737f.herokuapp.com/",
   },
   {
-    name: "MealMappr",
+    name: "Meal Mappr",
     projectImage: m5,
     modalImage: m5,
+    myRole: "Developer",
     description:
-      "Meal Planner is your go-to free and user-friendly app, facilitating personalized meal plans to foster a healthier and happier lifestyle. The app is a testament to our dedication to making meal planning a breeze, helping users save time, money, and effort. Join our growing community and embark on a journey towards a simplified and enjoyable meal planning experience.",
+      "A digital meal planning application designed to simplify nutrition tracking. Offers a recipe search and save feature, enabling users to easily plan meals and monitor nutritional intake.",
     madeWith: [],
     features: [
       {
@@ -79,11 +81,12 @@ export const projectObjects = [
     url: "https://mealmappr.herokuapp.com/",
   },
   {
-    name: "EscapeMe",
+    name: "Escape Me",
     projectImage: themes,
     modalImage: themes,
+    myRole: "Sole Developer",
     description:
-      "EscapeMe serves as a one-stop solution for escape room enthusiasts, offering a seamless booking experience right at your fingertips. Users can create an account to book their next adventure, choosing from a variety of escape rooms for a date and time that suits them. The platform also caters to administrators, providing a comprehensive admin center to manage escape rooms, users, and bookings efficiently. Join the community and elevate your escape room experience with EscapeMe.",
+      "A customizable booking system initially designed for escape room businesses. Features an admin portal for comprehensive management of bookings, users, and escape room details. Scalable for other business types.",
     madeWith: [],
     features: [
       {
