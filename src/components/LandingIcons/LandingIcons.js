@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { GitHub } from "@mui/icons-material";
 
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/Resume1.pdf";
 
 const lightIcons = [
   { name: envelopeWhite, url: "mailto:omar4589@hotmail.com" },
