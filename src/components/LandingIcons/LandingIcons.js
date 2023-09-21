@@ -15,7 +15,7 @@ import { GitHub } from "@mui/icons-material";
 import resume from "../../assets/Resume1.pdf";
 
 const lightIcons = [
-  { name: envelopeWhite, url: "mailto:omar4589@hotmail.com" },
+  { name: envelopeWhite, url: "mailto:omarzumayajr@gmail.com" },
   {
     name: linkedInWhite,
     url: "https://www.linkedin.com/in/omar-zumaya-50a55a267/",
