@@ -1,6 +1,6 @@
 import React from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
-import MySkills from "../../components/Skills/MySkills";
+import MySkillstest from "../../components/Skills/MySkillstest";
 
 const MySkillsPage = ({ children }) => {
   const { themeState } = useThemeContext();
@@ -10,7 +10,7 @@ const MySkillsPage = ({ children }) => {
       style={{ background: themeState.background }}
       className="w-full min-h-screen px-5 py-56 md:px-10 xl:pl-20 xl:pr-"
     >
-      <MySkills />
+      <MySkillstest />
     </div>
   );
 };
