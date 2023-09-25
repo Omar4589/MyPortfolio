@@ -4,7 +4,6 @@ import {
   frontEndIconsLanguages,
   frontEndIconsLibrariesFrameworksLightTheme,
   frontEndIconsLibrariesFrameworksDarkTheme,
-  backEndIconsLanguages,
   backEndIconsDatabases,
   otherIconsDark,
   otherIconsLight,
@@ -18,7 +17,6 @@ const MySkills = () => {
   const [frontEndLanguages, setfrontEndLanguages] = useState([]);
   const [frontEndLibrariesFrameworks, setfrontEndLibrariesFrameworks] =
     useState([]);
-  const [backEndLanguages, setbackEndLanguages] = useState([]);
   const [backEndLibrariesFrameworks, setbackEndLibrariesFrameworks] = useState(
     []
   );
@@ -34,7 +32,7 @@ const MySkills = () => {
           : frontEndIconsLibrariesFrameworksLightTheme
       )
     );
-    setbackEndLanguages(displayIcons(backEndIconsLanguages));
+
     setbackEndLibrariesFrameworks(
       displayIcons(
         themeState.name === "dark"
@@ -53,77 +51,82 @@ const MySkills = () => {
 
   return (
     <div
-      id="skills-container"
+      id="skills-page-container"
       style={{
         position: "relative",
         zIndex: 1,
       }}
       className="main w-full min-h-screen"
     >
-      <div id="skills-heading" className="xl:pb-10">
-        <h1 className="text-4xl pb-1 md:text-5xl md:pb-3">My Skills</h1>
-        <h2 className="font-thin pr-5 text-xl md:px-1 md:text-2xl xl:text-xl xl:pr-40">
-          You're probably wondering,{" "}
-          <span className="font-bold">"Omar, what can you do?"</span> {""}
-          With a diverse set of skills and an unyielding desire to keep
-          learning, what can't I do? Dive into my skillset below!
+      <div id="skills-heading" className="xl:pb-4">
+        <h1 className="text-3xl pb-1 md:text-4xl md:pb-3 lg:text-5xl lg:pb-6 xl:pb-1 xl:text-4xl">
+          My Skills
+        </h1>
+        <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-12 md:text-xl lg:leading-9 lg:text-2xl xl:text-xl xl:leading-9 xl:pr-48">
+          You're probably wondering,
+          <span className="font-bold">"Omar, what can you do?"</span> With a
+          diverse set of skills and an unyielding desire to keep learning,  <span className="font-bold">what
+          can't I do? </span> Dive into my skillset below!
         </h2>
       </div>
+
       <div id="skills-icons" className="">
-        {" "}
+        
         <div
-          id="front-end"
-          className="py-5 space-y-2 md:mb-5 xl:w-full xl:mb-12"
+          id="languages"
+          className="py-3 md:mb-5 lg:pt-10 xl:w-full xl:mb-1 xl:pt-5"
         >
-          <h1 className="text-3xl w-full underline xl:">Front-end</h1>
-          <h2 className="text-xl md:text-2xl xl:">Languages</h2>
+          <h2 className="text-lg underline md:text-2xl  lg:pb-5 xl:pb-2 xl:text-xl">Languages</h2>
           <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8
           "
           >
             {frontEndLanguages}
           </div>
-          <h2 className="text-xl md:text-2xl xl:pt-8 ">
+        </div>
+
+        <div
+          id="libraries-frameworks"
+          className="pb-3 md:mb-6 xl:w-full xl:mb-1"
+        >
+          <h2 className="text-lg underline md:text-2xl  lg:pb-5 xl:pb-2 xl:text-xl">
             Libraries and Frameworks
           </h2>
+
           <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+            id="frontEndLibrariesFrameworks"
+            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:pb-5 xl:grid-cols-8
           "
           >
             {frontEndLibrariesFrameworks}
           </div>
-        </div>
-        <div id="back-end" className="space-y-2 md:mb-6 xl:w-full xl:mb-12">
-          <h1 className="text-3xl w-full underline ">Back-end</h1>
-
-          <h2 className="text-xl md:text-2xl ">Languages</h2>
           <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
-          "
-          >
-            {backEndLanguages}
-          </div>
-          <h2 className="text-xl md:text-2xl xl:pt-8 ">
-            Libraries and Frameworks
-          </h2>
-          <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+            id="backEndLibrariesFrameworks"
+            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8
           "
           >
             {backEndLibrariesFrameworks}
           </div>
-          <h2 className="text-xl md:text-2xl xl:pt-8 ">Databases</h2>
+        </div>
+
+        <div id="databases" className="pb-3 md:mb-6 xl:w-full xl:mb-1">
+          <h2 className="text-lg underline md:text-2xl  lg:pb-5 xl:pb-2 xl:text-xl">
+            Databases
+          </h2>
           <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-5
+            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8
           "
           >
             {backEndDatabases}
           </div>
         </div>
-        <div id="other" className=" space-y-2 xl:mt-5 ">
-          <h1 className="text-3xl w-full underline xl:text-4xl">Other</h1>
+
+        <div id="tools" className=" pb-3 md:mb-6 xl:mt- xl:w-full xl:mb-1">
+          <h1 className="text-lg  underline md:text-2xl  lg:pb-5 xl:pb-2 xl:text-xl">
+            Tools
+          </h1>
           <div
-            className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-7
+            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7
           "
           >
             {otherTechnologies}
