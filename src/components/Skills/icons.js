@@ -13,7 +13,6 @@ import githubWhiteIcon from "../../assets/images/githubWhite.png";
 import apolloWhiteIcon from "../../assets/svgs/apolloWhite.svg";
 import tailwindIcon from "../../assets/svgs/tailwindCSS.svg";
 import handlebarsJS from "../../assets/svgs/handlebarsJS.svg";
-import expressIconWhite from "../../assets/svgs/expressJSDark.svg";
 import expressIcon from "../../assets/svgs/expressJS.svg";
 import npmIcon from "../../assets/svgs/npmIcon.svg";
 import { urlString } from "../../assets/svgs/sequelize.js";
@@ -182,7 +181,7 @@ export const displayIcons = (icons) => {
         className={
           icon.name === "Mongoose ODM"
             ? "h-10 w-16 mx-auto"
-            : "h-8 w-8 mx-auto"
+            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 mx-auto"
         }
         src={icon.icon}
         alt={`${icon.name} icon`}
