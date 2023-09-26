@@ -181,7 +181,7 @@ export const displayIcons = (icons) => {
         className={
           icon.name === "Mongoose ODM"
             ? "h-10 w-16 mx-auto"
-            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 mx-auto"
+            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:w-10 mx-auto"
         }
         src={icon.icon}
         alt={`${icon.name} icon`}

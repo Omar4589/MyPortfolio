@@ -58,7 +58,7 @@ const MySkills = () => {
       }}
       className="main w-full min-h-screen"
     >
-      <div id="skills-heading" className="xl:pb-4">
+      <div id="skills-heading" className="">
         <h1 className="text-3xl pb-1 md:text-4xl md:pb-3 lg:text-5xl lg:pb-6 xl:pb-1 xl:text-4xl">
           My Skills
         </h1>

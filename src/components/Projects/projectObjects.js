@@ -122,12 +122,13 @@ export const projectObjects = [
 
 export const displayProjects = (projects, onProjectClick) => {
   return projects.map((project) => (
-    <div
+    <div 
+    id="project"
       key={project.name}
-      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-5 md:h-60 lg:w-10/12"
+      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-3 mx-3 md:w-3/4 md:mx-auto md:mb-5 lg:w-10/12 lg:h-72 lg:mb-10 xl:w-11/12"
       onClick={() => onProjectClick(project)}
     >
-      <h1 className="absolute mt-5 ml-5 text-3xl text-white text-shadow-lg">
+      <h1 className="absolute mt-5 ml-5 text-2xl text-white text-shadow-lg lg:text-3xl">
         {project.name}
       </h1>
       <img
