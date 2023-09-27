@@ -36,57 +36,56 @@ const ProjectModalTest = ({ project, onClose }) => {
 
       <div
         id="project"
-        className="mt-10 xl:flex xl:mt-5 xl:mx-10  md:block sm:block xs:block"
+        className="mt-10 lg:mx-7 xl:mt-5 xl:mx-10 "
       >
-        {" "}
-        <div
-          id="project-image"
-          className="bg-white rounded-3xl overflow-hidden h-1/2 w-3/4 mx-auto "
-          onClick={(e) => e.stopPropagation()}
-        >
-          <img
-            src={project.modalImage}
-            className=" w-full h-full object-cover"
-            alt="appImage"
-          />
-        </div>
-        <div id="project-details" className="w-full  px-7">
-          <h1
-            id="project-name"
-            className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10"
+        <div className="md:flex md:mx-10 md:pt-5">
+          <div
+            id="project-image"
+            className="bg-white rounded-3xl overflow-hidden h-1/2 w-3/4 mx-auto "
+            onClick={(e) => e.stopPropagation()}
           >
-            {project.name}
-            <a href={project.github} alt="github link">
-              <img
-                src={githubIconWhite}
-                alt="github logo"
-                className=" h-8 w-8 relative md:h-10 md:w-10 "
-              />
+            <img
+              src={project.modalImage}
+              className=" w-full h-full object-cover"
+              alt="appImage"
+            />
+          </div>
+
+          <div id="project-title" className="w-full  px-7 ">
+            <h1
+              id="project-name"
+              className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10 md:pt-0 md:pb-1"
+            >
+              {project.name}
+              <a href={project.github} alt="github link">
+                <img
+                  src={githubIconWhite}
+                  alt="github logo"
+                  className=" h-8 w-8 relative md:h-10 md:w-10 "
+                />
+              </a>
+            </h1>
+
+            <h2 className="pt-3 md:text-xl xl:pb-5 lg:leading-9 lg:pb-3">{project.description}</h2>
+
+            <a
+              href={project.url}
+              alt="project url"
+              className="font-thin italic leading-10  lg:text-2xl xl:text-xl"
+            >
+              ↗ Visit {project.name}
             </a>
-          </h1>
-
-          <h2 className="pt-3 md:text-xl xl:pb-5">{project.description}</h2>
-
-          <a
-            href={project.url}
-            alt="project url"
-            className="font-thin italic leading-10 xl:text-xl"
-          >
-            ↗ Visit {project.name}
-          </a>
+          </div>
         </div>
-        
 
-        <div id="technologies" className="px-7">
+        <div id="technologies" className="px-7 lg:pt-5 lg:mx-3">
           {" "}
-
-          <h2 className="pt-3 text-2xl border-b-2 pt-10">Technolgies</h2>
-          
-          <div className="grid grid-cols-2 py-3 md:text-xl">
+          <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">Technolgies</h2>
+          <div className="grid grid-cols-2 py-3 md:text-xl md:grid-cols-4">
             {project.technologies.map((tech) => {
               return (
                 <div className="mb-2" key={tech}>
-                  <h3 className="pb-1 text-center text-lg">{tech} &#9989;</h3>
+                  <h3 className="pb-1 text-center text-lg lg:text-2xl">{tech} &#9989;</h3>
                 </div>
               );
             })}
