@@ -18,6 +18,34 @@ const ProjectModalTest = ({ project, onClose }) => {
     };
   }, []);
 
+
+
+  const underlineWords = (string, wordList) => {
+    const words = string.split(' ');
+    const elements = [];
+  
+    words.forEach((word, index) => {
+      if (wordList.includes(word) || wordList.includes(word.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, ''))) {
+        elements.push(
+          <span key={index} style={{ textDecoration: 'underline' }}>
+            {word}
+          </span>
+        );
+      } else {
+        elements.push(word);
+      }
+  
+      if (index < words.length - 1) {
+        elements.push(' ');
+      }
+    });
+  
+    return elements;
+  };
+  
+  
+
+
   return (
     <div
       id="project-modal"
@@ -34,10 +62,9 @@ const ProjectModalTest = ({ project, onClose }) => {
         <img src={backArrow} className="w-10 h-10" alt="back arrow" />
       </button>
 
-      <div
-        id="project"
-        className="mt-10 lg:mx-7 xl:mt-5 xl:mx-10 "
-      >
+      <div id="project" className="mt-10 lg:mx-7 xl:mt-5 xl:mx-10 ">
+
+
         <div className="md:flex md:mx-10 md:pt-5">
           <div
             id="project-image"
@@ -66,7 +93,9 @@ const ProjectModalTest = ({ project, onClose }) => {
               </a>
             </h1>
 
-            <h2 className="pt-3 md:text-xl xl:pb-5 lg:leading-9 lg:pb-3">{project.description}</h2>
+            <h2 className="pt-3 md:text-xl xl:pb-5 lg:leading-9 lg:pb-3">
+              {project.description}
+            </h2>
 
             <a
               href={project.url}
@@ -77,20 +106,46 @@ const ProjectModalTest = ({ project, onClose }) => {
             </a>
           </div>
         </div>
+        
 
-        <div id="technologies" className="px-7 lg:pt-5 lg:mx-3">
+         <div id="rolesandresponsibilities" className="w-full  px-7 lg:pt-6">
+            <h1 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
+              Role & Responsibilities
+            </h1>
+
+            <div className="grid grid-cols-1  py-3 md:text-xl md:grid-cols-1">
+              {project.roleAndResponsibilities.map((r) => {
+                return (
+                  <div className="mb-2" key={r}>
+                    <h3 className="pb-1 text-left text-lg lg:text-2xl">
+                    &bull; {underlineWords(r, ['Node.js', 'ExpressJS', "React's", "context", "API", "GraphQL", "JWT", "Cloudinary", "Material-UI", "Tailwind", "CSS", "RESTful", "Nodemailer", "EmailJS", "Express", "Session", "HandlebarJS", "MySQL", "Sequelize", "HandlebarsJS"])}
+                    </h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+        <div id="technologies" className="px-7  lg:mx-3">
           {" "}
-          <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">Technolgies</h2>
+          <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
+            Technolgies
+          </h2>
           <div className="grid grid-cols-2 py-3 md:text-xl md:grid-cols-4">
             {project.technologies.map((tech) => {
               return (
                 <div className="mb-2" key={tech}>
-                  <h3 className="pb-1 text-center text-lg lg:text-2xl">{tech} &#9989;</h3>
+                  <h3 className="pb-1 text-center text-lg lg:text-2xl">
+                    {tech} &#9989;
+                  </h3>
                 </div>
               );
             })}
           </div>
         </div>
+
+
+
       </div>
     </div>
   );

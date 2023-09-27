@@ -37,7 +37,16 @@ export const projectObjects = [
       "Google Maps SDK",
       "Use Places Auto Complete",
     ],
-
+    roleAndResponsibilities: [
+      "Project Leader / Developer",
+      "Led server setup using Node.js and ExpressJS.",
+      "Utilized React's context API for efficient global state management.",
+      "Integrated GraphQL API, enhancing data querying and mutation processes.",
+      "Implemented JWT to ensure secure user authentication.",
+      "Facilitated the addition of an image upload feature using Cloudinary to improve user engagement.",
+      "Styled components using Material-UI.",
+      "Incorporated EmailJS in the 'Contact Us' page to facilitate user-to-admin communication.",
+    ],
     features: [
       {
         featureName: "Intuitive UI/UX",
@@ -74,7 +83,7 @@ export const projectObjects = [
     modalImage: m5,
     myRole: "Developer",
     description:
-      "A digital meal planning application designed to simplify nutrition tracking. Offers a recipe search and save feature, enabling users to easily plan meals and monitor nutritional intake.",
+      "A digital meal planning application designed to simplify nutrition tracking. Offering a recipe search and save feature, enabling users to easily plan meals and monitor nutritional intake.",
     madeWith: [],
     technologies: [
       "Node.js",
@@ -90,6 +99,13 @@ export const projectObjects = [
       "Dayjs",
       "Full Calendar",
       "Nodemailer",
+    ],
+    roleAndResponsibilities: [
+      "Developer",
+      "Structured RESTful API endpoints to extend app functionality.",
+      "Integrated dynamic recipe search feature via 3rd party API to enrich user experience.",
+      "Styled application elements with Tailwind CSS to enhance the user interface",
+      "Implemented Nodemailer in the 'Contact Us' page to enable user messages to be sent to admins.",
     ],
     features: [
       {
@@ -124,6 +140,16 @@ export const projectObjects = [
     description:
       "A customizable booking system initially designed for escape room businesses. Features an admin portal for management of bookings, users, and escape room details. Scalable for other business types.",
     madeWith: [],
+    roleAndResponsibilities: [
+      "Sole Developer",
+      "Responsible for the end-to-end development.",
+      "Set up the server architecture using Node.js and ExpressJS.",
+      "Implemented Express Session middleware to ensure secure authentication and authorization.",
+      "Utilized HandlebarsJS for efficient rendering of views.",
+      "Established a MySQL database using Sequelize ORM to manage data storage.",
+      "Crafted RESTful API endpoints to facilitate CRUD operations.",
+      "Styled application using Tailwind CSS, focusing on a user-friendly interface.",
+    ],
     technologies: [
       "Node.js",
       "Express",
