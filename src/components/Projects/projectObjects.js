@@ -17,6 +17,27 @@ export const projectObjects = [
     description:
       "A community-driven platform designed to streamline the yard sale experience. The application eliminates the tedious need to drive around in search of yard sales by providing a centralized platform where users can find and list yard sales in their area.",
     madeWith: [],
+    technologies: [
+      "Node.js",
+      "React",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Apollo Server",
+      "Apollo Client",
+      "Graphql",
+      "Jsonwebtoken",
+      "Bcrypt",
+      "Dotenv",
+      "Dayjs",
+      "Material-UI",
+      "Reach Combobox",
+      "Emailjs",
+      "Cloudinary",
+      "Google Maps SDK",
+      "Use Places Auto Complete",
+    ],
+
     features: [
       {
         featureName: "Intuitive UI/UX",
@@ -55,6 +76,21 @@ export const projectObjects = [
     description:
       "A digital meal planning application designed to simplify nutrition tracking. Offers a recipe search and save feature, enabling users to easily plan meals and monitor nutritional intake.",
     madeWith: [],
+    technologies: [
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Sequelize",
+      "Handlebars.js",
+      "Tailwind CSS",
+      "Express-session",
+      "Bcrypt",
+      "jQuery",
+      "Dotenv",
+      "Dayjs",
+      "Full Calendar",
+      "Nodemailer",
+    ],
     features: [
       {
         featureName: "User-Friendly Interface",
@@ -86,8 +122,21 @@ export const projectObjects = [
     modalImage: themes,
     myRole: "Sole Developer",
     description:
-      "A customizable booking system initially designed for escape room businesses. Features an admin portal for comprehensive management of bookings, users, and escape room details. Scalable for other business types.",
+      "A customizable booking system initially designed for escape room businesses. Features an admin portal for management of bookings, users, and escape room details. Scalable for other business types.",
     madeWith: [],
+    technologies: [
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Sequelize",
+      "Handlebars.js",
+      "Tailwind CSS",
+      "Express-session",
+      "Bcrypt",
+      "jQuery",
+      "Dotenv",
+      "Dayjs",
+    ],
     features: [
       {
         featureName: "Modern UI/UX",
@@ -122,8 +171,8 @@ export const projectObjects = [
 
 export const displayProjects = (projects, onProjectClick) => {
   return projects.map((project) => (
-    <div 
-    id="project"
+    <div
+      id="project"
       key={project.name}
       className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-3 mx-3 md:w-3/4 md:mx-auto md:mb-5 lg:w-10/12 lg:h-72 lg:mb-10 xl:w-11/12"
       onClick={() => onProjectClick(project)}

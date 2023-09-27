@@ -4,7 +4,7 @@ import backArrow from "../../assets/images/image (1).png";
 import githubIconWhite from "../../assets/images/githubWhite.png";
 import githubIconBlack from "../../assets/svgs/github.svg";
 
-const ProjectModal = ({ project, onClose }) => {
+const ProjectModalTest = ({ project, onClose }) => {
   const { themeState } = useThemeContext();
 
   useEffect(() => {
@@ -25,9 +25,6 @@ const ProjectModal = ({ project, onClose }) => {
       style={{ zIndex: 3 }}
       // onClick={onClose}
     >
-
-
-
       <button
         id="back-button"
         onClick={onClose}
@@ -37,34 +34,27 @@ const ProjectModal = ({ project, onClose }) => {
         <img src={backArrow} className="w-10 h-10" alt="back arrow" />
       </button>
 
-
-
-
-      <div className="xl:flex xl:mt-5 xl:mx-10  md:block sm:block xs:block">
+      <div
+        id="project"
+        className="mt-10 xl:flex xl:mt-5 xl:mx-10  md:block sm:block xs:block"
+      >
         {" "}
-
-
-
-        <div id="project-details" className="w-full mt-10 px-10">
-
-
-
-          <div
-            id="project-image"
-            className="bg-white rounded-3xl overflow-hidden h-1/2 w-3/4 mx-auto "
-            onClick={(e) => e.stopPropagation()}
+        <div
+          id="project-image"
+          className="bg-white rounded-3xl overflow-hidden h-1/2 w-3/4 mx-auto "
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img
+            src={project.modalImage}
+            className=" w-full h-full object-cover"
+            alt="appImage"
+          />
+        </div>
+        <div id="project-details" className="w-full  px-7">
+          <h1
+            id="project-name"
+            className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10"
           >
-            <img
-              src={project.modalImage}
-              className=" w-full h-full object-cover"
-              alt="appImage"
-            />
-          </div>
-
-
-
-
-          <h1 className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10">
             {project.name}
             <a href={project.github} alt="github link">
               <img
@@ -75,12 +65,7 @@ const ProjectModal = ({ project, onClose }) => {
             </a>
           </h1>
 
-
-
           <h2 className="pt-3 md:text-xl xl:pb-5">{project.description}</h2>
-
-
-
 
           <a
             href={project.url}
@@ -89,40 +74,27 @@ const ProjectModal = ({ project, onClose }) => {
           >
             ↗ Visit {project.name}
           </a>
-
-
         </div>
+        
 
-
-
-
-
-        <div id="features" className="px-10">
+        <div id="technologies" className="px-7">
           {" "}
-          <h2 className="pt-3 text-2xl border-b-2 pt-10">Features</h2>
 
-          <div className="grid py-3 md:text-xl">
-            {project.features.map((feature) => {
+          <h2 className="pt-3 text-2xl border-b-2 pt-10">Technolgies</h2>
+          
+          <div className="grid grid-cols-2 py-3 md:text-xl">
+            {project.technologies.map((tech) => {
               return (
-                <div className="" key={feature.featureName}>
-                  <h3 className="pb-1 text-center">
-                    {feature.featureName} &#9989;
-                  </h3>
-                  <p className="pb-5 italic">{feature.featureDescription}</p>
+                <div className="mb-2" key={tech}>
+                  <h3 className="pb-1 text-center text-lg">{tech} &#9989;</h3>
                 </div>
               );
             })}
           </div>
-
-
         </div>
-
-
-
-
       </div>
     </div>
   );
 };
 
-export default ProjectModal;
+export default ProjectModalTest;
