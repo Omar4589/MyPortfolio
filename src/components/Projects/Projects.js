@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { displayProjects } from "./projectObjects";
 import { projectObjects } from "./projectObjects";
-import ProjectModalTest from "../ProjectModal/modaltest";
+import ProjectModal from "../ProjectModal/ProjectModal";
 
 const Projects = () => {
   const { themeState } = useThemeContext();
@@ -49,7 +49,7 @@ const Projects = () => {
 
       
       {isModalOpen && (
-        <ProjectModalTest
+        <ProjectModal
           project={selectedProject}
           onClose={() => setIsModalOpen(false)}
         />
