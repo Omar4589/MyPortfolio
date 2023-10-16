@@ -18,33 +18,31 @@ const ProjectModal = ({ project, onClose }) => {
     };
   }, []);
 
-
-
   const underlineWords = (string, wordList) => {
-    const words = string.split(' ');
+    const words = string.split(" ");
     const elements = [];
-  
+
     words.forEach((word, index) => {
-      if (wordList.includes(word) || wordList.includes(word.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, ''))) {
+      if (
+        wordList.includes(word) ||
+        wordList.includes(word.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, ""))
+      ) {
         elements.push(
-          <span key={index} style={{ textDecoration: 'underline' }}>
+          <span key={index} style={{ textDecoration: "underline" }}>
             {word}
           </span>
         );
       } else {
         elements.push(word);
       }
-  
+
       if (index < words.length - 1) {
-        elements.push(' ');
+        elements.push(" ");
       }
     });
-  
+
     return elements;
   };
-  
-  
-
 
   return (
     <div
@@ -63,8 +61,6 @@ const ProjectModal = ({ project, onClose }) => {
       </button>
 
       <div id="project" className="mt-10 lg:mx-7 xl:mt-5 xl:mx-14 ">
-
-
         <div className="md:flex md:mx-10 md:pt-5 xl:px-20">
           <div
             id="project-image"
@@ -78,7 +74,10 @@ const ProjectModal = ({ project, onClose }) => {
             />
           </div>
 
-          <div id="project-title" className="w-full  px-7 lg:pt-5 lg:pl-10  xl:my-auto">
+          <div
+            id="project-title"
+            className="w-full  px-7 lg:pt-5 lg:pl-10  xl:my-auto"
+          >
             <h1
               id="project-name"
               className="text-4xl border-b-4 flex justify-between pl-2 pr-4 pt-10 md:pt-0 md:pb-1"
@@ -106,25 +105,49 @@ const ProjectModal = ({ project, onClose }) => {
             </a>
           </div>
         </div>
-        
 
-         <div id="rolesandresponsibilities" className="w-full  px-7 lg:pt-6 xl:px-14">
-            <h1 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
-              Role & Responsibilities
-            </h1>
+        <div
+          id="rolesandresponsibilities"
+          className="w-full  px-7 lg:pt-6 xl:px-14"
+        >
+          <h1 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
+            Role & Responsibilities
+          </h1>
 
-            <div className="grid grid-cols-1  py-3 md:text-xl md:grid-cols-1 ">
-              {project.roleAndResponsibilities.map((r) => {
-                return (
-                  <div className="mb-2" key={r}>
-                    <h3 className="pb-1 text-left text-lg lg:text-2xl xl:text-xl">
-                    &bull; {underlineWords(r, ['Node.js', 'ExpressJS', "React's", "context", "API", "GraphQL", "JWT", "Cloudinary", "Material-UI", "Tailwind", "CSS", "RESTful", "Nodemailer", "EmailJS", "Express", "Session", "HandlebarJS", "MySQL", "Sequelize", "HandlebarsJS"])}
-                    </h3>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="grid grid-cols-1  py-3 md:text-xl md:grid-cols-1 ">
+            {project.roleAndResponsibilities.map((r) => {
+              return (
+                <div className="mb-2" key={r}>
+                  <h3 className="pb-1 text-left text-lg lg:text-2xl xl:text-xl">
+                    &bull;{" "}
+                    {underlineWords(r, [
+                      "Node.js",
+                      "ExpressJS",
+                      "React's",
+                      "context",
+                      "API",
+                      "GraphQL",
+                      "JWT",
+                      "Cloudinary",
+                      "Material-UI",
+                      "Tailwind",
+                      "CSS",
+                      "RESTful",
+                      "Nodemailer",
+                      "EmailJS",
+                      "Express",
+                      "Session",
+                      "HandlebarJS",
+                      "MySQL",
+                      "Sequelize",
+                      "HandlebarsJS",
+                    ])}
+                  </h3>
+                </div>
+              );
+            })}
           </div>
+        </div>
 
         <div id="technologies" className="px-7  lg:mx-3 ">
           {" "}
@@ -144,14 +167,23 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         </div>
 
-<div id="screenshots" className="grid grid-cols-1 xl:grid-cols-3">
-  {project.screenshots.map((screenshot) => {
-    return ( <img src={screenshot} alt="thumbnail" />
-      
-    )
-  })}
-</div>
-
+        <div id="screenshots" className="px-7  lg:mx-3 ">
+        <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
+          Screenshots
+        </h2>
+        <div id="screenshots" className="grid grid-cols-1 py-5 md:text-xl xl:grid-cols-4 xl:gap-x-40 xl:pt-8">
+          {project.screenshots.map((screenshot) => {
+            return (
+              <div className="mx-auto pb-10 px-10 xl:px-0">
+                <img src={screenshot.img} alt="thumbnail" width="100%" />
+                <h4 className="text-center pt-1 mx-auto">
+                  {screenshot.caption}
+                </h4>
+              </div>
+            );
+          })}
+        </div>
+        </div>
       </div>
     </div>
   );

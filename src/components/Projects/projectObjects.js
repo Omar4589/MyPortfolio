@@ -17,6 +17,22 @@ import Settings from "../../assets/mealMappr/Settings.png";
 import SignUp from "../../assets/mealMappr/SignUp.png";
 import Welcome from "../../assets/mealMappr/Welcome.png";
 
+import yardgems1 from "../../assets/yardGemsScreenshots/1.png";
+import yardgems2 from "../../assets/yardGemsScreenshots/2.png";
+import yardgems3 from "../../assets/yardGemsScreenshots/3.png";
+import yardgems4 from "../../assets/yardGemsScreenshots/4.png";
+import yardgems5 from "../../assets/yardGemsScreenshots/5.png";
+import yardgems6 from "../../assets/yardGemsScreenshots/6.png";
+import yardgems7 from "../../assets/yardGemsScreenshots/7.png";
+import yardgems8 from "../../assets/yardGemsScreenshots/8.png";
+import yardgems9 from "../../assets/yardGemsScreenshots/9.png";
+import yardgems10 from "../../assets/yardGemsScreenshots/10.png";
+import yardgems11 from "../../assets/yardGemsScreenshots/11.png";
+import yardgems12 from "../../assets/yardGemsScreenshots/12.png";
+import yardgems13 from "../../assets/yardGemsScreenshots/13.png";
+import yardgems14 from "../../assets/yardGemsScreenshots/14.png";
+import yardgems15 from "../../assets/yardGemsScreenshots/15.png";
+
 export const projectObjects = [
   {
     name: "YardGems",
@@ -83,14 +99,78 @@ export const projectObjects = [
       },
     ],
     screenshots: [
-      Welcome,
-      SignUp,
-      LogIn,
-      Home,
-      MyRecipes,
-      Settings,
-      AboutUs,
-      ContactUs,
+      {
+        img: yardgems1,
+        caption: "Launch Screen",
+      },
+
+      {
+        img: yardgems2,
+        caption: "Home - Map View",
+      },
+
+      {
+        img: yardgems3,
+        caption: "Map View - Info Window",
+      },
+
+      {
+        img: yardgems4,
+        caption: " Listing Modal",
+      },
+
+      {
+        img: yardgems5,
+        caption: "Home - List View",
+      },
+
+      {
+        img: yardgems6,
+        caption: "Sign Up Page",
+      },
+
+      {
+        img: yardgems7,
+        caption: "Sign In Page",
+      },
+
+      {
+        img: yardgems8,
+        caption: "My Listings",
+      },
+
+      {
+        img: yardgems9,
+        caption: "Create Listing Modal",
+      },
+
+      {
+        img: yardgems10,
+        caption: "Saved Listings",
+      },
+      {
+        img: yardgems11,
+        caption: "Menu Drawer",
+      },
+
+      {
+        img: yardgems12,
+        caption: "My Account",
+      },
+
+      {
+        img: yardgems13,
+        caption: "Contact Us",
+      },
+      {
+        img: yardgems14,
+        caption: "About Us",
+      },
+
+      {
+        img: yardgems15,
+        caption: "FAQ",
+      },
     ],
     github: "https://github.com/Omar4589/YardGems",
     url: "https://yardgems-15b0faee737f.herokuapp.com/",
@@ -238,7 +318,7 @@ export const displayProjects = (projects, onProjectClick) => {
     <div
       id="project"
       key={project.name}
-      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-3 mx-3 md:w-3/4 md:mx-auto md:mb-5 lg:w-10/12 lg:h-72 lg:mb-10 xl:w-11/12"
+      className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-3 mx-3 md:w-3/4 md:mx-auto md:mb-5 lg:w-10/12 lg:h-72 lg:mb-10 xl:w-11/12 cursor-pointer"
       onClick={() => onProjectClick(project)}
     >
       <h1 className="absolute mt-5 ml-5 text-2xl text-white text-shadow-lg lg:text-3xl">
