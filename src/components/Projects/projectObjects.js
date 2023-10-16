@@ -8,6 +8,15 @@ import ygLogo from "../../assets/images/logo1.PNG";
 import ygAppName from "../../assets/images/YGappName.png";
 import greenYardGems from "../../assets/images/greenYardGems.PNG";
 
+import AboutUs from "../../assets/mealMappr/AboutUs.png";
+import ContactUs from "../../assets/mealMappr/ContactUs.png";
+import Home from "../../assets/mealMappr/Home.png";
+import LogIn from "../../assets/mealMappr/LogIn.png";
+import MyRecipes from "../../assets/mealMappr/MyRecipes.png";
+import Settings from "../../assets/mealMappr/Settings.png";
+import SignUp from "../../assets/mealMappr/SignUp.png";
+import Welcome from "../../assets/mealMappr/Welcome.png";
+
 export const projectObjects = [
   {
     name: "YardGems",
@@ -31,11 +40,10 @@ export const projectObjects = [
       "Dotenv",
       "Dayjs",
       "Material-UI",
-      "Reach Combobox",
       "Emailjs",
       "Cloudinary",
       "Google Maps SDK",
-      "Use Places Auto Complete",
+      "Use Places Auto Complete Library",
     ],
     roleAndResponsibilities: [
       "Project Leader / Developer",
@@ -73,6 +81,16 @@ export const projectObjects = [
         featureDescription:
           "Facilitating easy image uploads using Multer and Cloudinary, enhancing the visual appeal of listings.",
       },
+    ],
+    screenshots: [
+      Welcome,
+      SignUp,
+      LogIn,
+      Home,
+      MyRecipes,
+      Settings,
+      AboutUs,
+      ContactUs,
     ],
     github: "https://github.com/Omar4589/YardGems",
     url: "https://yardgems-15b0faee737f.herokuapp.com/",
@@ -128,6 +146,16 @@ export const projectObjects = [
         featureDescription:
           "Powered by a Node.js and Express server backend, coupled with MySQL for reliable and efficient data management.",
       },
+    ],
+    screenshots: [
+      Welcome,
+      SignUp,
+      LogIn,
+      Home,
+      MyRecipes,
+      Settings,
+      AboutUs,
+      ContactUs,
     ],
     github: "https://github.com/Rolyat512/MealMappr",
     url: "https://mealmappr.herokuapp.com/",
@@ -189,6 +217,16 @@ export const projectObjects = [
         featureDescription:
           "Built with a Node.js and Express server backend, integrated with MySQL for reliable and secure data management.",
       },
+    ],
+    screenshots: [
+      Welcome,
+      SignUp,
+      LogIn,
+      Home,
+      MyRecipes,
+      Settings,
+      AboutUs,
+      ContactUs,
     ],
     github: "https://github.com/Omar4589/Escape-Me",
     url: "https://escape-me.herokuapp.com/",

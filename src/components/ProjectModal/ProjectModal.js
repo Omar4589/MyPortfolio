@@ -144,7 +144,13 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         </div>
 
-
+<div id="screenshots" className="grid grid-cols-1 xl:grid-cols-3">
+  {project.screenshots.map((screenshot) => {
+    return ( <img src={screenshot} alt="thumbnail" />
+      
+    )
+  })}
+</div>
 
       </div>
     </div>
