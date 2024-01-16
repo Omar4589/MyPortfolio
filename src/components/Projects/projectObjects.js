@@ -8,11 +8,11 @@ import ygLogo from "../../assets/images/logo1.PNG";
 import ygAppName from "../../assets/images/YGappName.png";
 import greenYardGems from "../../assets/images/greenYardGems.PNG";
 
-import AboutUs from "../../assets/mealMappr/AboutUs.png";
+import MyMeal from "../../assets/mealMappr/MyMeal.png";
 import ContactUs from "../../assets/mealMappr/ContactUs.png";
 import Home from "../../assets/mealMappr/Home.png";
 import LogIn from "../../assets/mealMappr/LogIn.png";
-import MyRecipes from "../../assets/mealMappr/MyRecipes.png";
+import MyRecipes from "../../assets/mealMappr/Recipes.png";
 import Settings from "../../assets/mealMappr/Settings.png";
 import SignUp from "../../assets/mealMappr/SignUp.png";
 import Welcome from "../../assets/mealMappr/Welcome.png";
@@ -247,6 +247,10 @@ export const projectObjects = [
         caption: "Home Screen",
       },
       {
+        img: MyMeal,
+        caption: "Meal Input Screen",
+      },
+      {
         img: MyRecipes,
         caption: "MyRecipes Screen",
       },
@@ -254,10 +258,6 @@ export const projectObjects = [
       {
         img: Settings,
         caption: "Settings Screen",
-      },
-      {
-        img: AboutUs,
-        caption: "AboutUs Screen",
       },
 
       {
@@ -357,10 +357,6 @@ export const projectObjects = [
       {
         img: Settings,
         caption: "Settings Screen",
-      },
-      {
-        img: AboutUs,
-        caption: "AboutUs Screen",
       },
 
       {
