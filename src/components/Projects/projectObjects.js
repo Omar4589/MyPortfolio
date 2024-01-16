@@ -8,11 +8,11 @@ import ygLogo from "../../assets/images/logo1.PNG";
 import ygAppName from "../../assets/images/YGappName.png";
 import greenYardGems from "../../assets/images/greenYardGems.PNG";
 
-import AboutUs from "../../assets/mealMappr/AboutUs.png";
+import MyMeal from "../../assets/mealMappr/MyMeal.png";
 import ContactUs from "../../assets/mealMappr/ContactUs.png";
 import Home from "../../assets/mealMappr/Home.png";
 import LogIn from "../../assets/mealMappr/LogIn.png";
-import MyRecipes from "../../assets/mealMappr/MyRecipes.png";
+import MyRecipes from "../../assets/mealMappr/Recipes.png";
 import Settings from "../../assets/mealMappr/Settings.png";
 import SignUp from "../../assets/mealMappr/SignUp.png";
 import Welcome from "../../assets/mealMappr/Welcome.png";
@@ -32,6 +32,17 @@ import yardgems12 from "../../assets/yardGemsScreenshots/12.png";
 import yardgems13 from "../../assets/yardGemsScreenshots/13.png";
 import yardgems14 from "../../assets/yardGemsScreenshots/14.png";
 import yardgems15 from "../../assets/yardGemsScreenshots/15.png";
+
+import welcomepage from "../../assets/escapeMe/Welcome.png";
+import confirmationpage from "../../assets/escapeMe/Confirmation.png";
+import Contactuspage from "../../assets/escapeMe/ContactUs.png";
+import escaperoomspage from "../../assets/escapeMe/EscapeRooms.png";
+import myaccountpage from "../../assets/escapeMe/MyAccount.png";
+import mybookingspage from "../../assets/escapeMe/MyBookings.png";
+import signuppage from "../../assets/escapeMe/SignUp.png";
+import loginpage from "../../assets/escapeMe/LogIn.png";
+import userhomepage from "../../assets/escapeMe/UserHome.png";
+import bookingpage from "../../assets/escapeMe/bookingpage.png";
 
 export const projectObjects = [
   {
@@ -58,7 +69,7 @@ export const projectObjects = [
       "Material-UI",
       "Emailjs",
       "Cloudinary",
-      "Google Maps SDK",
+      "Google Maps",
       "Use Places Auto Complete Library",
     ],
     roleAndResponsibilities: [
@@ -228,14 +239,42 @@ export const projectObjects = [
       },
     ],
     screenshots: [
-      Welcome,
-      SignUp,
-      LogIn,
-      Home,
-      MyRecipes,
-      Settings,
-      AboutUs,
-      ContactUs,
+      {
+        img: Welcome,
+        caption: "Welcome Screen",
+      },
+
+      {
+        img: SignUp,
+        caption: "SignUp Screen",
+      },
+      {
+        img: LogIn,
+        caption: "LogIn Screen",
+      },
+
+      {
+        img: Home,
+        caption: "Home Screen",
+      },
+      {
+        img: MyMeal,
+        caption: "Meal Input Screen",
+      },
+      {
+        img: MyRecipes,
+        caption: "MyRecipes Screen",
+      },
+
+      {
+        img: Settings,
+        caption: "Settings Screen",
+      },
+
+      {
+        img: ContactUs,
+        caption: "ContactUs Screen",
+      },
     ],
     github: "https://github.com/Rolyat512/MealMappr",
     url: "https://mealmappr.herokuapp.com/",
@@ -246,30 +285,34 @@ export const projectObjects = [
     modalImage: themes,
     myRole: "Sole Developer",
     description:
-      "A customizable booking system initially designed for escape room businesses. Features an admin portal for management of bookings, users, and escape room details. Scalable for other business types.",
+      "A customizable booking system initially designed for escape room businesses. Scalable for other business types.",
     madeWith: [],
     roleAndResponsibilities: [
       "Sole Developer",
       "Responsible for the end-to-end development.",
       "Set up the server architecture using Node.js and ExpressJS.",
-      "Implemented Express Session middleware to ensure secure authentication and authorization.",
-      "Utilized HandlebarsJS for efficient rendering of views.",
+      "Utilized React's context API for efficient global state management.",
+      "Integrated GraphQL API, enhancing data querying and mutation processes.",
+      "Implemented JWT to ensure secure user authentication.",
       "Established a MySQL database using Sequelize ORM to manage data storage.",
-      "Crafted RESTful API endpoints to facilitate CRUD operations.",
       "Styled application using Tailwind CSS, focusing on a user-friendly interface.",
     ],
     technologies: [
       "Node.js",
       "Express",
+      "React",
       "MySQL",
       "Sequelize",
-      "Handlebars.js",
       "Tailwind CSS",
-      "Express-session",
+      "Apollo Server",
+      "Apollo Client",
+      "Graphql",
+      "Jsonwebtoken",
       "Bcrypt",
-      "jQuery",
       "Dotenv",
       "Dayjs",
+      "Emailjs",
+      "Google Maps",
     ],
     features: [
       {
@@ -299,14 +342,49 @@ export const projectObjects = [
       },
     ],
     screenshots: [
-      Welcome,
-      SignUp,
-      LogIn,
-      Home,
-      MyRecipes,
-      Settings,
-      AboutUs,
-      ContactUs,
+      {
+        img: welcomepage,
+        caption: "Welcome Screen",
+      },
+
+      {
+        img: signuppage,
+        caption: "SignUp Screen",
+      },
+      {
+        img: loginpage,
+        caption: "LogIn Screen",
+      },
+      {
+        img: escaperoomspage,
+        caption: "Escape Rooms Screen",
+      },
+
+      {
+        img: userhomepage,
+        caption: "User Home Screen",
+      },
+      {
+        img: bookingpage,
+        caption: "Booking Screen",
+      },
+      {
+        img: confirmationpage,
+        caption: "Booking Confirmation Screen",
+      },
+      {
+        img: mybookingspage,
+        caption: "My Bookings Screen",
+      },
+      {
+        img: myaccountpage,
+        caption: "My Account Screen",
+      },
+
+      {
+        img: Contactuspage,
+        caption: "Contact Us Screen",
+      },
     ],
     github: "https://github.com/Omar4589/Escape-Me",
     url: "https://escape-me.herokuapp.com/",
