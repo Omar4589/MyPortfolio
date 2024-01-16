@@ -58,7 +58,7 @@ export const projectObjects = [
       "Material-UI",
       "Emailjs",
       "Cloudinary",
-      "Google Maps SDK",
+      "Google Maps",
       "Use Places Auto Complete Library",
     ],
     roleAndResponsibilities: [
@@ -228,14 +228,42 @@ export const projectObjects = [
       },
     ],
     screenshots: [
-      Welcome,
-      SignUp,
-      LogIn,
-      Home,
-      MyRecipes,
-      Settings,
-      AboutUs,
-      ContactUs,
+      {
+        img: Welcome,
+        caption: "Welcome Screen",
+      },
+
+      {
+        img: SignUp,
+        caption: "SignUp Screen",
+      },
+      {
+        img: LogIn,
+        caption: "LogIn Screen",
+      },
+
+      {
+        img: Home,
+        caption: "Home Screen",
+      },
+      {
+        img: MyRecipes,
+        caption: "MyRecipes Screen",
+      },
+
+      {
+        img: Settings,
+        caption: "Settings Screen",
+      },
+      {
+        img: AboutUs,
+        caption: "AboutUs Screen",
+      },
+
+      {
+        img: ContactUs,
+        caption: "ContactUs Screen",
+      },
     ],
     github: "https://github.com/Rolyat512/MealMappr",
     url: "https://mealmappr.herokuapp.com/",
@@ -246,30 +274,34 @@ export const projectObjects = [
     modalImage: themes,
     myRole: "Sole Developer",
     description:
-      "A customizable booking system initially designed for escape room businesses. Features an admin portal for management of bookings, users, and escape room details. Scalable for other business types.",
+      "A customizable booking system initially designed for escape room businesses. Scalable for other business types.",
     madeWith: [],
     roleAndResponsibilities: [
       "Sole Developer",
       "Responsible for the end-to-end development.",
       "Set up the server architecture using Node.js and ExpressJS.",
-      "Implemented Express Session middleware to ensure secure authentication and authorization.",
-      "Utilized HandlebarsJS for efficient rendering of views.",
+      "Utilized React's context API for efficient global state management.",
+      "Integrated GraphQL API, enhancing data querying and mutation processes.",
+      "Implemented JWT to ensure secure user authentication.",
       "Established a MySQL database using Sequelize ORM to manage data storage.",
-      "Crafted RESTful API endpoints to facilitate CRUD operations.",
       "Styled application using Tailwind CSS, focusing on a user-friendly interface.",
     ],
     technologies: [
       "Node.js",
       "Express",
+      "React",
       "MySQL",
       "Sequelize",
-      "Handlebars.js",
       "Tailwind CSS",
-      "Express-session",
+      "Apollo Server",
+      "Apollo Client",
+      "Graphql",
+      "Jsonwebtoken",
       "Bcrypt",
-      "jQuery",
       "Dotenv",
       "Dayjs",
+      "Emailjs",
+      "Google Maps",
     ],
     features: [
       {
@@ -299,14 +331,42 @@ export const projectObjects = [
       },
     ],
     screenshots: [
-      Welcome,
-      SignUp,
-      LogIn,
-      Home,
-      MyRecipes,
-      Settings,
-      AboutUs,
-      ContactUs,
+      {
+        img: Welcome,
+        caption: "Welcome Screen",
+      },
+
+      {
+        img: SignUp,
+        caption: "SignUp Screen",
+      },
+      {
+        img: LogIn,
+        caption: "LogIn Screen",
+      },
+
+      {
+        img: Home,
+        caption: "Home Screen",
+      },
+      {
+        img: MyRecipes,
+        caption: "MyRecipes Screen",
+      },
+
+      {
+        img: Settings,
+        caption: "Settings Screen",
+      },
+      {
+        img: AboutUs,
+        caption: "AboutUs Screen",
+      },
+
+      {
+        img: ContactUs,
+        caption: "ContactUs Screen",
+      },
     ],
     github: "https://github.com/Omar4589/Escape-Me",
     url: "https://escape-me.herokuapp.com/",
