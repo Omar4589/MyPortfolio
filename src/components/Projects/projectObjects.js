@@ -33,6 +33,17 @@ import yardgems13 from "../../assets/yardGemsScreenshots/13.png";
 import yardgems14 from "../../assets/yardGemsScreenshots/14.png";
 import yardgems15 from "../../assets/yardGemsScreenshots/15.png";
 
+import welcomepage from "../../assets/escapeMe/Welcome.png";
+import confirmationpage from "../../assets/escapeMe/Confirmation.png";
+import Contactuspage from "../../assets/escapeMe/ContactUs.png";
+import escaperoomspage from "../../assets/escapeMe/EscapeRooms.png";
+import myaccountpage from "../../assets/escapeMe/MyAccount.png";
+import mybookingspage from "../../assets/escapeMe/MyBookings.png";
+import signuppage from "../../assets/escapeMe/SignUp.png";
+import loginpage from "../../assets/escapeMe/LogIn.png";
+import userhomepage from "../../assets/escapeMe/UserHome.png";
+import bookingpage from "../../assets/escapeMe/bookingpage.png";
+
 export const projectObjects = [
   {
     name: "YardGems",
@@ -332,36 +343,47 @@ export const projectObjects = [
     ],
     screenshots: [
       {
-        img: Welcome,
+        img: welcomepage,
         caption: "Welcome Screen",
       },
 
       {
-        img: SignUp,
+        img: signuppage,
         caption: "SignUp Screen",
       },
       {
-        img: LogIn,
+        img: loginpage,
         caption: "LogIn Screen",
       },
-
       {
-        img: Home,
-        caption: "Home Screen",
-      },
-      {
-        img: MyRecipes,
-        caption: "MyRecipes Screen",
+        img: escaperoomspage,
+        caption: "Escape Rooms Screen",
       },
 
       {
-        img: Settings,
-        caption: "Settings Screen",
+        img: userhomepage,
+        caption: "User Home Screen",
+      },
+      {
+        img: bookingpage,
+        caption: "Booking Screen",
+      },
+      {
+        img: confirmationpage,
+        caption: "Booking Confirmation Screen",
+      },
+      {
+        img: mybookingspage,
+        caption: "My Bookings Screen",
+      },
+      {
+        img: myaccountpage,
+        caption: "My Account Screen",
       },
 
       {
-        img: ContactUs,
-        caption: "ContactUs Screen",
+        img: Contactuspage,
+        caption: "Contact Us Screen",
       },
     ],
     github: "https://github.com/Omar4589/Escape-Me",
