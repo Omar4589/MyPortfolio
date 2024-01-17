@@ -386,8 +386,8 @@ export const projectObjects = [
         caption: "Contact Us Screen",
       },
     ],
-    github: "https://github.com/Omar4589/Escape-Me",
-    url: "https://escape-me.herokuapp.com/",
+    github: "https://github.com/Omar4589/EscapeMe",
+    url: "https://escapeme-62de0a91bfcf.herokuapp.com/",
   },
 ];
 
