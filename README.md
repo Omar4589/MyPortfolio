@@ -46,7 +46,3 @@ https://omar4589.github.io/MyPortfolio/
 ## Screenshots <a id="Screenshots"></a>
 
 <img src="https://res.cloudinary.com/yardgems/image/upload/v1705474204/MyPortfolio/hw9fxixpwmmsizn4kbf6.png" alt="Home Screen - Light" width="450"  /> 
-<br>
-<img src="https://res.cloudinary.com/yardgems/image/upload/v1705474204/MyPortfolio/u0dchk7fttatxqgdxx23.png" alt="Home Screen - Dark width="450"  />
-
-
