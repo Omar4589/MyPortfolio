@@ -7,8 +7,11 @@ const MyProjects = ({ children }) => {
   return (
     <div
       id="my-projects"
-      style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 md:px-10 xl:px-20 pt-60"
+      className={`${
+        themeState.name === "light"
+          ? "bg-slate-100 text-zinc-950"
+          : "bg-zinc-950 text-slate-100"
+      }  w-full min-h-screen px-5 md:px-10 xl:px-20 pt-60"`}
     >
       <Projects />
     </div>

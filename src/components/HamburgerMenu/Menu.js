@@ -8,7 +8,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
     <div
       id="menu-container"
       style={{ pointerEvents: isChecked ? "auto" : "none" }}
-      className=" absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
+      className=" absolute top-0 left-1/2 transform -translate-x-custom -translate-y-1/2 transition-transform"
     >
       <div
         id="menu-background"
@@ -17,7 +17,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
       ></div>
       <div
         id="menu-links"
-        className="text-5xl lg:text-6xl text-left relative top-40 lg:top-96 xl:top-60 flex flex-col space-y-5 items-center justify-center  text-white"
+        className="text-5xl lg:text-6xl text-left relative  top-40 lg:top-96 xl:top-60 flex flex-col space-y-5 items-center justify-center  text-white"
       >
         <a
           onClick={() => {

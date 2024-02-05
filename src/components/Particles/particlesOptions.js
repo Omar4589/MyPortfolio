@@ -30,6 +30,9 @@ import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
 import herokuIcon from "../../assets/svgs/heroku.svg";
 import herokuIconDark from "../../assets/svgs/herokublack.svg";
 
+import computerBug from "../../assets/svgs/computerBug.png";
+import fireFly from "../../assets/svgs/firefly.png";
+
 export const desktopParticlesOptions = {
   autoPlay: true,
 
@@ -248,51 +251,56 @@ export const desktopParticlesOptions = {
           width: 100,
           height: 100,
         },
-        {
-          src: handlebarsJS,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: handlebarsJS,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: npmIcon,
           width: 100,
           height: 100,
         },
-        {
-          src: mongooseIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: mongooseIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
 
+        // {
+        //   src: expressIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
-          src: expressIcon,
+          src: herokuIconDark,
           width: 100,
           height: 100,
         },
-        {
-          src: herokuIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: computerBug,
+        //   width: 385,
+        //   height: 251,
+        // },
       ],
     },
     size: {
       random: {
         enable: true,
         minimumValue: 10,
-        maxValue: 25,
+        maxValue: 40,
       },
     },
 
     lineLinked: {
-      blink: false,
+      blink: true,
       color: {
         value: "#000000",
       },
       consent: true,
-      distance: 100,
+      distance: 500,
       enable: false,
-      frequency: 10,
+      frequency: 1,
       opacity: 0.4,
       width: 1,
     },
@@ -519,27 +527,27 @@ export const mobileParticlesOptions = {
           width: 100,
           height: 100,
         },
-        {
-          src: handlebarsJS,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: handlebarsJS,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: npmIcon,
           width: 100,
           height: 100,
         },
-        {
-          src: mongooseIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: mongooseIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
 
-        {
-          src: expressIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: expressIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: herokuIcon,
           width: 100,
@@ -791,27 +799,27 @@ export const mobileParticlesOptionsDarkTheme = {
           width: 100,
           height: 100,
         },
-        {
-          src: handlebarsJS,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: handlebarsJS,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: npmIcon,
           width: 100,
           height: 100,
         },
-        {
-          src: mongooseIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: mongooseIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
 
-        {
-          src: expressIconWhite,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: expressIconWhite,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: herokuIconDark,
           width: 100,
@@ -942,7 +950,7 @@ export const desktopParticlesOptionsDarkTheme = {
       },
 
       repulse: {
-        distance: 200,
+        distance: 100,
         factor: 200,
         speed: 1,
         maxSpeed: 50,
@@ -953,7 +961,7 @@ export const desktopParticlesOptionsDarkTheme = {
   particles: {
     collisions: {
       enable: true,
-      mode: "bounce",
+      mode: "repulse",
     },
     color: {
       value: "#000000",
@@ -974,7 +982,7 @@ export const desktopParticlesOptionsDarkTheme = {
       enable: true,
       random: false,
       size: false,
-      speed: 0.8,
+      speed: 0.5,
       outMode: "bounce",
     },
     number: {
@@ -986,7 +994,7 @@ export const desktopParticlesOptionsDarkTheme = {
       random: {
         enable: true,
         minimumValue: 0.1,
-        maxValue: 0.9,
+        maxValue: 100,
       },
       value: 0.6,
       animation: {
@@ -1063,39 +1071,44 @@ export const desktopParticlesOptionsDarkTheme = {
           width: 100,
           height: 100,
         },
-        {
-          src: handlebarsJS,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: handlebarsJS,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
           src: npmIcon,
           width: 100,
           height: 100,
         },
-        {
-          src: mongooseIcon,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //   src: mongooseIcon,
+        //   width: 100,
+        //   height: 100,
+        // },
 
+        // {
+        //   src: expressIconWhite,
+        //   width: 100,
+        //   height: 100,
+        // },
         {
-          src: expressIconWhite,
+          src: herokuIcon,
           width: 100,
           height: 100,
         },
-        {
-          src: herokuIconDark,
-          width: 100,
-          height: 100,
-        },
+        // {
+        //     src: fireFly,
+        //     width: 100,
+        //     height: 100,
+        //   },
       ],
     },
     size: {
       random: {
         enable: true,
         minimumValue: 10,
-        maxValue: 25,
+        maxValue: 30,
       },
     },
 

@@ -6,8 +6,11 @@ const AboutMePage = ({ children }) => {
   return (
     <div
       id="about-me-page"
-      style={{ background: themeState.background }}
-      className="w-full min-h-screen px-6 pt-60 pb-10 md:px-10 xl:px-20"
+      className={`${
+        themeState.name === "light"
+          ? "bg-slate-100 text-zinc-950"
+          : "bg-zinc-950 text-slate-100"
+      }  w-full min-h-screen px-6 pt-60 pb-10 md:px-10 xl:px-20"`}
     >
       <AboutMe />
     </div>

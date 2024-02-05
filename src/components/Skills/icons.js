@@ -19,6 +19,7 @@ import { urlString } from "../../assets/svgs/sequelize.js";
 import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
 import herokuIcon from "../../assets/svgs/heroku.svg";
 import herokuIconDark from "../../assets/svgs/herokublack.svg";
+import materialUIIcon from "../../assets/svgs/materialUI.svg";
 export const frontEndIconsLanguages = [
   {
     name: "HTML",
@@ -34,18 +35,30 @@ export const frontEndIconsLanguages = [
   },
 ];
 
-export const frontEndIconsLibrariesFrameworksLightTheme = [
+export const librariesFrameworksLightTheme = [
   {
     name: "React",
     icon: reactIcon,
   },
   {
-    name: "Apollo Client",
+    name: "Tailwind CSS",
+    icon: tailwindIcon,
+  },
+  {
+    name: "Material UI",
+    icon: materialUIIcon,
+  },
+  {
+    name: "Apollo Client/Server",
     icon: apolloIcon,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwindIcon,
+    name: "GraphQL",
+    icon: graphqlIcon,
+  },
+  {
+    name: "Express JS",
+    icon: expressIcon,
   },
   {
     name: "Handlebars JS",
@@ -53,18 +66,32 @@ export const frontEndIconsLibrariesFrameworksLightTheme = [
   },
 ];
 
-export const frontEndIconsLibrariesFrameworksDarkTheme = [
+export const librariesFrameworksDarkTheme = [
   {
     name: "React",
     icon: reactIcon,
   },
-  {
-    name: "Apollo Client",
-    icon: apolloWhiteIcon,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwindIcon,
+  },
+  {
+    name: "Material UI",
+    icon: materialUIIcon,
+  },
+  {
+    name: "Apollo Client/Servert",
+    icon: apolloWhiteIcon,
+  },
+  {
+    name: "GraphQL",
+    icon: graphqlIcon,
+  },
+
+  {
+    name: "Express JS",
+    icon: expressIcon,
   },
   {
     name: "Handlebars JS",
@@ -76,36 +103,6 @@ export const backEndIconsLanguages = [
   {
     name: "JavaScript",
     icon: jsSquareIcon,
-  },
-];
-
-export const backEndIconsLibrariesFrameworksLightTheme = [
-  {
-    name: "Express JS",
-    icon: expressIcon,
-  },
-  {
-    name: "Apollo Server",
-    icon: apolloIcon,
-  },
-  {
-    name: "GraphQL",
-    icon: graphqlIcon,
-  },
-];
-
-export const backEndIconsLibrariesFrameworksDarkTheme = [
-  {
-    name: "Express JS",
-    icon: expressIcon,
-  },
-  {
-    name: "Apollo Server",
-    icon: apolloWhiteIcon,
-  },
-  {
-    name: "GraphQL",
-    icon: graphqlIcon,
   },
 ];
 
@@ -176,12 +173,15 @@ export const otherIconsDark = [
 
 export const displayIcons = (icons) => {
   return icons.map((icon) => (
-    <div className="mt-3 mb-1  justify-center items-center   " key={icon.name}>
+    <div
+      className="flex flex-col  justify-center items-center   "
+      key={icon.name}
+    >
       <img
         className={
           icon.name === "Mongoose ODM"
             ? "h-10 w-16 mx-auto"
-            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:w-10 mx-auto"
+            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 "
         }
         src={icon.icon}
         alt={`${icon.name} icon`}

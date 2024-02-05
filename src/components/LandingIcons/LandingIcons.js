@@ -44,14 +44,18 @@ const LandingIcons = () => {
   }, [themeState]);
 
   return (
-    <div>
-      <div id="landing-icons" style={{ zIndex: 1 }} className="flex">
+    <div className="flex flex-col items-center">
+      <div
+        id="landing-icons"
+        style={{ zIndex: 1 }}
+        className="flex justify-around space-x-6"
+      >
         {icons.map((icon, index) => (
           <a
             key={icon + index}
             href={icon.url}
             alt="icon url"
-            className="z-10 h-8 w-8 mt-3 mr-3 flex justify-center md:h-9 md:w-9 md:mr-5 lg:mr-10 lg:w-11 lg:h-11"
+            className="z-10 h-8 w-8 mt-3 flex justify-center md:h-9 md:w-9 "
           >
             <img src={icon.name} alt="icon" className="h-full" />
           </a>
@@ -59,13 +63,12 @@ const LandingIcons = () => {
       </div>
       <a
         href={resume}
-        onClick={() => {
-          console.log("you clicked the resume button");
-        }}
-        style={{ borderColor: themeState.text }}
-        className="px-3 top-3 border-2 rounded-full relative z-10 md:px-6 md:py-1 md:top-5 md:text-lg lg:text-2xl lg:top-8"
+        className={`px-3 top-3 rounded-full ring ${
+          themeState.name === "light" ? "ring-zinc-950" : "ring-slate-100"
+        } relative z-10 md:px- md:py- md:top-5 md:text-lg lg:text-1xl flex items-center space-x-1`}
       >
-        Resume
+        <span>Resume</span>
+        <ion-icon name="paper"></ion-icon>
       </a>
     </div>
   );

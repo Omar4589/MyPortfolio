@@ -16,7 +16,7 @@ const Hamburger = () => {
       <input
         id="hamburger-checkbox"
         aria-labelledby="menu"
-        className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20 md:right-8 xl:right-20"
+        className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20 md:right-8 xl:right-0"
         type="checkbox"
         aria-label="menu"
         checked={isChecked} 
@@ -24,7 +24,7 @@ const Hamburger = () => {
       />
       <div
         id="hamburger-background"
-        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center z-10 md:right-8 xl:right-20"
+        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center z-10 md:right-8 xl:right-0"
       >
         <div
           id="hamburger-lines"

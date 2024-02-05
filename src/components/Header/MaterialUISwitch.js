@@ -5,7 +5,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   //whole switch container
   width: 62,
   height: 50,
-  padding: 7,
+  padding: 0,
 
   //whole circle too, silhouette
   "& .MuiSwitch-switchBase": {
@@ -34,7 +34,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
   //background, full circle
   "& .MuiSwitch-thumb": {
-    backgroundColor: theme.palette.mode === "dark" ? "#003892" : "transparent",
+    backgroundColor: theme.palette.mode === "dark" ? "#09090b" : "transparent",
     width: 40,
     height: 40,
     boxShadow: "none",

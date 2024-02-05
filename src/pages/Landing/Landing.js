@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./styles";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import Name from "../../components/Name/Name";
 import Title from "../../components/Title/Title";
@@ -10,8 +9,11 @@ const Landing = ({ children }) => {
   return (
     <div
       id="home"
-      style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 pt-56 md:flex  md:flex-col  md:justify-center md:pt-0 md:px-10 md:space-y-2 xl:px-20"
+      className={`${
+        themeState.name === "light"
+          ? "bg-slate-100 text-zinc-950"
+          : "bg-zinc-950 text-slate-100"
+      } w-full min-h-screen items-center px-5 pt-56 md:flex  md:flex-col  md:justify-center md:pt-0 md:px-10 md:space-y-2 xl:px-36`}
     >
       <Name />
       <Title />

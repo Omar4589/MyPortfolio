@@ -10,7 +10,6 @@ import Header from "./components/Header/Header";
 import Bugs from "./components/Bugs/Bugs";
 import ParticlesComponent from "./components/Particles/ParticlesComponent";
 import { displayWelcomeLog } from "./utils/WelcomeLogMessage/displayWelcomeLog";
-import "./components/Title/cursor.css";
 import "./index.css";
 import MySkillsPage from "./pages/MySkills/MySkills";
 import MyProjectsPage from "./pages/MyProjects/MyProjects";
@@ -26,12 +25,11 @@ function App() {
   return (
     <div
       id="app"
-      style={{
-        background: themeState.background,
-        color: themeState.text,
-        height: "100%",
-        width: "100%",
-      }}
+      className={`${
+        themeState.name === "light"
+          ? "bg-slate-100 text-zinc-950"
+          : "bg-zinc-950 text-slate-100"
+      }  w-full h-full`}
     >
       <ParticlesComponent />
       <Header />

@@ -7,8 +7,11 @@ const MySkillsPage = ({ children }) => {
   return (
     <div
       id="my-skills"
-      style={{ background: themeState.background }}
-      className="w-full min-h-screen px-5 py-56 md:px-10 lg:px-14 xl:pl-20 xl:pr-"
+      className={` ${
+        themeState.name === "light"
+          ? "bg-slate-100 text-zinc-950"
+          : "bg-zinc-950 text-slate-100"
+      }  "w-full min-h-screen  flex justify-center items-center`}
     >
       <MySkills />
     </div>
