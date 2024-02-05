@@ -399,7 +399,15 @@ export const displayProjects = (projects, onProjectClick) => {
       className="rounded-2xl bg-black overflow-hidden shadow-lg h-48 my-3 mx-3 md:w-3/4 md:mx-auto md:mb-5 lg:w-10/12 lg:h-72 lg:mb-10 xl:w-11/12 cursor-pointer"
       onClick={() => onProjectClick(project)}
     >
-      <h1 className="absolute mt-5 ml-5 text-2xl text-white text-shadow-lg lg:text-3xl">
+      <h1
+        className={`font-robotoBlack absolute mt-5 ml-5 text-2xl  lg:text-3xl ${
+          project.name === "YardGems"
+            ? "text-green-500  drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]"
+            : project.name === "Meal Mappr"
+            ? "text-blue-600  drop-shadow-[0_3px_2px_rgba(0,0,0,0.1)]"
+            : "text-slate-100 drop-shadow-[0_3px_2px_rgba(0,0,0)]"
+        }`}
+      >
         {project.name}
       </h1>
       <img

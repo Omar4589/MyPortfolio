@@ -38,18 +38,14 @@ const MySkills = () => {
 
   return (
     <div
-      id="skills-page-container"
-      // style={{
-      //   position: "relative",
-      //   zIndex: 1,
-      // }}
-      className="relative z-10  min-h-screen mx-48"
+      id="skills-container"
+      className="relative z-10  mx-36 flex flex-col justify-center space-y-12"
     >
-      <div id="skills-heading" className="flex flex-col space-y-2 ">
-        <h1 className="text-3xl pb-1 md:text-4xl  lg:text-5xl  xl:text-3xl font-robotoM">
+      <div id="skills-heading" className="flex flex-col space-y-2 mx-12">
+        <h1 className="text-3xl pb-1 md:text-4xl  lg:text-5xl  xl:text-3xl font-robotoBlack">
           MY SKILLS
         </h1>
-        <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-6 md:text-xl lg:leading-9 lg:text-2xl xl:text-lg xl:leading-7 xl:mx-2 font-roboto">
+        <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-6 md:text-xl lg:leading-9 lg:text-2xl xl:text-xl xl:leading-7 xl:mx-2 font-robotoLight">
           You're probably wondering,
           <span className="font-robotoItalic">
             "Omar, what can you do?"
@@ -62,28 +58,34 @@ const MySkills = () => {
 
       <div
         id="skills-icons"
-        className="flex flex-col justify-center items-center space-y-8 my-6 "
+        className="flex flex-col justify-center items-center space-y-8 my-6 font-robotoM"
       >
         <div className="flex w-full justify-between">
-          <div id="languages" className=" flex flex-col  items-center w-1/4 space-y-3">
+          <div
+            id="languages"
+            className=" flex flex-col  items-center w-1/3 space-y-3"
+          >
             <h2 className="text-lg underline md:text-2xl  xl:text-xl">
               Languages
             </h2>
             <div
-              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-3
+              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-3 
           "
             >
               {frontEndLanguages}
             </div>
           </div>
 
-          <div id="libraries-frameworks" className="flex flex-col  items-center  w-2/3 space-y-3">
+          <div
+            id="libraries-frameworks"
+            className="flex flex-col  items-center  w-7/12 space-y-3"
+          >
             <h2 className="text-lg underline md:text-2xl xl:text-xl">
               Libraries and Frameworks
             </h2>
 
             <div
-              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6  xl:grid-cols-7
+              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6  xl:grid-cols-6
           "
             >
               {librariesFrameworks}
@@ -91,37 +93,35 @@ const MySkills = () => {
           </div>
         </div>
 
-
         <div className="flex w-full justify-between ">
-
-        <div id="databases" className=" flex flex-col justify-center items-center space-y-3">
-          <h2 className="text-lg underline md:text-2xl xl:text-xl">
-            Databases
-          </h2>
           <div
-            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-4
-          "
+            id="databases"
+            className=" flex flex-col justify-center items-center space-y-3 w-1/3"
           >
-            {backEndDatabases}
+            <h2 className="text-lg underline md:text-2xl xl:text-xl">
+              Databases
+            </h2>
+            <div
+              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-4
+          "
+            >
+              {backEndDatabases}
+            </div>
+          </div>
+
+          <div
+            id="tools"
+            className="  flex flex-col justify-center items-center w-7/12 space-y-3"
+          >
+            <h1 className="text-lg underline md:text-2xl  xl:text-xl">Tools</h1>
+            <div
+              className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-5 w-full
+          "
+            >
+              {otherTechnologies}
+            </div>
           </div>
         </div>
-
-        <div id="tools" className="  flex flex-col justify-center items-center w-1/2 space-y-3">
-          <h1 className="text-lg underline md:text-2xl  xl:text-xl">
-            Tools
-          </h1>
-          <div
-            className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-5 w-full
-          "
-          >
-            {otherTechnologies}
-          </div>
-        </div>
-
-
-        </div>
-
-       
       </div>
     </div>
   );

@@ -27,6 +27,19 @@
     font-family: 'Roboto Medium';
     src: url('../src/assets/fonts/Roboto-Medium.ttf') format('truetype');
   }
+  @font-face {
+    font-family: 'Roboto Light';
+    src: url('../src/assets/fonts/Roboto-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto Black';
+    src: url('../src/assets/fonts/Roboto-Black.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Supernatural Knight';
+    src: url('../src/assets/fonts/Supernatural_Knight.ttf') format('truetype');
+  }
 
 
 

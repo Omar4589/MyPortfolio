@@ -60,10 +60,6 @@ export const librariesFrameworksLightTheme = [
     name: "Express JS",
     icon: expressIcon,
   },
-  {
-    name: "Handlebars JS",
-    icon: handlebarsJS,
-  },
 ];
 
 export const librariesFrameworksDarkTheme = [
@@ -92,10 +88,6 @@ export const librariesFrameworksDarkTheme = [
   {
     name: "Express JS",
     icon: expressIcon,
-  },
-  {
-    name: "Handlebars JS",
-    icon: handlebarsJS,
   },
 ];
 
@@ -186,7 +178,7 @@ export const displayIcons = (icons) => {
         src={icon.icon}
         alt={`${icon.name} icon`}
       />
-      <h3 className="font-thin text-center text-sm">{icon.name}</h3>
+      <h3 className="font-thin text-center text-sm font-robotoLight">{icon.name}</h3>
     </div>
   ));
 };

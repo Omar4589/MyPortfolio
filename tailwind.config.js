@@ -16,6 +16,9 @@ module.exports = {
         robotoItalic: ["Roboto Bold Italic"],
         robotoM: ["Roboto Medium"],
         roboto: ["Roboto Regular"],
+        robotoLight:['Roboto Light'],
+        robotoBlack:['Roboto Black'],
+        supernatural:['Supernatural Knight']
       },
     },
   },

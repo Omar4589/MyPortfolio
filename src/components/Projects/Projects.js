@@ -20,34 +20,23 @@ const Projects = () => {
   };
 
   return (
-    <div
-      id="projects-container"
-      style={{
-        position: "relative",
-        zIndex: 1,
-      }}
-      className="main w-full min-h-screen"
-    >
+    <div id="projects-container" className="relative z-10 w-full flex flex-col items-center mx-24 space-y-12">
+      <div id="projects-heading" className="flex flex-col space-y-2">
+        <h1 className="text-3xl pb-1 md:text-4xl  lg:text-5xl  xl:text-3xl font-robotoBlack">
+          My Projects
+        </h1>
 
-
-      <div id="projects-heading">
-        <h1 className="text-3xl pb-1 md:text-4xl md:pb-3 lg:text-5xl xl:text-4xl">My Projects</h1>
-
-        <h2 className="font-thin pr-5 pb-4 text-md md:pl-1 md:pr-8 md:pb-6 md:text-xl lg:text-2xl lg:pb-10 xl:text-xl xl:pr-44">
+        <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-6 md:text-xl lg:leading-9 lg:text-2xl xl:text-xl xl:leading-7 xl:mx-2 font-robotoLight">
           Explore my projects. Each crafted to demonstrate a harmonious blend of
-          intuitive front-end design with powerful back-end solutions,
-          showcasing the power of full-stack development.
+          intuitive <span className="font-robotoM">front-end design</span> with powerful <span className="font-robotoM">back-end solutions</span>,
+          showcasing the power of <span className="font-robotoM">full-stack development</span>.
         </h2>
       </div>
 
-
-      <div id="projects" className="grid grid-cols-1 xl:grid-cols-3">
+      <div id="projects" className="grid grid-cols-1 xl:grid-cols-3 w-full">
         {projects}
       </div>
 
-
-
-      
       {isModalOpen && (
         <ProjectModal
           project={selectedProject}
