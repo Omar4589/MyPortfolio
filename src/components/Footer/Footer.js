@@ -28,15 +28,15 @@ const Footer = () => {
         </a>
 
         <div
-          class={`${
+          className={`${
             themeState.name === "light"
               ? "from-slate-100 to-transparent "
               : "from-zinc-950 to-transparent "
           } h-6 absolute bottom-0 left-0 right-0 bg-gradient-to-t`}
         ></div>
         <div
-          class={`${
-            themeState.name === "light" ? "" : "from-zinc-950 to-transparent "
+          className={`${
+            themeState.name === "light" ? "from-slate-100 to-transparent " : "from-zinc-950 to-transparent "
           } h-6 absolute top-0 left-0 right-0 bg-gradient-to-b`}
         ></div>
       </div>

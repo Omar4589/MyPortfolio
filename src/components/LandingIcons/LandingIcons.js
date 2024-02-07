@@ -44,7 +44,7 @@ const LandingIcons = () => {
   }, [themeState]);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="w-4/5 flex flex-col items-start md:items-center ">
       <div
         id="landing-icons"
         style={{ zIndex: 1 }}

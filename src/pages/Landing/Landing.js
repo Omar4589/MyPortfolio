@@ -13,8 +13,9 @@ const Landing = ({ children }) => {
         themeState.name === "light"
           ? "bg-slate-100 text-zinc-950"
           : "bg-zinc-950 text-slate-100"
-      } w-full min-h-screen items-center px-5 pt-56 md:flex  md:flex-col  md:justify-center md:pt-0 md:px-10 md:space-y-2 xl:px-36`}
+      } w-full min-h-screen items-center flex  flex-col justify-center  lg:space-y-0 xl:space-y-2 xl:px-36`}
     >
+    
       <Name />
       <Title />
       <LandingIcons />

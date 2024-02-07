@@ -30,7 +30,7 @@ function App() {
         themeState.name === "light"
           ? "bg-slate-100 text-zinc-950"
           : "bg-zinc-950 text-slate-100"
-      }  w-full h-full`}
+      }  w-full h-full `}
     >
       <ParticlesComponent />
       <Header />

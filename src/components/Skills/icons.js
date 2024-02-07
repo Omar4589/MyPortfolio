@@ -189,14 +189,14 @@ export const otherIconsDark = [
 export const displayIcons = (icons) => {
   return icons.map((icon) => (
     <div
-      className="flex flex-col  justify-center items-center  space-y-4 "
+      className="flex flex-col  justify-start items-center  space-y-3 pb-5"
       key={icon.name}
     >
       <a href={icon.url}>
         <img
           className={
             icon.name === "Mongoose ODM"
-              ? "h-10 w-16"
+              ? "h-8 w-16"
               : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 "
           }
           src={icon.icon}

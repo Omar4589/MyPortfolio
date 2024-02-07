@@ -11,7 +11,7 @@ const MySkillsPage = ({ children }) => {
         themeState.name === "light"
           ? "bg-slate-100 text-zinc-950"
           : "bg-zinc-950 text-slate-100"
-      }  "w-full min-h-screen px-5  md:px-10 lg:px-14  flex justify-center items-center`}
+      }  "w-full min-h-screen  xl:px-14  flex justify-center items-center`}
     >
       <MySkills />
     </div>

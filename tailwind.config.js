@@ -7,10 +7,13 @@ module.exports = {
         glow: "0 0 5px #9E9E9E, 0 0 15px #9E9E9E",
       },
       rotate: {
-        '540': "540deg",
+        540: "540deg",
       },
       translate: {
-        custom: "67.5%",
+        custom: "68.5%",
+      },
+      fontSize: {
+        xxs: "10px",
       },
       fontFamily: {
         yellowtail: ["Yellowtail Regular"],

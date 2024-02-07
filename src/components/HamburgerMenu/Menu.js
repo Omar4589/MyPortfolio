@@ -9,7 +9,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
       id="menu-container"
       className={`${
         !isChecked ? "hidden" : ""
-      } absolute top-0 left-1/2 transform -translate-x-custom -translate-y-1/2 transition-transform`}
+      } absolute top-32 left-1/2 transform -translate-x-custom -translate-y-1/2 transition-transform`}
     >
       <div
         id="menu-background"
@@ -17,7 +17,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
       ></div>
       <div
         id="menu-links"
-        className=" text-5xl lg:text-6xl text-left relative  top-40 lg:top-96 xl:top-72  flex flex-col space-y-5 items-center justify-center  text-slate-100 font-robotoBlack"
+        className=" text-5xl relative  top-40   flex flex-col space-y-5 items-center justify-center  text-slate-100 font-robotoBlack"
       >
         <a
           onClick={() => {

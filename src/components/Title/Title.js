@@ -12,7 +12,7 @@ const Title = () => {
   return (
     <div
       id="title-container"
-      className="text-3xl relative z-10  md:text-3xl lg:text-4xl select-none font-robotoItalic "
+      className="w-4/5 md:text-center text-3xl relative z-10  md:text-3xl lg:text-4xl select-none font-robotoItalic "
     >
       <Typed
         strings={["Web Developer", "Web Developer"]}

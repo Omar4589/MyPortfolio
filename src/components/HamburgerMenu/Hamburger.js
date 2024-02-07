@@ -3,9 +3,8 @@ import "./hamburger.css";
 import { useState } from "react";
 import Menu from "./Menu";
 
-const Hamburger = ({ isScrolled }) => {
+const Hamburger = ({ isScrolled, isChecked, setIsChecked }) => {
   const { themeState } = useThemeContext();
-  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <div
@@ -18,7 +17,7 @@ const Hamburger = ({ isScrolled }) => {
       <input
         id="hamburger-checkbox"
         aria-labelledby="menu"
-        className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20 md:right-8 xl:right-0"
+        className="link absolute bottom-6  w-6 h-6 opacity-0 cursor-pointer z-20 right-0 "
         type="checkbox"
         aria-label="menu"
         checked={isChecked}
@@ -26,12 +25,14 @@ const Hamburger = ({ isScrolled }) => {
       />
       <div
         id="hamburger-background"
-        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center z-10 md:right-8 xl:right-0"
+        className="absolute bottom-6 w-6 h-6 flex items-center justify-center z-10 right-0  "
       >
         <div
           id="hamburger-lines"
           className={`${
-            isScrolled
+            isChecked
+              ? "bg-slate-100"
+              : isScrolled
               ? themeState.name === "light"
                 ? "bg-slate-100 "
                 : "bg-slate-100 "
