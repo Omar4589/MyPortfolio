@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <h1 className=" text-center text-md pt-24 font-robotoLight md:text-xl lg:text-2xl xl:text-xl">
         You've reached the end. Thank you for visiting! Enjoy a pixel art
-        version of my favorite artwork.
+        version of one of my favorite artworks.
       </h1>
 
       <div className="w-full relative mt-10">
@@ -23,7 +23,7 @@ const Footer = () => {
           <img
             alt="artwork"
             src={themeState.name === "dark" ? vince : banksy}
-            className=" w-1/2 mx-auto"
+            className={`${themeState.name === 'light' ? "w-1/2": "w-2/3"} mx-auto`}
           />
         </a>
 
