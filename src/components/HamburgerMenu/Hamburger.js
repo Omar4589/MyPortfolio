@@ -3,7 +3,7 @@ import "./hamburger.css";
 import { useState } from "react";
 import Menu from "./Menu";
 
-const Hamburger = () => {
+const Hamburger = ({ isScrolled }) => {
   const { themeState } = useThemeContext();
   const [isChecked, setIsChecked] = useState(false);
 
@@ -12,7 +12,7 @@ const Hamburger = () => {
       id="hamburger"
       style={{ color: themeState.menuText }}
       className={`${
-        themeState.name === "light" ? "text-zinc-950" : "text-slate-100"
+        themeState.name === "light" ? "text-zinc-950" : ""
       } relative`}
     >
       <input
@@ -31,10 +31,12 @@ const Hamburger = () => {
         <div
           id="hamburger-lines"
           className={`${
-            themeState.name === "light"
-              ? isChecked
-                ? "bg-slate-100"
-                : "bg-zinc-950"
+            isScrolled
+              ? themeState.name === "light"
+                ? "bg-slate-100 "
+                : "bg-slate-100 "
+              : themeState.name === "light"
+              ? "bg-zinc-950"
               : "bg-slate-100"
           } 
           relative w-full items-center z-10`}

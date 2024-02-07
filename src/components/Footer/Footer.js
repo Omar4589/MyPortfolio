@@ -11,9 +11,9 @@ const Footer = () => {
         themeState.name === "light"
           ? "bg-slate-100 text-zinc-950"
           : "bg-zinc-950 text-slate-100"
-      }  w-full pt-36 pb-3 "`}
+      }  w-full  flex flex-col justify-end items-center h-screen pb-4 `}
     >
-      <h1 className=" text-center text-md pt-24 font-robotoLight md:text-xl lg:text-2xl xl:text-xl">
+      <h1 className=" text-center text-md font-robotoLight md:text-xl lg:text-2xl xl:text-xl">
         You've reached the end. Thank you for visiting! Enjoy a pixel art
         version of one of my favorite artworks.
       </h1>
