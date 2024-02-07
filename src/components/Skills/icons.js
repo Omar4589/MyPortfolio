@@ -166,19 +166,19 @@ export const otherIconsDark = [
 export const displayIcons = (icons) => {
   return icons.map((icon) => (
     <div
-      className="flex flex-col  justify-center items-center   "
+      className="flex flex-col  justify-center items-center  space-y-4 "
       key={icon.name}
     >
       <img
         className={
           icon.name === "Mongoose ODM"
-            ? "h-10 w-16 mx-auto"
+            ? "h-10 w-16"
             : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 "
         }
         src={icon.icon}
         alt={`${icon.name} icon`}
       />
-      <h3 className="font-thin text-center text-sm font-robotoLight">{icon.name}</h3>
+      <h3 className=" text-center text-sm font-roboto">{icon.name}</h3>
     </div>
   ));
 };

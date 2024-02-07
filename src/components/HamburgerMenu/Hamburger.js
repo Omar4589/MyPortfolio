@@ -11,7 +11,9 @@ const Hamburger = () => {
     <div
       id="hamburger"
       style={{ color: themeState.menuText }}
-      className="main relative"
+      className={`${
+        themeState.name === "light" ? "text-zinc-950" : "text-slate-100"
+      } relative`}
     >
       <input
         id="hamburger-checkbox"
@@ -19,7 +21,7 @@ const Hamburger = () => {
         className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20 md:right-8 xl:right-0"
         type="checkbox"
         aria-label="menu"
-        checked={isChecked} 
+        checked={isChecked}
         onChange={() => setIsChecked((prev) => !prev)}
       />
       <div
@@ -28,12 +30,14 @@ const Hamburger = () => {
       >
         <div
           id="hamburger-lines"
-          style={{
-            backgroundColor: isChecked
-              ? themeState.isChecked
-              : themeState.isNotChecked,
-          }}
-          className="relative w-full items-center z-10"
+          className={`${
+            themeState.name === "light"
+              ? isChecked
+                ? "bg-slate-100"
+                : "bg-zinc-950"
+              : "bg-slate-100"
+          } 
+          relative w-full items-center z-10`}
         ></div>
       </div>
       <Menu isChecked={isChecked} setIsChecked={setIsChecked} />

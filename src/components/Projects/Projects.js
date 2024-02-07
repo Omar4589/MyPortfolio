@@ -21,15 +21,15 @@ const Projects = () => {
 
   return (
     <div id="projects-container" className="relative z-10 w-full flex flex-col items-center mx-24 space-y-12">
-      <div id="projects-heading" className="flex flex-col space-y-2">
+      <div id="projects-heading" className="flex flex-col space-y-4 select-none">
         <h1 className="text-3xl pb-1 md:text-4xl  lg:text-5xl  xl:text-3xl font-robotoBlack">
           My Projects
         </h1>
 
         <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-6 md:text-xl lg:leading-9 lg:text-2xl xl:text-xl xl:leading-7 xl:mx-2 font-robotoLight">
           Explore my projects. Each crafted to demonstrate a harmonious blend of
-          intuitive <span className="font-robotoM">front-end design</span> with powerful <span className="font-robotoM">back-end solutions</span>,
-          showcasing the power of <span className="font-robotoM">full-stack development</span>.
+          intuitive <span className="font-robotoM underline">front-end design</span> with powerful <span className="font-robotoM underline">back-end solutions</span>,
+          showcasing the power of <span className="font-robotoM underline">full-stack development</span>.
         </h2>
       </div>
 

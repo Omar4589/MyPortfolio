@@ -41,6 +41,40 @@
     src: url('../src/assets/fonts/Supernatural_Knight.ttf') format('truetype');
   }
 
+.rnEffect:hover .react-logo{
+  transform: rotate(240deg);
+}
+
+.rnEffect:hover .underline-from-left{
+  color: #06bcee;
+}
+
+.rnEffect:hover .underline-from-left::before {
+ width: 100%;
+  }
+
+  .underline-from-left {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-from-left::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px; /* or however thick you want your underline to be */
+    bottom: 0; /* Position the line at the bottom of the text */
+    left: 0;
+    background-color: currentColor; /* or choose a custom color */
+    transition: width .5s ease-out; /* Adjust the timing to your liking */
+  }
+  
+ 
+  .react-logo {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+
 
 
 

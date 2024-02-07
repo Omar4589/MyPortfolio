@@ -1,8 +1,3 @@
-main {
-  font-family: raleway;
-}
-
-
 /* THE FOLLOWING ANIMATIONS RUN BASED ON WHETHER OR NOT THE CHECKBOX INPUT FIELD IS CHECKED */
 
     /*           ROTATION OF HAMBURGER ANIMATION            */
@@ -83,18 +78,18 @@ main {
 
 
   /*            BEATING ANIMATION FOR MENU LINKS           */
-  @keyframes beating {
+  /* @keyframes beating {
     0%, 100% {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
   }
   
   .beating:hover {
-    animation: beating 1.5s infinite;
-  }
+    animation: beating 1s ;
+  } */
   
 
   /*                    MENU LINKS                */
