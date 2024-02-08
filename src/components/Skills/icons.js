@@ -90,7 +90,7 @@ export const librariesFrameworksDarkTheme = [
     url: "https://mui.com/material-ui/",
   },
   {
-    name: "Apollo Client/Servert",
+    name: "Apollo Client/Server",
     icon: apolloWhiteIcon,
     url: "https://www.apollographql.com/",
   },

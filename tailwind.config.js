@@ -12,6 +12,10 @@ module.exports = {
       translate: {
         custom: "68.5%",
       },
+      space: {
+        custom: "32rem",
+      },
+
       fontSize: {
         xxs: "10px",
       },

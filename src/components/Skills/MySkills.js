@@ -39,16 +39,16 @@ const MySkills = () => {
   return (
     <div
       id="skills-container"
-      className="relative z-10 md:mx-6 lg:mx-14 flex flex-col justify-center space-y-4 md:space-y-8 lg:space-y-12 select-none"
+      className="relative mt-20 md:mt-0 z-10 md:mx-6 lg:mx-14 flex flex-col justify-center space-y-4 md:space-y-8 lg:space-y-12 select-none"
     >
       <div
         id="skills-heading"
         className="flex flex-col space-y-2  mx-6 "
       >
-        <h1 className="text-xl md:text-2xl xl:text-2xl  font-robotoBlack">
+        <h1 className="text-xl md:text-2xl font-robotoBlack">
           MY SKILLS
         </h1>
-        <h2 className="text-md  lg:leading-7 lg:text-lg xl:text-xl xl:leading-7 xl:mx-4 font-robotoLight">
+        <h2 className="text-md lg:text-lg xl:text-xl lg:leading-7  xl:leading-7 md:mx-2 xl:mx-4 font-robotoLight">
           You're probably wondering,
           <span className="font-robotoItalic">
             "Omar, what can you do?"

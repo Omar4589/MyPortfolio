@@ -11,11 +11,10 @@ const Footer = () => {
         themeState.name === "light"
           ? "bg-slate-100 text-zinc-950"
           : "bg-zinc-950 text-slate-100"
-      }  w-full  flex flex-col justify-end items-center h-screen pb-4 `}
+      }  w-full flex flex-col justify-end items-center pb-4 h-3/4 lg:h-screen px-3 md:px-0`}
     >
-      <h1 className=" text-center text-md font-robotoLight md:text-xl lg:text-2xl xl:text-xl">
-        You've reached the end. Thank you for visiting! Enjoy a pixel art
-        version of one of my favorite artworks.
+      <h1 className=" text-center text-base font-robotoLight md:text-xl  mx-6">
+        You've reached the end. Thank you for visiting!
       </h1>
 
       <div className="w-full relative mt-10">
@@ -23,7 +22,7 @@ const Footer = () => {
           <img
             alt="artwork"
             src={themeState.name === "dark" ? vince : banksy}
-            className={`${themeState.name === 'light' ? "w-1/2": "w-2/3"} mx-auto`}
+            className={`${themeState.name === 'light' ? "w-full lg:w-2/3 xl:w-1/2": "w-full xl:w-3/4 md:w-11/12"} mx-auto`}
           />
         </a>
 
@@ -41,10 +40,10 @@ const Footer = () => {
         ></div>
       </div>
 
-      <p className="text-center text-sm font-roboto pt-4">
+      <p className="text-center text-xs font-roboto pt-4 xl:pt-0">
         Made with ❤️ by Omar Zumaya
       </p>
-      <p className="text-center text-xs font-roboto">
+      <p className="text-center text-xxs font-roboto">
         Powered by React & Tailwind CSS
       </p>
     </div>

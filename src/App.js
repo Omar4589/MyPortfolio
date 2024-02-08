@@ -23,6 +23,11 @@ function App() {
     displayWelcomeLog();
   }, []);
 
+  useEffect(() => {
+    const metaThemeColor = document.getElementById("theme-color");
+    metaThemeColor.setAttribute("content", themeState.metaTag);
+  }, [themeState]);
+
   return (
     <div
       id="app"

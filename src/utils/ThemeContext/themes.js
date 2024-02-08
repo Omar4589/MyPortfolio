@@ -6,6 +6,7 @@ export const lightTheme = {
   menuText: "#f1f5f9",
   isChecked: "#f1f5f9",
   isNotChecked: "#09090b",
+  metaTag: "#f1f5f9"
 };
 
 export const darkTheme = {
@@ -15,4 +16,5 @@ export const darkTheme = {
   menuText: "#09090b",
   isChecked: "#f1f5f9",
   isNotChecked: "#f1f5f9",
+  metaTag: "#09090b"
 };

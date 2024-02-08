@@ -20,20 +20,31 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects-container" className="relative z-10 w-full flex flex-col items-center mx-24 space-y-12">
-      <div id="projects-heading" className="flex flex-col space-y-4 select-none">
-        <h1 className="text-3xl pb-1 md:text-4xl  lg:text-5xl  xl:text-3xl font-robotoBlack">
-          My Projects
+    <div
+      id="projects-container"
+      className="relative mt-28 md:mt-0 z-10 w-full flex flex-col items-center justify-center mx-6 md:mx-12 lg:mx-14 xl:mx-24 space-y-6 md:space-y-12"
+    >
+      <div
+        id="projects-heading"
+        className="flex flex-col space-y-2 select-none lg:mx-6"
+      >
+        <h1 className="text-xl  md:text-2xl  xl:text-3xl font-robotoBlack">
+        MY PROJECTS
         </h1>
 
-        <h2 className="font-thin pr-5 text-md md:pl-1 md:pr-6 md:text-xl lg:leading-9 lg:text-2xl xl:text-xl xl:leading-7 xl:mx-2 font-robotoLight">
+        <h2 className=" text-md   md:text-lg lg:text-xl  lg:leading-9 xl:leading-7  mx-2 font-robotoLight">
           Explore my projects. Each crafted to demonstrate a harmonious blend of
-          intuitive <span className="font-robotoM underline">front-end design</span> with powerful <span className="font-robotoM underline">back-end solutions</span>,
-          showcasing the power of <span className="font-robotoM underline">full-stack development</span>.
+          intuitive{" "}
+          <span className="font-robotoM underline">front-end design</span> with
+          powerful{" "}
+          <span className="font-robotoM underline">back-end solutions</span>,
+          showcasing the power of{" "}
+          <span className="font-robotoM underline">full-stack development</span>
+          .
         </h2>
       </div>
 
-      <div id="projects" className="grid grid-cols-1 xl:grid-cols-3 w-full">
+      <div id="projects" className="grid grid-cols-1 space-y-4 md:space-y-6 lg:space-y-0 lg:grid-cols-3 w-full ">
         {projects}
       </div>
 

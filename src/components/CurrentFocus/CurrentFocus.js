@@ -2,11 +2,11 @@ import reactLogo from "../../assets/svgs/react.svg";
 
 const CurrentFocus = () => {
   return (
-    <div className="w-full relative z-10 flex justify-around items-center mx-36 ">
-      <div className="flex flex-col space-y-4">
-        <h1 className="text-3xl font-robotoBlack">My Current Focus</h1>
+    <div className="w-full relative mt-20 md:mt-0 z-10 flex justify-around items-center mx-6 md:mx-12 lg:mx-20 xl:mx-36 ">
+      <div className="flex flex-col space-y-2 lg:space-y-4">
+        <h1 className="text-xl text-center md:text-left md:text-2xl xl:text-2xl  font-robotoBlack">MY CURRENT FOCUS</h1>
 
-        <div className="flex flex-col space-y-6 text-xl font-robotoLight mx-3">
+        <div className="flex flex-col space-y-4 lg:space-y-6 text-md lg:text-lg xl:text-xl font-robotoLight text-justify md:text-left md:mx-3">
           <div className="align-bottom">
             <span>
               I'm currently embarked on an exciting journey developing my first
@@ -15,9 +15,9 @@ const CurrentFocus = () => {
               <img
                 src={reactLogo}
                 alt="react logo"
-                className="h-8 inline-block align-bottom react-logo"
+                className="h-6 md:h-8 inline-block align-bottom react-logo"
               />{" "}
-              <span className="font-robotoM text-2xl underline-from-left">
+              <span className="font-robotoM text-lg md:text-xl xl:text-2xl underline-from-left">
                 React Native
               </span>
             </a>{" "}

@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className={` fixed w-full h-20 z-20 flex justify-between px-6 md:px-10 lg:px-20 xl:px-24 transition-all  duration-500 ${
+      className={` fixed w-full h-16 md:h-20 z-20 flex justify-between px-6 md:px-10 lg:px-20 xl:px-24 transition-all  duration-500 ${
         themeState.name === "light"
           ? isScrolled
             ? "bg-zinc-950 text-slate-100 shadow-sm shadow-zinc-700" // Light theme + scrolled
