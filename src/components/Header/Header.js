@@ -3,6 +3,8 @@ import Hamburger from "../HamburgerMenu/Hamburger";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import blackOZlogo from "../../assets/images/blackOZlogo.PNG";
+import whiteOZlogo from "../../assets/images/whiteOZlogo.PNG";
 
 const Header = () => {
   const { themeState, toggleThemeState } = useThemeContext();
@@ -68,32 +70,46 @@ const Header = () => {
           : "bg-zinc-950 text-slate-100" // Not light theme + not scrolled
       }`}
     >
-      <div className="flex items-center">
+      <div className="flex items-center ">
+        <img
+          alt="logo"
+          src={
+            themeState.name === "light"
+              ? isScrolled
+                ? whiteOZlogo
+                : blackOZlogo
+              : whiteOZlogo
+          }
+          className="w-12 md:w-16"
+        />
         {themeState.name === "light" ? (
-          <LightModeOutlinedIcon
-            onClick={toggleThemeState}
-            className="cursor-pointer mx-2"
-          />
+          <>
+            {" "}
+            <LightModeOutlinedIcon
+              onClick={toggleThemeState}
+              className="cursor-pointer ml-6 mr-2"
+            />
+            <div
+              className={`flex items-center space-x-1  text-xxs font-supernatural select-none ${
+                isScrolled
+                  ? isChecked
+                    ? "text-zinc-950"
+                    : "text-slate-100"
+                  : "text-zinc-950"
+              }`}
+            >
+              <div className="mt-1">&#8592;</div>{" "}
+              <div className="-space-y-1">
+                <p>click here</p>
+                <p>if you're a vampire</p>
+              </div>
+            </div>
+          </>
         ) : (
           <NightsStayIcon
             onClick={toggleThemeState}
-            className="cursor-pointer mx-2"
+            className="cursor-pointer ml-6 mr-2"
           />
-        )}
-
-        {themeState.name === "light" && (
-          <div
-            className={`flex items-center space-x-1  text-xxs font-supernatural select-none ${
-              isScrolled
-                ? isChecked
-                  ? "text-zinc-950"
-                  : "text-slate-100"
-                : "text-zinc-950"
-            }`}
-          >
-            <div className="mt-1">&#8592;</div>{" "}
-            <div>click here if you're a vampire</div>
-          </div>
         )}
       </div>
 
