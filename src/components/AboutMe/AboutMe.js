@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div
       id="about-me-container"
-      className="w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between  items-center mx-6 md:mx-14 lg:mx-18 xl:mx-32 select-none space-y-2  md:space-y-4  xl:-space-y-ctom"
+      className="w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between  items-center mx-6 md:mx-14 lg:mx-18 xl:mx-32 select-none space-y-2  md:space-y-4"
     >
       <img
         id="about-me"
@@ -24,8 +24,8 @@ const AboutMe = () => {
           ABOUT ME
         </h1>
 
-        <div className="mx-4 md:mx-0 lg:mx-4 flex flex-col jusify-center  items-center space-y-4 font-robotoLight">
-          <p className="text-lg mx-2 leading-7 md:leading-9  lg:text-lg lg:leading-9 xl:text-xl xl:leading-10">
+        <div className="mx-0 lg:mx-4 flex flex-col jusify-center  items-center space-y-4 font-robotoLight">
+          <p className="text-base  md:text-lg mx-2 leading-7 md:leading-9  lg:text-lg lg:leading-9 xl:text-xl xl:leading-10">
             Fresh out of UTSA's School of Data Science, I've earned a
             certificate in{" "}
             <span className="font-robotoM">Full Stack Web Development</span>. My

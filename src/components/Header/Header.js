@@ -71,17 +71,20 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center ">
-        <img
-          alt="logo"
-          src={
-            themeState.name === "light"
-              ? isScrolled
-                ? whiteOZlogo
-                : blackOZlogo
-              : whiteOZlogo
-          }
-          className="w-12 md:w-16"
-        />
+        <a href="/">
+          <img
+            alt="logo"
+            src={
+              themeState.name === "light"
+                ? isScrolled
+                  ? whiteOZlogo
+                  : blackOZlogo
+                : whiteOZlogo
+            }
+            className="w-12 md:w-16"
+          />
+        </a>
+
         {themeState.name === "light" ? (
           <>
             {" "}

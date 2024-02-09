@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { GitHub } from "@mui/icons-material";
 
+import ArticleIcon from "@mui/icons-material/Article";
 import resume from "../../assets/Resume1.pdf";
 
 const lightIcons = [
@@ -68,7 +69,7 @@ const LandingIcons = () => {
         } relative z-10 md:px- md:py- md:top-5 md:text-lg lg:text-1xl flex items-center space-x-1`}
       >
         <span>Resume</span>
-        <ion-icon name="paper"></ion-icon>
+        <ArticleIcon fontSize="small"  />
       </a>
     </div>
   );
