@@ -1,6 +1,5 @@
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import "./hamburger.css";
-import { useState } from "react";
 import Menu from "./Menu";
 
 const Hamburger = ({ isScrolled, isChecked, setIsChecked }) => {

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
-import vince from "../../assets/images/vince.png";
-import banksy from "../../assets/images/Banks.png";
-import banksy2 from "../../assets/images/Banks3.png";
 import LandingIcons from "../LandingIcons/LandingIcons";
 import { lightIcons, darkIcons } from "../LandingIcons/iconsLanding";
 

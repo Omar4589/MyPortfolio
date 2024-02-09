@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import ArticleIcon from "@mui/icons-material/Article";
 import resume from "../../assets/Resume1.pdf";
-import { light } from "@mui/material/styles/createPalette";
 
 const LandingIcons = ({
   width,

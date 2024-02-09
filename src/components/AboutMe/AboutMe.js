@@ -1,9 +1,6 @@
 import portrait from "../../assets/images/portrait.JPG";
-import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 
 const AboutMe = () => {
-  const { themeState } = useThemeContext();
-
   return (
     <div
       id="about-me-container"

@@ -26,9 +26,7 @@ module.exports = {
         menuHeight: "250vw",
       },
       fontFamily: {
-        yellowtail: ["Yellowtail Regular"],
         soisBold: ["SoinSansPro-Bold"],
-        oswald: ["Oswald"],
         robotoItalic: ["Roboto Bold Italic"],
         robotoM: ["Roboto Medium"],
         roboto: ["Roboto Regular"],

@@ -1,8 +1,6 @@
-import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import "./hamburger.css";
 
 const Menu = ({ isChecked, setIsChecked }) => {
-  const { themeState } = useThemeContext();
 
   return (
     <div

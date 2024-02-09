@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
+import React, { useEffect } from "react";
 import backArrow from "../../assets/images/image (1).png";
 import githubIconWhite from "../../assets/images/githubWhite.png";
-import githubIconBlack from "../../assets/svgs/github.svg";
 
 const ProjectModal = ({ project, onClose }) => {
-  const { themeState } = useThemeContext();
-
   useEffect(() => {
     console.log(project);
     // Disable body scroll when modal is open
@@ -168,21 +164,24 @@ const ProjectModal = ({ project, onClose }) => {
         </div>
 
         <div id="screenshots" className="px-7  lg:mx-3 ">
-        <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
-          Screenshots
-        </h2>
-        <div id="screenshots" className="grid grid-cols-1 py-5 md:text-xl xl:grid-cols-4 xl:gap-x-40 xl:pt-8">
-          {project.screenshots.map((screenshot) => {
-            return (
-              <div className="mx-auto pb-10 px-10 xl:px-0">
-                <img src={screenshot.img} alt="thumbnail" width="100%" />
-                <h4 className="text-center pt-1 mx-auto">
-                  {screenshot.caption}
-                </h4>
-              </div>
-            );
-          })}
-        </div>
+          <h2 className="pt-3 text-2xl border-b-2 pt-10 lg:text-3xl">
+            Screenshots
+          </h2>
+          <div
+            id="screenshots"
+            className="grid grid-cols-1 py-5 md:text-xl xl:grid-cols-4 xl:gap-x-40 xl:pt-8"
+          >
+            {project.screenshots.map((screenshot) => {
+              return (
+                <div className="mx-auto pb-10 px-10 xl:px-0">
+                  <img src={screenshot.img} alt="thumbnail" width="100%" />
+                  <h4 className="text-center pt-1 mx-auto">
+                    {screenshot.caption}
+                  </h4>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

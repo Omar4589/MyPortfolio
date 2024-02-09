@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import { displayProjects } from "./projectObjects";
 import { projectObjects } from "./projectObjects";
 import ProjectModal from "../ProjectModal/ProjectModal";
 
 const Projects = () => {
-  const { themeState } = useThemeContext();
   const [projects, setProjects] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -29,7 +27,7 @@ const Projects = () => {
         className="flex flex-col space-y-2 select-none lg:mx-6"
       >
         <h1 className="text-xl  md:text-2xl  xl:text-3xl font-robotoBlack">
-        MY PROJECTS
+          MY PROJECTS
         </h1>
 
         <h2 className=" text-md   md:text-lg lg:text-xl  lg:leading-9 xl:leading-7  mx-2 font-robotoLight">
@@ -44,7 +42,10 @@ const Projects = () => {
         </h2>
       </div>
 
-      <div id="projects" className="grid grid-cols-1 space-y-4 md:space-y-6 lg:space-y-0 lg:grid-cols-3 w-full ">
+      <div
+        id="projects"
+        className="grid grid-cols-1 space-y-4 md:space-y-6 lg:space-y-0 lg:grid-cols-3 w-full "
+      >
         {projects}
       </div>
 
