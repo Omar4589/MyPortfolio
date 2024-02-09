@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.b8ff8a20.css",
-    "main.js": "/MyPortfolio/static/js/main.c8b43795.js",
+    "main.css": "/MyPortfolio/static/css/main.19650cb5.css",
+    "main.js": "/MyPortfolio/static/js/main.66cf46b4.js",
     "static/media/EscapeRooms.png": "/MyPortfolio/static/media/EscapeRooms.35b2128e41da1f127c14.png",
     "static/media/Welcome.png": "/MyPortfolio/static/media/Welcome.a67a6dc9b144c2b6e187.png",
     "static/media/4.png": "/MyPortfolio/static/media/4.d6702b060c63daf8501e.png",
@@ -44,6 +44,7 @@
     "static/media/12.png": "/MyPortfolio/static/media/12.e554685a1b88248eb066.png",
     "static/media/M5.png": "/MyPortfolio/static/media/M5.e69b173a50ed92a16423.png",
     "static/media/Home.png": "/MyPortfolio/static/media/Home.555d0592cf3ee5e4a62a.png",
+    "static/media/Banks3.png": "/MyPortfolio/static/media/Banks3.4557761ad03937ce6fd5.png",
     "static/media/1.png": "/MyPortfolio/static/media/1.61eb507210226af02864.png",
     "static/media/SoinSansPro-Bold.ttf": "/MyPortfolio/static/media/SoinSansPro-Bold.cc11e517de470f0d8bfe.ttf",
     "static/media/nodejs.svg": "/MyPortfolio/static/media/nodejs.139d739ba4221e19604478d80d7aba75.svg",
@@ -81,11 +82,11 @@
     "static/media/materialUI.svg": "/MyPortfolio/static/media/materialUI.fab4e70b71b046796bcf505701bb2b9b.svg",
     "static/media/linkedinBlack.svg": "/MyPortfolio/static/media/linkedinBlack.757885027fecebeb343266fa5ae768cd.svg",
     "static/media/envelopeBlack.svg": "/MyPortfolio/static/media/envelopeBlack.6c4972d1534f82645bde0042ddf51633.svg",
-    "main.b8ff8a20.css.map": "/MyPortfolio/static/css/main.b8ff8a20.css.map",
-    "main.c8b43795.js.map": "/MyPortfolio/static/js/main.c8b43795.js.map"
+    "main.19650cb5.css.map": "/MyPortfolio/static/css/main.19650cb5.css.map",
+    "main.66cf46b4.js.map": "/MyPortfolio/static/js/main.66cf46b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ff8a20.css",
-    "static/js/main.c8b43795.js"
+    "static/css/main.19650cb5.css",
+    "static/js/main.66cf46b4.js"
   ]
 }
