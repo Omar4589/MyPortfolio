@@ -11,17 +11,17 @@ export const lightIcons = [
   {
     name: envelopeWhite,
     url: "mailto:omarzumayajr@gmail.com",
-    caption: "omarzumayajr@gmail.com",
+    caption: "Email me! - omarzumayajr@gmail.com",
   },
   {
     name: linkedInWhite,
     url: "https://www.linkedin.com/in/omarzumaya",
-    caption: "www.linkedin.com/in/omarzumaya",
+    caption: "Connect with me on LinkedIn! - www.linkedin.com/in/omarzumaya",
   },
   {
     name: githubWhite,
     url: "https://www.github.com/Omar4589",
-    caption: "Omar4589",
+    caption: "Check out my Github! - Omar4589",
   },
 ];
 
