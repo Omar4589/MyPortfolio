@@ -1,6 +1,8 @@
 import "./hamburger.css";
+import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 
 const Menu = ({ isChecked, setIsChecked }) => {
+  const { themeState } = useThemeContext();
 
   return (
     <div
@@ -11,7 +13,9 @@ const Menu = ({ isChecked, setIsChecked }) => {
     >
       <div
         id="menu-background"
-        className="absolute -top-60 -left-1/2 w-menuWidth h-menuHeight rounded-full opacity-80  bg-black"
+        className={` ${
+          themeState.name === "light" ? "opacity-80" : "opacity-90"
+        } absolute -top-60 -left-1/2 w-menuWidth h-menuHeight rounded-full bg-black`}
       ></div>
       <div
         id="menu-links"
