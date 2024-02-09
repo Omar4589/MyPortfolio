@@ -10,9 +10,14 @@ import MySkillsPage from "./pages/MySkills/MySkills";
 import MyProjectsPage from "./pages/MyProjects/MyProjects";
 import Footer from "./components/Footer/Footer";
 import CurrentFocusPage from "./pages/CurrentFocusPage/CurrentFocusPage";
+import dontLeaveMe from "dontleaveme";
 
 function App() {
   const { themeState } = useThemeContext();
+
+  useEffect(() => {
+    dontLeaveMe.init("Please come back! 😭", "Omar Zumaya - Developer");
+  });
 
   useEffect(() => {
     displayWelcomeLog();
