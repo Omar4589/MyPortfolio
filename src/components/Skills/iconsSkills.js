@@ -189,7 +189,7 @@ export const otherIconsDark = [
 export const displayIcons = (icons) => {
   return icons.map((icon) => (
     <div
-      className="flex flex-col  justify-start items-center  space-y-3 pb-5"
+      className="flex flex-col  justify-start items-center  space-y-3 pb-4 md:pb-5"
       key={icon.name}
     >
       <a href={icon.url}>

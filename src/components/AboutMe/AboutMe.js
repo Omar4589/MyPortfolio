@@ -25,7 +25,7 @@ const AboutMe = () => {
         </h1>
 
         <div className="mx-0 lg:mx-4 flex flex-col jusify-center  items-center space-y-4 font-robotoLight">
-          <p className="text-base  md:text-lg mx-2 leading-7 md:leading-9  lg:text-lg lg:leading-9 xl:text-xl xl:leading-10">
+          <p className="text-base  md:text-lg  md:mx-2 leading-7 md:leading-9  lg:text-lg lg:leading-9 xl:text-xl xl:leading-10">
             Fresh out of UTSA's School of Data Science, I've earned a
             certificate in{" "}
             <span className="font-robotoM">Full Stack Web Development</span>. My

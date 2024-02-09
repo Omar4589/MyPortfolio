@@ -63,7 +63,7 @@ const MySkills = () => {
         id="skills-icons"
         className="flex flex-col justify-center items-center  lg:space-y-12 mx-6 md:mx-10 lg:mx-0 font-robotoM"
       >
-        <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row w-full md:justify-around lg:justify-between">
+        <div className="flex flex-col md:space-y-2 lg:space-y-0 lg:flex-row w-full md:justify-around lg:justify-between">
           <div
             id="languages"
             className=" flex flex-col items-start lg:items-center w-full lg:w-2/5 space-y-3"
@@ -96,7 +96,7 @@ const MySkills = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row w-full md:justify-around lg:justify-between items-start ">
+        <div className="flex flex-col md:space-y-2 lg:space-y-0 lg:flex-row w-full md:justify-around lg:justify-between items-start ">
           <div
             id="databases"
             className=" flex flex-col justify-center items-start lg:items-center md:justify-start space-y-3 w-full lg:w-2/5"
