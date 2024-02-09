@@ -71,7 +71,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center ">
-        <a href="/">
+        <a href="https://omar4589.github.io/MyPortfolio/">
           <img
             alt="logo"
             src={
