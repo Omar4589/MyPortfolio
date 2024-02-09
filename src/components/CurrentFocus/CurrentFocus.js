@@ -6,7 +6,7 @@ const CurrentFocus = () => {
       <div className="flex flex-col space-y-2 lg:space-y-4">
         <h1 className="text-xl text-center md:text-left md:text-2xl xl:text-2xl  font-robotoBlack">MY CURRENT FOCUS</h1>
 
-        <div className="flex flex-col space-y-4 lg:space-y-6 text-md lg:text-lg xl:text-xl font-robotoLight text-justify md:text-left md:mx-3">
+        <div className="flex flex-col space-y-4 lg:space-y-6 text-md lg:text-lg xl:text-xl font-robotoLight md:mx-3">
           <div className="align-bottom">
             <span>
               I'm currently embarked on an exciting journey developing my first
