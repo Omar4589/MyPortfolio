@@ -1,39 +1,45 @@
 import { useThemeContext } from "../../utils/ThemeContext/ThemeContext";
 import "./hamburger.css";
-import { useState } from "react";
 import Menu from "./Menu";
 
-const Hamburger = () => {
+const Hamburger = ({ isScrolled, isChecked, setIsChecked }) => {
   const { themeState } = useThemeContext();
-  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <div
       id="hamburger"
       style={{ color: themeState.menuText }}
-      className="main relative"
+      className={`${
+        themeState.name === "light" ? "text-zinc-950" : ""
+      } h-6 w-6`}
     >
       <input
         id="hamburger-checkbox"
         aria-labelledby="menu"
-        className="link absolute bottom-4 right-5 w-6 h-6 opacity-0 cursor-pointer z-20 md:right-8 xl:right-20"
+        className="relative w-6 h-6 opacity-0 cursor-pointer justify-center z-20"
         type="checkbox"
         aria-label="menu"
-        checked={isChecked} 
+        checked={isChecked}
         onChange={() => setIsChecked((prev) => !prev)}
       />
       <div
         id="hamburger-background"
-        className="absolute bottom-4 right-5 w-6 h-6 flex items-center justify-center z-10 md:right-8 xl:right-20"
+        className="relative -top-full w-6 h-6 flex items-center justify-center z-10"
       >
-        <div
+        <div 
           id="hamburger-lines"
-          style={{
-            backgroundColor: isChecked
-              ? themeState.isChecked
-              : themeState.isNotChecked,
-          }}
-          className="relative w-full items-center z-10"
+          className={`${
+            isChecked
+              ? "bg-slate-100"
+              : isScrolled
+              ? themeState.name === "light"
+                ? "bg-slate-100 "
+                : "bg-slate-100 "
+              : themeState.name === "light"
+              ? "bg-zinc-950"
+              : "bg-slate-100"
+          } 
+          relative w-full items-center z-10`}
         ></div>
       </div>
       <Menu isChecked={isChecked} setIsChecked={setIsChecked} />

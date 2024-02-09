@@ -1,3 +1,73 @@
+  @font-face {
+    font-family: 'SoinSansPro-Bold';
+    src: url('../src/assets/fonts/SoinSansPro-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Bold Italic';
+    src: url('../src/assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Regular';
+    src: url('../src/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto Medium';
+    src: url('../src/assets/fonts/Roboto-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Light';
+    src: url('../src/assets/fonts/Roboto-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto Black';
+    src: url('../src/assets/fonts/Roboto-Black.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Supernatural Knight';
+    src: url('../src/assets/fonts/Supernatural_Knight.ttf') format('truetype');
+  }
+
+.rnEffect:hover .react-logo{
+  transform: rotate(240deg);
+}
+
+.rnEffect:hover .underline-from-left{
+  color: #06bcee;
+}
+
+.rnEffect:hover .underline-from-left::before {
+ width: 100%;
+  }
+
+  .underline-from-left {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-from-left::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px; /* or however thick you want your underline to be */
+    bottom: 0; /* Position the line at the bottom of the text */
+    left: 0;
+    background-color: currentColor; /* or choose a custom color */
+    transition: width .5s ease-out; /* Adjust the timing to your liking */
+  }
+  
+ 
+  .react-logo {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+
+
+
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";

@@ -19,93 +19,91 @@ import { urlString } from "../../assets/svgs/sequelize.js";
 import mongooseIcon from "../../assets/svgs/mongooseIcon.svg";
 import herokuIcon from "../../assets/svgs/heroku.svg";
 import herokuIconDark from "../../assets/svgs/herokublack.svg";
+import materialUIIcon from "../../assets/svgs/materialUI.svg";
+
 export const frontEndIconsLanguages = [
   {
     name: "HTML",
     icon: htmlIcon,
+    url: "https://html.com/",
   },
   {
     name: "CSS",
     icon: cssIcon,
+    url: "https://www.w3schools.com/css/",
   },
   {
     name: "JavaScript",
     icon: jsSquareIcon,
+    url: "https://www.javascript.com/",
   },
 ];
 
-export const frontEndIconsLibrariesFrameworksLightTheme = [
+export const librariesFrameworksLightTheme = [
   {
     name: "React",
     icon: reactIcon,
-  },
-  {
-    name: "Apollo Client",
-    icon: apolloIcon,
+    url: "https://react.dev/",
   },
   {
     name: "Tailwind CSS",
     icon: tailwindIcon,
+    url: "https://tailwindcss.com/",
   },
   {
-    name: "Handlebars JS",
-    icon: handlebarsJS,
+    name: "Material UI",
+    icon: materialUIIcon,
+    url: "https://mui.com/material-ui/",
+  },
+  {
+    name: "Apollo Client/Server",
+    icon: apolloIcon,
+    url: "https://www.apollographql.com/",
+  },
+  {
+    name: "GraphQL",
+    icon: graphqlIcon,
+    url: "https://graphql.org/",
+  },
+  {
+    name: "Express JS",
+    icon: expressIcon,
+    url: "https://expressjs.com/",
   },
 ];
 
-export const frontEndIconsLibrariesFrameworksDarkTheme = [
+export const librariesFrameworksDarkTheme = [
   {
     name: "React",
     icon: reactIcon,
+    url: "https://react.dev/",
   },
-  {
-    name: "Apollo Client",
-    icon: apolloWhiteIcon,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwindIcon,
+    url: "https://tailwindcss.com/",
   },
   {
-    name: "Handlebars JS",
-    icon: handlebarsJS,
-  },
-];
-
-export const backEndIconsLanguages = [
-  {
-    name: "JavaScript",
-    icon: jsSquareIcon,
-  },
-];
-
-export const backEndIconsLibrariesFrameworksLightTheme = [
-  {
-    name: "Express JS",
-    icon: expressIcon,
+    name: "Material UI",
+    icon: materialUIIcon,
+    url: "https://mui.com/material-ui/",
   },
   {
-    name: "Apollo Server",
-    icon: apolloIcon,
-  },
-  {
-    name: "GraphQL",
-    icon: graphqlIcon,
-  },
-];
-
-export const backEndIconsLibrariesFrameworksDarkTheme = [
-  {
-    name: "Express JS",
-    icon: expressIcon,
-  },
-  {
-    name: "Apollo Server",
+    name: "Apollo Client/Server",
     icon: apolloWhiteIcon,
+    url: "https://www.apollographql.com/",
   },
   {
     name: "GraphQL",
     icon: graphqlIcon,
+    url: "https://graphql.org/",
+  },
+
+  {
+    name: "Express JS",
+    icon: expressIcon,
+    url: "https://expressjs.com/",
   },
 ];
 
@@ -113,18 +111,22 @@ export const backEndIconsDatabases = [
   {
     name: "MongoDB",
     icon: mongoDBIcon,
+    url: "https://www.mongodb.com/",
   },
   {
     name: "Mongoose ODM",
     icon: mongooseIcon,
+    url: "https://mongoosejs.com/",
   },
   {
     name: "MySQL",
     icon: mysqlIcon,
+    url: "https://www.mysql.com/",
   },
   {
     name: "Sequelize ORM",
     icon: urlString,
+    url: "https://sequelize.org/",
   },
 ];
 
@@ -132,22 +134,27 @@ export const otherIconsLight = [
   {
     name: "Node.js",
     icon: nodejsIcon,
+    url: "https://nodejs.org/en",
   },
   {
     name: "NPM",
     icon: npmIcon,
+    url: "https://www.npmjs.com/",
   },
   {
     name: "Git",
     icon: gitIcon,
+    url: "https://git-scm.com/",
   },
   {
     name: "Github",
     icon: githubIcon,
+    url: "https://www.github.com",
   },
   {
     name: "Heroku",
     icon: herokuIconDark,
+    url: "https://www.heroku.com",
   },
 ];
 
@@ -155,38 +162,49 @@ export const otherIconsDark = [
   {
     name: "Node.js",
     icon: nodejsIcon,
+    url: "https://nodejs.org/en",
   },
   {
     name: "NPM",
     icon: npmIcon,
+    url: "https://www.npmjs.com/",
   },
   {
     name: "Git",
     icon: gitIcon,
+    url: "https://git-scm.com/",
   },
   {
     name: "Github",
     icon: githubWhiteIcon,
+    url: "https://www.github.com",
   },
   {
     name: "Heroku",
     icon: herokuIcon,
+    url: "https://www.heroku.com",
   },
 ];
 
 export const displayIcons = (icons) => {
   return icons.map((icon) => (
-    <div className="mt-3 mb-1  justify-center items-center   " key={icon.name}>
-      <img
-        className={
-          icon.name === "Mongoose ODM"
-            ? "h-10 w-16 mx-auto"
-            : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:w-10 mx-auto"
-        }
-        src={icon.icon}
-        alt={`${icon.name} icon`}
-      />
-      <h3 className="font-thin text-center text-sm">{icon.name}</h3>
+    <div
+      className="flex flex-col  justify-start items-center  space-y-3 pb-4 md:pb-5"
+      key={icon.name}
+    >
+      <a href={icon.url}>
+        <img
+          className={
+            icon.name === "Mongoose ODM"
+              ? "h-8 w-16"
+              : "h-8 w-8 lg:h-12 lg:w-12 xl:w-8 xl:h-8 "
+          }
+          src={icon.icon}
+          alt={`${icon.name} icon`}
+        />
+      </a>
+
+      <h3 className=" text-center text-sm font-roboto">{icon.name}</h3>
     </div>
   ));
 };
