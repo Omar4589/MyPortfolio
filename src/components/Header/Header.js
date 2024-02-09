@@ -115,7 +115,7 @@ const Header = () => {
       </div>
 
       {!isMobile ? (
-        <nav className="flex items-center w-1/2 font-robotoM text-lg lg:text-base xl:text-lg">
+        <nav className="flex items-center w-1/2 font-robotoM text-sm lg:text-base  xl:text-lg">
           <ul className="flex justify-around  w-full">
             <li>
               <a href="#home">Home</a>

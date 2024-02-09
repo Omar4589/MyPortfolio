@@ -10,6 +10,8 @@ const LandingIcons = ({
   lightIcons,
   darkIcons,
   compName,
+  handleMouseEnter,
+  handleMouseLeave,
 }) => {
   const { themeState } = useThemeContext();
   const [icons, setIcons] = useState([]);
@@ -38,7 +40,9 @@ const LandingIcons = ({
             key={icon + index}
             href={icon.url}
             alt="icon url"
-            className="z-10 h-8 w-8 mt-3 flex justify-center md:h-9 md:w-9 "
+            onMouseEnter={() => handleMouseEnter(icon.caption)}
+            onMouseLeave={handleMouseLeave}
+            className="z-10  h-8 w-8 mt-1 md:mt-3 lg:mt-1 flex justify-center md:h-9 md:w-9 hover:shadow-zinc-700 hover:drop-shadow-md"
           >
             <img src={icon.name} alt="icon" className="h-full" />
           </a>
@@ -48,7 +52,7 @@ const LandingIcons = ({
       {compName !== "footer" && (
         <a
           href={resume}
-          className={`px-3 top-3 rounded-full ring ${
+          className={`px-3 mt-3 rounded-full ring ${
             themeState.name === "light" ? "ring-zinc-950" : "ring-slate-100"
           } relative z-10 md:px- md:py- md:top-5 md:text-lg lg:text-1xl flex items-center space-x-1`}
         >
