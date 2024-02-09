@@ -1,3 +1,7 @@
 export const displayWelcomeLog = () => {
-  console.log("Thank You For Visiting!");
+  console.log(`
+
+  
+Welcome to my portfolio!
+`);
 };

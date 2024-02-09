@@ -19,6 +19,12 @@ module.exports = {
       fontSize: {
         xxs: "10px",
       },
+      width: {
+        menuWidth: "200vw",
+      },
+      height: {
+        menuHeight: "250vw",
+      },
       fontFamily: {
         yellowtail: ["Yellowtail Regular"],
         soisBold: ["SoinSansPro-Bold"],

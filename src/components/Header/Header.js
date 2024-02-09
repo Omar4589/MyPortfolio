@@ -33,8 +33,6 @@ const Header = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsScrolled(true);
-
-        console.log("scrolling...");
       } else {
         setIsScrolled(false);
       }
@@ -60,7 +58,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className={` fixed w-full h-16 md:h-20 z-20 flex justify-between px-6 md:px-10 lg:px-20 xl:px-24 transition-all  duration-500 ${
+      className={` fixed w-full h-16 md:h-20 z-20 flex items-center px-6 md:px-10 lg:px-20 xl:px-24 transition-all duration-500 ${
         themeState.name === "light"
           ? isScrolled
             ? "bg-zinc-950 text-slate-100 shadow-sm shadow-zinc-700" // Light theme + scrolled
@@ -70,7 +68,7 @@ const Header = () => {
           : "bg-zinc-950 text-slate-100" // Not light theme + not scrolled
       }`}
     >
-      <div className="flex items-center ">
+      <div className="flex flex-1 items-center ">
         <a href="https://omar4589.github.io/MyPortfolio/">
           <img
             alt="logo"

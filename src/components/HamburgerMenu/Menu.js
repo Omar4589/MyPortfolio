@@ -8,22 +8,22 @@ const Menu = ({ isChecked, setIsChecked }) => {
     <div
       id="menu-container"
       className={`${
-        !isChecked ? "hidden" : ""
-      } absolute top-32 left-1/2 transform -translate-x-custom -translate-y-1/2 transition-transform`}
+        isChecked ? "opacity-100 scale-100" : "opacity-0 scale-0"
+      } absolute top-0 left-0 h-screen w-full transform transition-all ease-in-out duration-300`}
     >
       <div
         id="menu-background"
-        className="w-full h-full absolute opacity-80 menubackground bg-black"
+        className="absolute -top-60 -left-1/2 w-menuWidth h-menuHeight rounded-full opacity-80  bg-black"
       ></div>
       <div
         id="menu-links"
-        className=" text-5xl relative  top-40   flex flex-col space-y-5 items-center justify-center  text-slate-100 font-robotoBlack"
+        className=" text-4xl md:text-5xl w-full h-screen absolute top-32  flex flex-col space-y-6 items-center text-slate-100 font-robotoBlack"
       >
         <a
           onClick={() => {
             setIsChecked(false);
           }}
-          className=" transition-transform duration-300 hover:scale-125 "
+          className="drop-shadow-lg shadow-slate-100 transition-transform duration-300 hover:scale-125 "
           href="#home"
         >
           Home
@@ -32,7 +32,7 @@ const Menu = ({ isChecked, setIsChecked }) => {
           onClick={() => {
             setIsChecked(false);
           }}
-          className=" transition-transform duration-300 hover:scale-125 "
+          className=" transition-transform duration-300 hover:scale-125  "
           href="#my-skills"
         >
           My Skills

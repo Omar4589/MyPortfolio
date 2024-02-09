@@ -8,7 +8,7 @@ import {
   otherIconsDark,
   otherIconsLight,
   displayIcons,
-} from "./icons";
+} from "./iconsSkills";
 
 const MySkills = () => {
   const { themeState } = useThemeContext();

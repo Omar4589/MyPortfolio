@@ -17,24 +17,8 @@
   }
 
 
-
-
-  /*                 MENU RENDER ANIMATION                 */
-  #hamburger #hamburger-checkbox:checked ~ #menu-container > div {
-    transform: scale(1);
-    transition-duration: 0.75s;
-  }
-
-
-  /*        ANIMATION THAT PLAYS WHEN YOU HOVER OVER X ICON          */
-  #hamburger #hamburger-checkbox:checked:hover + #hamburger-background > div {
-    transform: rotate(225deg);
-  }
-
-  
-
-  /*                HAMBURGER LINES STYLING                */
-  #hamburger #hamburger-background > div {
+   /*                HAMBURGER LINES STYLING                */
+   #hamburger #hamburger-background > div {
     height: 0.125rem;
     transition: all 0.4s ease;
     -webkit-box-pack: center;
@@ -58,53 +42,10 @@
   }
   
 
-  
 
-   /*                ACTUAL MENU                */
-  #hamburger #menu-container > div {
-    width: 240vw;
-    height: 260vw;
-    transform: scale(0);
-    will-change: transform;
-    border-radius: 50%;
-    transition: all 0.4s ease;
-    backface-visibility: hidden;
-  }
-  
-  #hamburger #menu-container > div > div {
-    max-width: 90vw;
-    transition: opacity 0.4s ease;
-  }
-
-
-  /*            BEATING ANIMATION FOR MENU LINKS           */
-  /* @keyframes beating {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.15);
-    }
-  }
-  
-  .beating:hover {
-    animation: beating 1s ;
-  } */
-  
-
-  /*                    MENU LINKS                */
-  /* #hamburger #menu-container > div > div ul li a {
-    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #8b31ff 51%, #7000ff 100%);
-    background-size: 200% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  #hamburger #menu-container > div > div ul li a:hover {
-    background-position: 100% 0;
-  } */
-
-
+ /*        ANIMATION THAT PLAYS WHEN YOU HOVER OVER X ICON          */
+ #hamburger #hamburger-checkbox:checked:hover + #hamburger-background > div {
+  transform: rotate(225deg);
+}
 
   

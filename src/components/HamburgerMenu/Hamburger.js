@@ -12,12 +12,12 @@ const Hamburger = ({ isScrolled, isChecked, setIsChecked }) => {
       style={{ color: themeState.menuText }}
       className={`${
         themeState.name === "light" ? "text-zinc-950" : ""
-      } relative`}
+      } h-6 w-6`}
     >
       <input
         id="hamburger-checkbox"
         aria-labelledby="menu"
-        className="link absolute bottom-5 md:bottom-6  w-6 h-6 opacity-0 cursor-pointer z-20 right-0 "
+        className="relative w-6 h-6 opacity-0 cursor-pointer justify-center z-20"
         type="checkbox"
         aria-label="menu"
         checked={isChecked}
@@ -25,9 +25,9 @@ const Hamburger = ({ isScrolled, isChecked, setIsChecked }) => {
       />
       <div
         id="hamburger-background"
-        className="absolute bottom-5 md:bottom-6 w-6 h-6 flex items-center justify-center z-10 right-0  "
+        className="relative -top-full w-6 h-6 flex items-center justify-center z-10"
       >
-        <div
+        <div 
           id="hamburger-lines"
           className={`${
             isChecked

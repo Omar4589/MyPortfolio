@@ -13,7 +13,7 @@ const AboutMe = () => {
         id="about-me"
         src={portrait}
         alt="Omar"
-        className="w-1/2 md:w-1/3 lg:w-1/4  rounded-full  lg:order-last"
+        className="w-1/2 md:w-2/5 lg:w-1/4  rounded-full  lg:order-last"
       />
 
       <div
