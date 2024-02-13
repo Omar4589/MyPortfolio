@@ -72,7 +72,7 @@ const MySkills = () => {
               Languages
             </h2>
             <div
-              className="grid grid-cols-3 
+              className="grid grid-cols-3 w-1/3 lg:w-3/4
           "
             >
               {frontEndLanguages}

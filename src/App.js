@@ -15,9 +15,9 @@ import dontLeaveMe from "dontleaveme";
 function App() {
   const { themeState } = useThemeContext();
 
-  useEffect(() => {
-    dontLeaveMe.init("Please come back! 😭", "Omar Zumaya - Developer");
-  });
+  // useEffect(() => {
+  //   dontLeaveMe.init("Please come back! 😭", "Omar Zumaya - Developer");
+  // });
 
   useEffect(() => {
     displayWelcomeLog();
