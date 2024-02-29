@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div
       id="about-me-container"
-      className="w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between  items-center mx-6 md:mx-14 lg:mx-18 xl:mx-28 select-none space-y-2  md:space-y-4 mb-36"
+      className="w-full py-32 relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between  items-center mx-6 md:mx-14 lg:mx-18 xl:mx-28 select-none space-y-2  md:space-y-4 mb-36"
     >
       <img
         id="about-me"

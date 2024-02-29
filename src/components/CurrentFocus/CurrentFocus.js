@@ -2,9 +2,11 @@ import reactLogo from "../../assets/svgs/react.svg";
 
 const CurrentFocus = () => {
   return (
-    <div className="w-full relative mt-20 md:mt-0 z-10 flex justify-around items-center mx-6 md:mx-12 lg:mx-20 xl:mx-36 ">
+    <div className="w-full py-16 relative mt-20 md:mt-0 z-10 flex justify-around items-center mx-6 md:mx-12 lg:mx-20 xl:mx-36 ">
       <div className="flex flex-col space-y-2 lg:space-y-4">
-        <h1 className="text-xl text-center md:text-left md:text-2xl xl:text-2xl  font-robotoBlack">MY CURRENT FOCUS</h1>
+        <h1 className="text-xl text-center md:text-left md:text-2xl xl:text-2xl  font-robotoBlack">
+          MY CURRENT FOCUS
+        </h1>
 
         <div className="flex flex-col space-y-4 lg:space-y-6 text-md lg:text-lg xl:text-xl font-robotoLight md:mx-3">
           <div className="align-bottom">
